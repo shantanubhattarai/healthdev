@@ -1,10 +1,11 @@
-import HowWeHelpSection from "@/components/Home/HowWeHelpSection";
+import ContactSection from "@/components/home/ContactSection";
+import HowWeHelpSection from "@/components/home/HowWeHelpSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="px-4 lg:px-8 container mx-auto">
-      <section className="text-background px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-96 bg-green-900 bg-noise bg-blend-soft-light text-center">
+    <article className="px-4 lg:px-0 container mx-auto">
+      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-[46vh] bg-green-900 bg-noise bg-blend-soft-light text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
             Begin your health journey
@@ -20,7 +21,7 @@ export default function Home() {
       </section>
 
       <section className="py-24">
-        <div className="flex gap-4 justify-center items-center">
+        <div className="flex gap-16 justify-center items-center">
           <div className="flex flex-col gap-6">
             <div>
               <h3 className="text-4xl leading-14 mb-2">
@@ -69,6 +70,7 @@ export default function Home() {
         </div>
       </section>
       <HowWeHelpSection />
-    </main>
+      <ContactSection />
+    </article>
   );
 }
