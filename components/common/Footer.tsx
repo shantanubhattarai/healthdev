@@ -12,7 +12,10 @@ const Footer = () => {
       <div>
         <h3 className="font-medium text-lg mb-4">Links</h3>
         <ul className="flex flex-col gap-2 text-zinc-700">
-          <Link href="/" className="hover:underline hover:underline-offset-2">
+          <Link
+            href="/about"
+            className="hover:underline hover:underline-offset-2"
+          >
             About
           </Link>
           <Link href="/" className="hover:underline hover:underline-offset-2">

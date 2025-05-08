@@ -1,6 +1,7 @@
 "use client";
 
 import clsx from "clsx";
+import { X } from "lucide-react";
 import { useState } from "react";
 
 const HowWeHelpSection = () => {
@@ -138,6 +139,13 @@ const HelpCard = ({
       >
         {children}
       </div>
+      <X
+        className={clsx(
+          "absolute right-4 top-3",
+          selected === cardKey ? "" : "hidden"
+        )}
+        onClick={() => toggleCardSelect(cardKey)}
+      />
     </div>
   );
 };
