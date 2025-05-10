@@ -16,7 +16,7 @@ const Header = () => {
           </Link>
           <Link
             className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-green-800 transition-all"
-            href="/"
+            href="/services"
           >
             Services
           </Link>

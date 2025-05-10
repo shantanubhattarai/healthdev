@@ -18,7 +18,10 @@ const Footer = () => {
           >
             About
           </Link>
-          <Link href="/" className="hover:underline hover:underline-offset-2">
+          <Link
+            href="/services"
+            className="hover:underline hover:underline-offset-2"
+          >
             Services
           </Link>
           <Link
@@ -35,7 +38,7 @@ const Footer = () => {
           </Link>
         </ul>
       </div>
-      <div className="flex gap-8 justify-between items-center py-4 px-4 my-4 border-t border-b">
+      <div className="flex gap-8 justify-between items-center py-4 my-4 border-t border-b">
         <Link href="/" className="font-semibold text-lg py-1">
           HealthDev
         </Link>
