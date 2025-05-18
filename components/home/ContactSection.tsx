@@ -8,7 +8,7 @@ const ContactSection = () => {
         <h3 className="text-4xl mb-4">Contact Us</h3>
         <ContactDetails />
       </div>
-      <div className="p-4">
+      <div className="md:p-4">
         <ContactForm />
       </div>
     </section>
