@@ -16,9 +16,9 @@ const HowWeHelpSection = () => {
   };
 
   return (
-    <section className="py-24">
+    <section className="pb-12 md:pb-24 lg:py-24">
       <h3 className="text-center text-4xl leading-14 mb-8">How we help</h3>
-      <div className="grid grid-cols-3 gap-8 items-center justify-start relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 items-center justify-start relative">
         <HelpCard
           toggleCardSelect={toggleCardSelect}
           selected={selected}
@@ -111,42 +111,40 @@ const HelpCard = ({
   };
 
   return (
-    <div
-      className={clsx(
-        "px-12 py-6 rounded-md text-white cursor-pointer transition-all",
-        `ring-2 ${variantClassMap[variant]}`,
-        `bg-noise bg-blend-overlay`,
-        selected === cardKey ? "absolute inset-0" : ""
-      )}
-      key={cardKey}
-      onClick={() => toggleCardSelect(cardKey)}
-    >
-      <p
-        className={clsx(
-          selected === cardKey
-            ? "text-left font-medium tracking-wide"
-            : "text-center transition-all",
-          "text-lg"
-        )}
-      >
-        {label}
-      </p>
+    <>
       <div
         className={clsx(
-          "text-zinc-100 mt-2",
-          selected === cardKey ? "block" : "hidden"
+          "px-12 py-6 rounded-sm text-white cursor-pointer transition-all h-full inline-flex flex-col items-center justify-center",
+          `ring-2 ${variantClassMap[variant]}`,
+          `bg-noise bg-blend-overlay`
         )}
-      >
-        {children}
-      </div>
-      <X
-        className={clsx(
-          "absolute right-4 top-3",
-          selected === cardKey ? "" : "hidden"
-        )}
+        key={cardKey}
         onClick={() => toggleCardSelect(cardKey)}
-      />
-    </div>
+      >
+        <p className={clsx("text-center transition-all", "text-lg")}>{label}</p>
+      </div>
+      {selected === cardKey ? (
+        <div
+          className={clsx(
+            "px-6 md:px-12 py-6 rounded-sm text-white cursor-pointer transition-all",
+            `ring-2 ${variantClassMap[variant]}`,
+            `bg-noise bg-blend-overlay`,
+            "absolute inset-0"
+          )}
+          key={`overlay-${cardKey}`}
+          onClick={() => toggleCardSelect(cardKey)}
+        >
+          <p className={clsx("text-left font-medium tracking-wide", "text-lg")}>
+            {label}
+          </p>
+          <div className={clsx("text-zinc-100 mt-2", "block")}>{children}</div>
+          <X
+            className={clsx("absolute right-4 top-6 md:top-3")}
+            onClick={() => toggleCardSelect(cardKey)}
+          />
+        </div>
+      ) : null}
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <article className="px-4 lg:px-0 container mx-auto">
+    <article className="px-4 lg:px-0 pt-12 md:pt-0 container mx-auto">
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-amber-900 bg-noise bg-blend-soft-light text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
@@ -10,7 +10,7 @@ const About = () => {
           </h2>
         </div>
       </section>
-      <section className="pt-24 pb-8">
+      <section className="pt-12 lg:pt-24 pb-8">
         <p className="text-zinc-700">
           At HealthDEV, we believe you are the expert of your life. We pride
           ourselves on genuinely listening to you, taking the time to understand
@@ -30,7 +30,7 @@ const About = () => {
       </section>
       <section className="py-12">
         <h3 className="text-4xl tracking-wide text-center">Our Team</h3>
-        <div className="grid grid-cols-3 py-8 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-8 gap-8">
           <div className="flex flex-col gap-3 border rounded-md pb-2">
             <div className="relative w-full aspect-square">
               <Image
