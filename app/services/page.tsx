@@ -23,14 +23,14 @@ const Services = () => {
         </div>
       </section>
       <section className="py-12">
-        <div className="grid grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <>
               <ServiceDetails
                 value="community-access"
                 selectedKey={selectedKey}
+                title="Help with Community Access"
               >
-                <h4 className="text-3xl">Help with Community Access</h4>
                 <p className="pt-4">
                   To empower you to take control of your mental well-being. We
                   aim to break the stigma surrounding mental health, making
@@ -38,8 +38,11 @@ const Services = () => {
                   everyone who seeks it.
                 </p>
               </ServiceDetails>
-              <ServiceDetails value="daily-support" selectedKey={selectedKey}>
-                <h4 className="text-3xl">Your needs. Everyday.</h4>
+              <ServiceDetails
+                value="daily-support"
+                selectedKey={selectedKey}
+                title="Your needs. Everyday."
+              >
                 <p className="pt-4">
                   To empower you to take control of your mental well-being. We
                   aim to break the stigma surrounding mental health, making
@@ -50,8 +53,8 @@ const Services = () => {
               <ServiceDetails
                 value="independent-living"
                 selectedKey={selectedKey}
+                title="Become Independent"
               >
-                <h4 className="text-3xl">Become Independent</h4>
                 <p className="pt-4">
                   To empower you to take control of your mental well-being. We
                   aim to break the stigma surrounding mental health, making
@@ -59,8 +62,11 @@ const Services = () => {
                   everyone who seeks it.
                 </p>
               </ServiceDetails>
-              <ServiceDetails value="transport" selectedKey={selectedKey}>
-                <h4 className="text-3xl">Free transport</h4>
+              <ServiceDetails
+                value="transport"
+                selectedKey={selectedKey}
+                title="Free transport"
+              >
                 <p className="pt-4">
                   To empower you to take control of your mental well-being. We
                   aim to break the stigma surrounding mental health, making
@@ -71,8 +77,8 @@ const Services = () => {
               <ServiceDetails
                 value="skill-development"
                 selectedKey={selectedKey}
+                title="Assisted Learning"
               >
-                <h4 className="text-3xl">Assisted Learning</h4>
                 <p className="pt-4">
                   To empower you to take control of your mental well-being. We
                   aim to break the stigma surrounding mental health, making
@@ -83,8 +89,8 @@ const Services = () => {
               <ServiceDetails
                 value="employment-support"
                 selectedKey={selectedKey}
+                title="Employment Support"
               >
-                <h4 className="text-3xl">Employment Support</h4>
                 <p className="pt-4">
                   To empower you to take control of your mental well-being. We
                   aim to break the stigma surrounding mental health, making
@@ -93,7 +99,7 @@ const Services = () => {
                 </p>
               </ServiceDetails>
             </>
-            <ul className="flex flex-col items-start gap-2 pt-6">
+            <ul className="flex flex-row md:flex-col items-start gap-2 pt-6 overflow-x-scroll md:overflow-hidden pb-3 mb-3 md:pb-0 md:mb-0">
               <ServiceItem
                 serviceKey="community-access"
                 label="Community Access"
@@ -304,14 +310,21 @@ const Services = () => {
 const ServiceDetails = ({
   children,
   value,
+  title,
   selectedKey,
 }: {
   children: React.ReactNode;
   value: string;
+  title: string;
   selectedKey: string | null;
 }) => {
   if (selectedKey !== value) return null;
-  return <>{children}</>;
+  return (
+    <>
+      <h4 className="text-3xl font-medium">{title}</h4>
+      {children}
+    </>
+  );
 };
 
 const ServiceContent = ({
@@ -341,8 +354,10 @@ const ServiceItem = ({
   return (
     <button
       className={clsx(
-        "text-2xl hover:cursor-pointer",
-        serviceKey === selectedKey ? "" : "text-zinc-500 hover:text-zinc-700"
+        "text-md md:text-xl lg:text-2xl hover:cursor-pointer border-b-2 pb-2 pt-4 shrink-0",
+        serviceKey === selectedKey
+          ? "border-zinc-900"
+          : "border-zinc-300 text-zinc-500 hover:text-zinc-600 hover:border-zinc-600"
       )}
       onClick={() => selectService(serviceKey)}
     >
