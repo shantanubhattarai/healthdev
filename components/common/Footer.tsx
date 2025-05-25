@@ -34,13 +34,19 @@ const Footer = () => {
             href="/contact"
             className="hover:underline hover:underline-offset-2"
           >
+            Make a referral
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:underline hover:underline-offset-2"
+          >
             Contact
           </Link>
         </ul>
       </div>
       <div className="flex gap-8 justify-between items-center py-4 my-4 border-t border-b">
         <Link href="/" className="font-semibold text-lg py-1">
-          HealthDev
+          Apex Aid
         </Link>
         <ul className="flex gap-6 items-center justify-end">
           <SiFacebook />

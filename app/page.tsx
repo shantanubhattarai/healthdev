@@ -9,11 +9,13 @@ export default function Home() {
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-[46vh] bg-green-900 bg-noise bg-blend-soft-light text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
-            Begin your health journey
+            Care that lifts, support that lasts
           </h2>
           <p className="text-zinc-200 leading-5">
-            We combine experience and empathy to lead the way in psychosocial
-            and forensic disability across the NT
+            We believe every person has the right to live with dignity, choice,
+            and purpose — and that with the right support, everyone can thrive.
+            Disability is not a limitation, but a call for equity, inclusion,
+            and empowerment.
           </p>
         </div>
         <Link
