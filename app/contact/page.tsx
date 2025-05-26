@@ -3,8 +3,8 @@ import ContactForm from "@/components/contact/ContactForm";
 
 const Contact = () => {
   return (
-    <article className="px-4 lg:px-0  pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-amber-900 bg-noise bg-blend-soft-light text-center">
+    <article className="px-4 pt-12 md:pt-0 container mx-auto">
+      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-brand-800 bg-noise bg-blend-soft-light text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
             Contact Us
@@ -21,7 +21,7 @@ const Contact = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-24 py-12">
         <ContactForm />
         <aside>
-          <div className="bg-amber-100 text-amber-900 bg-noise bg-blend-soft-light rounded-md py-8 px-6 w-full md:w-fit h-fit md:mt-4">
+          <div className="bg-brand-50 text-brand-950 bg-noise bg-blend-soft-light rounded-md py-8 px-6 w-full md:w-fit h-fit md:mt-4">
             <ContactDetails />
           </div>
         </aside>

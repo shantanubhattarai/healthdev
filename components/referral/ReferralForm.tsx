@@ -358,7 +358,7 @@ const ReferralForm = () => {
         </div>
       </section>
       <button
-        className="text-medium bg-brand bg-noise bg-blend-color-burn text-white px-6 py-2 rounded-sm tracking-wide text-sm cursor-pointer ring ring-brand-secondary hover:bg-brand-secondary active:bg-brand transition-all"
+        className="text-medium bg-brand-800 bg-noise bg-blend-color-burn text-white px-6 py-2 rounded-sm tracking-wide text-sm cursor-pointer ring ring-brand-600 hover:bg-brand-700 active:bg-brand-900 transition-all"
         type="submit"
       >
         Send Message
