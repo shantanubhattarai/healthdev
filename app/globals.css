@@ -43,6 +43,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-brand: var(--brand);
+  --color-brand-secondary: var(--brand-secondary);
 }
 
 body {
@@ -88,6 +90,8 @@ body {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --brand: #550000;
+  --brand-secondary: #7b2d3a;
 }
 
 .dark {
@@ -130,5 +134,12 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    accent-color: var(--brand);
   }
 }
