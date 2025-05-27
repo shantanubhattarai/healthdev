@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Services = () => {
   const [selectedKey, setSelectedKey] = useState<string | null>("sda");
@@ -21,7 +21,7 @@ const Services = () => {
           </h2>
         </div>
       </section>
-      <section className="pt-12">
+      <section className="pt-12 text-zinc-700">
         <p>
           At Apex Aid Health Care, we provide person-centred, high-quality NDIS
           services that reflect each participant&apos;s unique goals, needs, and
@@ -87,16 +87,14 @@ const Services = () => {
             </ul>
           </div>
           <div className="md:col-span-2 lg:col-span-3">
-            <ServiceContent value="sda" selectedKey={selectedKey}>
-              <div className="w-full relative h-96">
-                <Image
-                  src="https://picsum.photos/800/800"
-                  fill
-                  alt="sda"
-                  className="rounded-lg object-cover"
-                />
-              </div>
-              <p className="pt-8">
+            <ServiceContent
+              value="sda"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/800/800"
+              imageAlt="sda"
+              url={"/services/sda"}
+            >
+              <p>
                 At Apex Aid Health Care, we understand that having the right
                 home environment is essential for people living with significant
                 disabilities. That is why we offer Specialist Disability
@@ -104,22 +102,14 @@ const Services = () => {
                 for NDIS participants with complex needs or extreme functional
                 limitations.
               </p>
-              <Link
-                href="/services/sda"
-                className="underline underline-offset-4 text-zinc-700 hover:text-zinc-900 mt-2 block"
-              >
-                Learn More
-              </Link>
             </ServiceContent>
-            <ServiceContent value="daily-support" selectedKey={selectedKey}>
-              <div className="w-full relative h-96">
-                <Image
-                  src="https://picsum.photos/900/900"
-                  fill
-                  alt="Daily Support"
-                  className="rounded-lg object-cover"
-                />
-              </div>
+            <ServiceContent
+              value="daily-support"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/900/900"
+              imageAlt="sda"
+              url={"/services/sda"}
+            >
               <p className="pt-8">
                 When considering a paragraph and how to set one well, there are
                 three parameters that work together: font size, line height (or
@@ -249,37 +239,41 @@ const Services = () => {
   );
 };
 
-const ServiceDetails = ({
-  children,
-  value,
-  title,
-  selectedKey,
-}: {
-  children: React.ReactNode;
-  value: string;
-  title: string;
-  selectedKey: string | null;
-}) => {
-  if (selectedKey !== value) return null;
-  return (
-    <>
-      <h4 className="text-3xl font-medium">{title}</h4>
-      {children}
-    </>
-  );
-};
-
 const ServiceContent = ({
   children,
   value,
   selectedKey,
+  imageSrc,
+  imageAlt,
+  url,
 }: {
   children: React.ReactNode;
   value: string;
   selectedKey: string | null;
+  imageSrc: string;
+  imageAlt: string;
+  url: string;
 }) => {
   if (selectedKey !== value) return;
-  return <>{children}</>;
+  return (
+    <>
+      <div className="w-full relative h-96">
+        <Image
+          src={imageSrc}
+          fill
+          alt={imageAlt}
+          className="rounded-lg object-cover"
+        />
+      </div>
+      <div className="pt-8 text-zinc-700">{children}</div>
+      <Link
+        href={url}
+        className="underline underline-offset-4 text-zinc-700 hover:text-zinc-900 mt-2 inline-block"
+      >
+        Learn More
+      </Link>
+    </>
+  );
 };
 
 const ServiceItem = ({
