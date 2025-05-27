@@ -72,18 +72,6 @@ const Services = () => {
                 selectedKey={selectedKey}
                 selectService={selectService}
               />
-              <ServiceItem
-                serviceKey="skill-development"
-                label="Skill Development"
-                selectedKey={selectedKey}
-                selectService={selectService}
-              />
-              <ServiceItem
-                serviceKey="employment-support"
-                label="Employment Support"
-                selectedKey={selectedKey}
-                selectService={selectService}
-              />
             </ul>
           </div>
           <div className="md:col-span-2 lg:col-span-3">
@@ -155,64 +143,6 @@ const Services = () => {
                 person-centred care for people with cognitive, intellectual, or
                 psychosocial disabilities who have encountered legal or forensic
                 settings.
-              </p>
-            </ServiceContent>
-            <ServiceContent value="skill-development" selectedKey={selectedKey}>
-              <div className="w-full relative h-96">
-                <Image
-                  src="https://picsum.photos/900/800"
-                  fill
-                  alt="Skill Development"
-                  className="rounded-lg object-cover"
-                />
-              </div>
-              <p className="pt-8">
-                Travelling day in and day out. Doing business like this takes
-                much more effort than doing your own business at home, and on
-                top of that {"there's"} the curse of travelling, worries about
-                making train connections, bad and irregular food, contact with
-                different people all the time so that you can never get to know
-                anyone or become friendly with them. It can all go to Hell! He
-                felt a slight itch up on his belly; pushed himself slowly up on
-                his back towards the headboard so that he could lift his head
-                better; found where the itch was, and saw that it was covered
-                with lots of little white spots which he {"didn't"} know what to
-                make of; and when he tried to feel the place with one of his
-                legs he drew it quickly back because as soon as he touched it he
-                was overcome by a cold shudder. He slid back into his former
-                position.
-              </p>
-            </ServiceContent>
-            <ServiceContent
-              value="employment-support"
-              selectedKey={selectedKey}
-            >
-              <div className="w-full relative h-96">
-                <Image
-                  src="https://picsum.photos/800/900"
-                  fill
-                  alt="Employment Support"
-                  className="rounded-lg object-cover"
-                />
-              </div>
-              <p className="pt-8">
-                {`For instance, whenever I go back to the guest house during the morning to copy out the contract, these gentlemen are always
-                still sitting there eating their breakfasts. I ought to just try
-                that with my boss; I'd get kicked out on the spot. But who
-                knows, maybe that would be the best thing for me. If I didn't
-                have my parents to think about I'd have given in my notice a
-                long time ago, I'd have gone up to the boss and told him just
-                what I think, tell him everything I would, let him know just
-                what I feel. He'd fall right off his desk! And it's a funny sort
-                of business to be sitting up there at your desk, talking down at
-                your subordinates from up there, especially when you have to go
-                right up close because the boss is hard of hearing. Well,
-                there's still some hope; once I've got the money together to pay
-                off my parents' debt to him - another five or six years I
-                suppose - that's definitely what I'll do. That's when I'll make
-                the big change. First of all though, I've got to get up, my
-                train leaves at five. And he looked over at the alarm clock,
-                ticking on the chest of drawers.`}
               </p>
             </ServiceContent>
           </div>

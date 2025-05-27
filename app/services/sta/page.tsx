@@ -1,7 +1,3 @@
-import ContactDetails from "@/components/contact/ContactDetails";
-import ContactForm from "@/components/contact/ContactForm";
-import Image from "next/image";
-
 export default function STA() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">

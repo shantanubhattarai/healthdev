@@ -1,5 +1,3 @@
-import ContactDetails from "@/components/contact/ContactDetails";
-import ContactForm from "@/components/contact/ContactForm";
 import Image from "next/image";
 
 export default function SDA() {
