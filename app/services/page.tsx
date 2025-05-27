@@ -55,20 +55,20 @@ const Services = () => {
                 selectService={selectService}
               />
               <ServiceItem
-                serviceKey="daily-support"
-                label="Daily Support"
+                serviceKey="sil"
+                label="Supported Independent Living"
                 selectedKey={selectedKey}
                 selectService={selectService}
               />
               <ServiceItem
-                serviceKey="independent-living"
-                label="Independent Living"
+                serviceKey="sta"
+                label="Respite Care & Short-Term Accommodation"
                 selectedKey={selectedKey}
                 selectService={selectService}
               />
               <ServiceItem
-                serviceKey="transport"
-                label="Transport"
+                serviceKey="fds"
+                label="Forensic Disability Services"
                 selectedKey={selectedKey}
                 selectService={selectService}
               />
@@ -104,74 +104,57 @@ const Services = () => {
               </p>
             </ServiceContent>
             <ServiceContent
-              value="daily-support"
+              value="sil"
               selectedKey={selectedKey}
               imageSrc="https://picsum.photos/900/900"
-              imageAlt="sda"
-              url={"/services/sda"}
+              imageAlt="sil"
+              url={"/services/sil"}
             >
-              <p className="pt-8">
-                When considering a paragraph and how to set one well, there are
-                three parameters that work together: font size, line height (or
-                leading in traditional parlance), and line length (or measure).
-                I am including the traditional terms here because I think it is
-                important to connect how type has been set by typographers and
-                graphic designers. Understanding the terms and using them
-                properly helps us understand one another—and the intent behind a
-                given design file—in important and fundamental ways.
+              <p>
+                At Apex Aid Health Care, our Supported Independent Living (SIL)
+                services are designed to empower individuals with disabilities
+                to live as independently as possible while receiving the support
+                they need. We provide tailored assistance in shared or
+                individual living environments, guided by each
+                participant&apos;s NDIS goals, daily routines, and personal
+                preferences.
               </p>
             </ServiceContent>
             <ServiceContent
-              value="independent-living"
+              value="sta"
               selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/1024/900"
+              imageAlt="sta"
+              url={"/services/sta"}
             >
-              <div className="w-full relative h-96">
-                <Image
-                  src="https://picsum.photos/1024/800"
-                  fill
-                  alt="Independent Living"
-                  className="rounded-lg object-cover"
-                />
-              </div>
-              <p className="pt-8">
-                The European languages are members of the same family. Their
-                separate existence is a myth. For science, music, sport, etc,
-                Europe uses the same vocabulary. The languages only differ in
-                their grammar, their pronunciation and their most common words.
-                Everyone realizes why a new common language would be desirable:
-                one could refuse to pay expensive translators. To achieve this,
-                it would be necessary to have uniform grammar, pronunciation and
-                more common words. If several languages coalesce, the grammar of
-                the resulting language is more simple and regular than that of
-                the individual languages. The new common language will be more
-                simple and regular than the existing European languages. It will
-                be as simple as Occidental; in fact, it will be Occidental. To
-                an English person, it will seem like simplified English, as a
-                skeptical Cambridge friend of mine told me what Occidental
-                is.The European languages are members of the same family. Their
-                separate existence is a myth. For science, music, sport, etc,
-                Europe uses the same vocabulary. The languages only differ in
-                their grammar, their pronunciation and their most common words.
-                Everyone realizes why a new common language would be desirable:
-                one could refuse to pay expensive translators.
+              <p>
+                Short Term Accommodation (STA), often referred to as respite
+                care, provides temporary supported housing for people with
+                disabilities. It offers a break or relief for regular carers and
+                families, while giving participants an opportunity to experience
+                living independently or in a supported environment for a short
+                period.
               </p>
             </ServiceContent>
-            <ServiceContent value="transport" selectedKey={selectedKey}>
-              <div className="w-full relative h-96">
-                <Image
-                  src="https://picsum.photos/1024/1024"
-                  fill
-                  alt="Transport"
-                  className="rounded-lg object-cover"
-                />
-              </div>
-              <p className="pt-8">
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment.
+            <ServiceContent
+              value="fds"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/1024/900"
+              imageAlt="forensic disability services"
+              url={"/services/fds"}
+            >
+              <p>
+                At Apex Aid Health Care, we recognise the unique and complex
+                needs of individuals with a disability who are involved in the
+                criminal justice system. Our
+                <span className="font-medium">
+                  {" "}
+                  Forensic Disability Support{" "}
+                </span>
+                services are designed to provide structured, therapeutic, and
+                person-centred care for people with cognitive, intellectual, or
+                psychosocial disabilities who have encountered legal or forensic
+                settings.
               </p>
             </ServiceContent>
             <ServiceContent value="skill-development" selectedKey={selectedKey}>

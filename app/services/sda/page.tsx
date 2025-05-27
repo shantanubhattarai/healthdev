@@ -151,7 +151,7 @@ export default function SDA() {
               </p>
             </div>
             <div>
-              <p className="font-medium">Sensory-Friendly Living Spaces</p>
+              <p className="font-medium">Advanced Support-Ready Properties</p>
               <p>
                 Tailored for individuals with high physical support
                 requirements, these homes integrate assistive technologies,
