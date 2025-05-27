@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex justify-between px-4 py-4 items-center container mx-auto">
+    <header className="flex flex-col md:flex-row justify-between px-4 py-4 items-center container mx-auto">
       <Link href="/" className="font-semibold text-lg py-1">
         Apex Aid
       </Link>

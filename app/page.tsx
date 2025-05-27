@@ -6,14 +6,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-[46vh] bg-brand-900 bg-noise bg-blend-soft-light text-center">
+      <section className="text-white px-4 py-8 rounded-md flex flex-col gap-8 justify-center items-center min-h-[46vh] bg-brand-900 bg-noise bg-blend-soft-light text-center">
         <div className="max-w-xl">
-          <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
+          <h2 className="text-2xl md:text-4xl tracking-wide font-serif font-medium mb-4">
             Care that lifts, support that lasts
           </h2>
           <p className="text-zinc-200 leading-5">
-            We believe every person has the right to live with dignity, choice,
-            and purpose — and that with the right support, everyone can thrive.
             Disability is not a limitation, but a call for equity, inclusion,
             and empowerment.
           </p>
@@ -30,7 +28,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-4 md:gap-16 justify-center items-center">
           <div className="flex flex-col gap-6">
             <div>
-              <h3 className="text-2xl lg:text-4xl leading-14 mb-2">
+              <h3 className="text-2xl lg:text-4xl mb-2">
                 Empowering Lives.
                 <br /> Supporting Independence.
               </h3>
