@@ -13,7 +13,7 @@ export default function SDA() {
         </div>
       </section>
       <section className="pt-12">
-        <p>
+        <p className="text-zinc-800">
           At Apex Aid Health Care, we understand that having the right home
           environment is essential for people living with significant
           disabilities. That is why we offer Specialist Disability Accommodation
@@ -25,7 +25,7 @@ export default function SDA() {
             src="https://picsum.photos/1024/1024"
             alt="sda"
             fill
-            className="rounded-md"
+            className="rounded-md object-cover object-center"
           />
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function SDA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           What makes SDA different?
         </h3>
-        <div className="text-zinc-700">
+        <div className="text-zinc-800">
           SDA properties are not ordinary homes. They are designed in accordance
           with NDIS requirements and include a range of features such as:
           <ul className="list-disc list-inside mt-2">
@@ -43,7 +43,7 @@ export default function SDA() {
             <li>Durable, low maintenance materials</li>
           </ul>
         </div>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           SDA also works in tandem with your other funded supports, such as
           <span className="font-medium">
             &nbsp;Supported Independent Living (SIL),&nbsp;
@@ -56,15 +56,15 @@ export default function SDA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           What types of SDA Homes do we provide?
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           At Apex Aid Health Care, we offer a diverse range of Specialist
           Disability Accommodation (SDA) options, tailored to meet varying
           levels of support needs, mobility requirements, and personal
           preferences. Our housing models are thoughtfully designed to foster
           independence, comfort, and social inclusion:
         </p>
-        <div className="flex flex-col lg:flex-row gap-4 mt-2">
-          <ul className="list-disc list-inside text-zinc-700">
+        <div className="flex flex-col xl:flex-row gap-4 mt-2">
+          <ul className="list-disc list-inside text-zinc-800">
             <li>
               <span className="font-medium">Private Apartments - </span>
               Ideal for individuals seeking greater independence within a safe
@@ -88,15 +88,15 @@ export default function SDA() {
               supported by dedicated staff who provide daily assistance and
               tailored care.
             </li>
-            <p className="mt-2 text-zinc-700">
+            <p className="mt-2 text-zinc-800">
               Each property is carefully selected and designed to ensure
               accessibility, safety, and a strong sense of belonging within the
               community.
             </p>
           </ul>
-          <div className="h-72 w-96 relative shrink-0">
+          <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              className="rounded-md"
+              className="rounded-md object-cover object-center"
               fill
               src="https://picsum.photos/1000/1000"
               alt="sda homes"
@@ -108,23 +108,23 @@ export default function SDA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           Our commitment to SDA design standards
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           At Apex Aid Health Care, we deliver Specialist Disability
           Accommodation (SDA) that aligns with the NDIS SDA Design Standards.
           Our properties are developed with a strong focus on safety,
           functionality, and personalised support, and fall into one or more of
           the following categories:
         </p>
-        <div className="mt-2 flex items-start gap-4">
-          <div className="w-96 h-72 relative shrink-0">
+        <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
+          <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
               src="https://picsum.photos/1000/1000"
               alt="Design standards"
               fill
-              className="rounded-md"
+              className="rounded-md object-cover object-center"
             />
           </div>
-          <div className="text-zinc-700 flex flex-col gap-2">
+          <div className="text-zinc-800 flex flex-col gap-2">
             <div>
               <p className="font-medium">Sensory-Friendly Living Spaces</p>
               <p>
@@ -161,7 +161,7 @@ export default function SDA() {
             </div>
           </div>
         </div>
-        <p className="mt-2 text-zinc-700">
+        <p className="mt-2 text-zinc-800">
           Each property reflects our commitment to quality, comfort, and
           inclusion - empowering residents to live safely and independently
           within their communities.
@@ -172,13 +172,13 @@ export default function SDA() {
           Who is eligible for SDA?
         </h3>
         <p>To be eligible for SDA housing, participants must:</p>
-        <ul className="list-disc list-inside mt-2 text-zinc-700">
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
           <li>Be aged 18 or over</li>
           <li>Have a permanent and significant disability</li>
           <li>Require housing that meets high or very high support needs</li>
           <li>Have SDA funding approved in their NDIS plan</li>
         </ul>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           If you&apos;re not sure whether you qualify, our team can help you
           navigate the process and connect you with the right professionals to
           support your application.
@@ -188,7 +188,7 @@ export default function SDA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           Ready to take the next step?
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           Whether you&apos;re just starting to explore SDA options or already
           have funding in your plan, Apex Aid Health Care is here to support
           you. We&apos;ll help you find a home that not only meets your physical

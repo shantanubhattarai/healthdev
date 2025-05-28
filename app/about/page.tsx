@@ -14,13 +14,13 @@ const About = () => {
         </div>
       </section>
       <section className="pt-12 lg:pt-24 pb-8">
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           At <span className="font-semibold">Apex Aid Health Care</span>, we are
           committed to delivering high-quality, person-centred disability
           support services that empower individuals to live independently,
           safely, and with dignity.
         </p>
-        <p className="text-zinc-700 mt-3">
+        <p className="text-zinc-800 mt-3">
           As a registered NDIS provider, we proudly support people with a wide
           range of abilities, backgrounds, and support needs—including complex
           behaviours, physical disabilities, psychosocial challenges, and
@@ -34,7 +34,7 @@ const About = () => {
       </section>
       <section className="py-6">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">Who We Are</h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           Founded with a vision to raise the standard of disability care, Apex
           Aid Health Care brings together a dedicated team of{" "}
           <span className="font-semibold">
@@ -47,10 +47,10 @@ const About = () => {
           <span className="font-semibold"> make a real difference </span>in
           everyday life.
         </p>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           We offer a broad range of NDIS supports including:
         </p>
-        <ul className="py-1 text-zinc-700 list-disc list-inside">
+        <ul className="py-1 text-zinc-800 list-disc list-inside">
           <li>Supported Independent Living (SIL) </li>
           <li>Specialist Disability Accommodation (SDA) </li>
           <li>Short-Term Accommodation (STA) / Respite</li>
@@ -63,7 +63,7 @@ const About = () => {
       </section>
       <section className="py-6">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Approach</h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           We don&apos;t believe in one-size-fits-all care. Instead, we take the
           time to
           <span className="font-semibold">
@@ -74,7 +74,7 @@ const About = () => {
           coordinators, and healthcare professionals to design supports that are
           truly effective and respectful.
         </p>
-        <ul className="py-1 text-zinc-700 list-disc list-inside">
+        <ul className="py-1 text-zinc-800 list-disc list-inside">
           <li>Individualized Support Plans</li>
           <li>Culturally Safe & Trauma-Informed Care</li>
           <li>24/7 Flexible Support Options</li>
@@ -84,14 +84,14 @@ const About = () => {
       </section>
       <section className="py-6">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Mission</h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           To support people with disabilities to lead fulfilling, independent
           lives by providing care that is personal, reliable, and empowering.
         </p>
       </section>
       <section className="py-6">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Vision</h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           To be recognised as a leading, compassionate provider of disability
           and community health services—built on trust, integrity, and
           person-centred care.
@@ -99,7 +99,7 @@ const About = () => {
       </section>
       <section className="py-6">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Values</h3>
-        <ul className="text-zinc-700 list-decimal list-inside">
+        <ul className="text-zinc-800 list-decimal list-inside">
           <li>
             <span className="font-medium">Dignity & Respect - </span>We honour
             each person&nbsp;s worth, voice, and choices. Every interaction

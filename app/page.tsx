@@ -32,11 +32,11 @@ export default function Home() {
                 Empowering Lives.
                 <br /> Supporting Independence.
               </h3>
-              <p className="text-zinc-700 text-lg md:text-xl">
+              <p className="text-zinc-800 text-lg md:text-xl">
                 Let us join you in your recovery.
               </p>
             </div>
-            <p className="text-zinc-700 text-lg md:text-xl max-w-xl">
+            <p className="text-zinc-800 text-lg md:text-xl max-w-xl">
               Engage in opportunities you choose. You get an inclusive
               environment, surrounded by our values to create the experience
               that lets you put your foot forward.

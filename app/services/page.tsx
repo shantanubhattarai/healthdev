@@ -21,8 +21,8 @@ const Services = () => {
           </h2>
         </div>
       </section>
-      <section className="pt-12 text-zinc-700">
-        <p>
+      <section className="pt-12 text-zinc-800">
+        <p className="text-zinc-800">
           At Apex Aid Health Care, we provide person-centred, high-quality NDIS
           services that reflect each participant&apos;s unique goals, needs, and
           values. We understand that every individual&apos;s journey is
@@ -69,6 +69,30 @@ const Services = () => {
               <ServiceItem
                 serviceKey="fds"
                 label="Forensic Disability Services"
+                selectedKey={selectedKey}
+                selectService={selectService}
+              />
+              <ServiceItem
+                serviceKey="htoh"
+                label="Hospital to Home"
+                selectedKey={selectedKey}
+                selectService={selectService}
+              />
+              <ServiceItem
+                serviceKey="cn"
+                label="Community Nursing"
+                selectedKey={selectedKey}
+                selectService={selectService}
+              />
+              <ServiceItem
+                serviceKey="adl"
+                label="Assistance with Daily Living"
+                selectedKey={selectedKey}
+                selectService={selectService}
+              />
+              <ServiceItem
+                serviceKey="scp"
+                label="Community Participation"
                 selectedKey={selectedKey}
                 selectService={selectService}
               />
@@ -145,6 +169,84 @@ const Services = () => {
                 settings.
               </p>
             </ServiceContent>
+            <ServiceContent
+              value="htoh"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/800/900"
+              imageAlt="htoh"
+              url={"/services/htoh"}
+            >
+              <p>
+                At Apex Aid Health Care, we understand that leaving hospital is
+                a critical time that requires careful planning and the right
+                support. Our
+                <span className="font-medium"> Hospital to Home </span>
+                transition service is designed to help individuals with
+                disability, illness, or injury move safely and confidently from
+                hospital or rehabilitation settings back into their homes or
+                supported living environments.
+              </p>
+            </ServiceContent>
+            <ServiceContent
+              value="cn"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/800/1000"
+              imageAlt="cn"
+              url={"/services/cn"}
+            >
+              <p>
+                At Apex Aid Health Care, our
+                <span className="font-medium">
+                  {" "}
+                  Community Nursing Services{" "}
+                </span>
+                are designed to provide compassionate, clinical care to
+                individuals living with a disability or chronic health condition
+                — delivered in the comfort of their own home or supported
+                accommodation.
+              </p>
+            </ServiceContent>
+            <ServiceContent
+              value="adl"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/960/1000"
+              imageAlt="adl"
+              url={"/services/adl"}
+            >
+              <p>
+                At Apex Aid Health Care, we provide
+                <span className="font-medium">
+                  {" "}
+                  Assistance with Daily Living (ADL){" "}
+                </span>
+                to help individuals with disabilities manage everyday tasks and
+                routines in a way that supports
+                <span className="font-medium">
+                  {" "}
+                  independence, dignity, and personal choice.{" "}
+                </span>
+                Our goal is to empower people to live life on their own
+                terms—safely, confidently, and comfortably in their home or
+                community.
+              </p>
+            </ServiceContent>
+            <ServiceContent
+              value="scp"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/960/1024"
+              imageAlt="scp"
+              url={"/services/scp"}
+            >
+              <p>
+                At Apex Aid Health Care, we believe that everyone deserves the
+                opportunity to be an active part of their community. Our
+                <span className="font-medium"> Community Participation </span>
+                support services are designed to empower individuals with
+                disabilities to engage in meaningful, social, recreational, and
+                civic activities that enrich their lives and foster a sense of
+                belonging.
+              </p>
+            </ServiceContent>
           </div>
         </div>
       </section>
@@ -175,13 +277,13 @@ const ServiceContent = ({
           src={imageSrc}
           fill
           alt={imageAlt}
-          className="rounded-lg object-cover"
+          className="rounded-lg object-cover object-center"
         />
       </div>
-      <div className="pt-8 text-zinc-700">{children}</div>
+      <div className="pt-8 text-zinc-800">{children}</div>
       <Link
         href={url}
-        className="underline underline-offset-4 text-zinc-700 hover:text-zinc-900 mt-2 inline-block"
+        className="underline underline-offset-4 text-zinc-800 hover:text-zinc-900 mt-2 inline-block"
       >
         Learn More
       </Link>

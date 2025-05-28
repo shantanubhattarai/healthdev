@@ -130,7 +130,7 @@ const ReferralForm = () => {
                 <input type="checkbox" id={`check-${item.value}`} />
                 <label
                   htmlFor={`check-${item.value}`}
-                  className="text-zinc-700"
+                  className="text-zinc-800"
                 >
                   {item.label}
                 </label>
@@ -188,7 +188,7 @@ const ReferralForm = () => {
                   id="gender-male"
                   name="gender"
                 />
-                <label htmlFor="gender-male" className="text-zinc-700">
+                <label htmlFor="gender-male" className="text-zinc-800">
                   Male
                 </label>
               </div>
@@ -199,7 +199,7 @@ const ReferralForm = () => {
                   id="gender-female"
                   name="gender"
                 />
-                <label htmlFor="gender-female" className="text-zinc-700">
+                <label htmlFor="gender-female" className="text-zinc-800">
                   Female
                 </label>
               </div>
@@ -210,7 +210,7 @@ const ReferralForm = () => {
                   id="gender-unanswered"
                   name="gender"
                 />
-                <label htmlFor="gender-unanswered" className="text-zinc-700">
+                <label htmlFor="gender-unanswered" className="text-zinc-800">
                   Prefer not to say
                 </label>
               </div>
@@ -278,7 +278,7 @@ const ReferralForm = () => {
                 id="heard-google"
                 name="heard"
               />
-              <label htmlFor="heard-google" className="text-zinc-700">
+              <label htmlFor="heard-google" className="text-zinc-800">
                 Google
               </label>
             </div>
@@ -289,7 +289,7 @@ const ReferralForm = () => {
                 id="heard-facebook"
                 name="heard"
               />
-              <label htmlFor="heard-facebook" className="text-zinc-700">
+              <label htmlFor="heard-facebook" className="text-zinc-800">
                 Facebook
               </label>
             </div>
@@ -300,7 +300,7 @@ const ReferralForm = () => {
                 id="heard-instagram"
                 name="heard"
               />
-              <label htmlFor="heard-instagram" className="text-zinc-700">
+              <label htmlFor="heard-instagram" className="text-zinc-800">
                 Instagram
               </label>
             </div>
@@ -311,7 +311,7 @@ const ReferralForm = () => {
                 id="heard-colleague"
                 name="heard"
               />
-              <label htmlFor="heard-colleague" className="text-zinc-700">
+              <label htmlFor="heard-colleague" className="text-zinc-800">
                 Colleague or Friend
               </label>
             </div>
@@ -339,7 +339,7 @@ const ReferralForm = () => {
                 id="contact-participant"
                 name="contact-who"
               />
-              <label htmlFor="contact-participant" className="text-zinc-700">
+              <label htmlFor="contact-participant" className="text-zinc-800">
                 Contact participant directly
               </label>
             </div>
@@ -350,7 +350,7 @@ const ReferralForm = () => {
                 id="contact-referrer"
                 name="contact-who"
               />
-              <label htmlFor="contact-referrer" className="text-zinc-700">
+              <label htmlFor="contact-referrer" className="text-zinc-800">
                 Contact referrer
               </label>
             </div>

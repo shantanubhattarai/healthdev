@@ -11,7 +11,7 @@ export default function SIL() {
         </div>
       </section>
       <section className="pt-12">
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           At Apex Aid Health Care, our Supported Independent Living (SIL)
           services are designed to empower individuals with disabilities to live
           as independently as possible while receiving the support they need. We
@@ -24,16 +24,16 @@ export default function SIL() {
             src="https://picsum.photos/1024/1024"
             alt="sda"
             fill
-            className="rounded-md"
+            className="rounded-md object-cover object-center"
           />
         </div>
       </section>
       <section className="pt-12">
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           Our SIL services cover a wide range of supports, including:
         </p>
-        <div className="mt-2 flex items-start gap-4">
-          <div className="text-zinc-700 flex flex-col gap-2">
+        <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
+          <div className="text-zinc-800 flex flex-col gap-2">
             <div>
               <p className="font-medium">Daily Living Assistance</p>
               <p>
@@ -95,16 +95,16 @@ export default function SIL() {
               </p>
             </div>
           </div>
-          <div className="w-96 h-72 relative shrink-0">
+          <div className="w-full xl:w-96 h-72 relative shrink-0">
             <Image
               src="https://picsum.photos/1000/1000"
               alt="Design standards"
               fill
-              className="rounded-md"
+              className="rounded-md object-cover object-center"
             />
           </div>
         </div>
-        <p className="mt-2 text-zinc-700">
+        <p className="mt-2 text-zinc-800">
           Every SIL arrangement at Apex Aid Health Care is tailored through a
           person-centred planning approach. We work closely with participants,
           families, and support networks to create safe, supportive, and
@@ -115,20 +115,20 @@ export default function SIL() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           Empowering independence, every step of the way
         </h3>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           At Apex Aid Health Care, we believe that everyone deserves the right
           to live life on their own terms. That&apos;s why our services are
           built around one simple goal: empowering individuals to live
           independently, with confidence and dignity.
         </p>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           We don&apos;t just provide support — we build pathways. Whether
           it&apos;s learning new life skills, navigating daily routines, or
           connecting with the community, we&apos;re here to walk alongside you,
           offering the tools, encouragement, and care you need to shape your own
           future.
         </p>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           Because independence isn&apos;t about doing everything alone —
           it&apos;s about having the right support to do things your way.
         </p>
@@ -137,12 +137,12 @@ export default function SIL() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           Shared Accommodation: Finding the right fit
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           At Apex Aid Health Care, we understand that choosing to live in shared
           accommodation is more than just finding a place to stay — it&apos;s
           about finding a space where you feel safe, respected, and understood.
         </p>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           That&apos;s why we focus on creating shared living environments that
           support both independence and meaningful connections. We take the time
           to carefully match housemates based on lifestyle preferences,
@@ -154,13 +154,13 @@ export default function SIL() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           Holistic supported accommodation: integrating SIL and SDA
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           At Apex Aid Health Care, we believe that quality supported
           accommodation is about more than just housing — it&apos;s about
           creating ah holistic environment that supports independence,
           wellbeing, and community connection.
         </p>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           Our integrated approach combines
           <span className="font-medium">
             {" "}

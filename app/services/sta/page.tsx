@@ -12,14 +12,14 @@ export default function STA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           What is Short-Term Accommodation?
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           Short Term Accommodation (STA), often referred to as respite care,
           provides temporary supported housing for people with disabilities. It
           offers a break or relief for regular carers and families, while giving
           participants an opportunity to experience living independently or in a
           supported environment for a short period.
         </p>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           STA can range from overnight stays to several weeks, depending on
           individual needs and NDIS funding.
         </p>
@@ -28,10 +28,10 @@ export default function STA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           How to access STA through the NDIS
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           Accessing STA through the NDIS usually involves the following steps:
         </p>
-        <div className="text-zinc-700 flex flex-col gap-2 mt-2">
+        <div className="text-zinc-800 flex flex-col gap-2 mt-2">
           <div>
             <p className="font-medium">Review your NDIS Plan</p>
             <p>
@@ -71,10 +71,10 @@ export default function STA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           What can you use STA for?
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           STA is versatile and can be used for many purposes, including:
         </p>
-        <ul className="list-disc list-inside mt-2 text-zinc-700">
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
           <li>Giving your regular carers a well-deserved break</li>
           <li>
             Trying out new living arrangements before making longer-term
@@ -92,11 +92,11 @@ export default function STA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           What to expect at Apex Aid Health Care Respite
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           At Apex Aid Health Care, our STA services are designed to be
           comfortable, safe, and empowering. Here&apos;s what you can expect:
         </p>
-        <div className="text-zinc-700 flex flex-col gap-2 mt-2">
+        <div className="text-zinc-800 flex flex-col gap-2 mt-2">
           <div>
             <p className="font-medium">Person-Centered Care</p>
             <p>
@@ -142,10 +142,10 @@ export default function STA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-medium">
           For more independent clients
         </h3>
-        <p className="text-zinc-700">
+        <p className="text-zinc-800">
           For participants who are more independent, our STA offers:
         </p>
-        <ul className="list-disc list-inside mt-2 text-zinc-700">
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
           <li>Greater autonomy in daily routines and decision-making</li>
           <li>
             Opportunities to practise life skills in a supported environment
@@ -156,7 +156,7 @@ export default function STA() {
             independence
           </li>
         </ul>
-        <p className="text-zinc-700 mt-2">
+        <p className="text-zinc-800 mt-2">
           At Apex Aid Health Care, our goal is to make your STA experience
           positive and enriching, giving you the support you need while
           promoting independence and confidence.
