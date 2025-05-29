@@ -96,6 +96,24 @@ const Services = () => {
                 selectedKey={selectedKey}
                 selectService={selectService}
               />
+              <ServiceItem
+                serviceKey="group"
+                label="Group Activities"
+                selectedKey={selectedKey}
+                selectService={selectService}
+              />
+              <ServiceItem
+                serviceKey="transport"
+                label="Transport Assistance"
+                selectedKey={selectedKey}
+                selectService={selectService}
+              />
+              <ServiceItem
+                serviceKey="household"
+                label="Household Assistance"
+                selectedKey={selectedKey}
+                selectService={selectService}
+              />
             </ul>
           </div>
           <div className="md:col-span-2 lg:col-span-3">
@@ -245,6 +263,59 @@ const Services = () => {
                 disabilities to engage in meaningful, social, recreational, and
                 civic activities that enrich their lives and foster a sense of
                 belonging.
+              </p>
+            </ServiceContent>
+            <ServiceContent
+              value="group"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/1000/1024"
+              imageAlt="group"
+              url={"/services/group"}
+            >
+              <p>
+                At Apex Aid Health Care, we offer a range of
+                <span className="font-medium"> group-based activities </span>
+                designed to foster
+                <span className="font-medium">
+                  {" "}
+                  social connection, skill development, and personal growth.{" "}
+                </span>
+                Group activities are a great way for participants to meet new
+                people, build confidence, and have fun in a safe and supportive
+                environment.
+              </p>
+            </ServiceContent>
+            <ServiceContent
+              value="transport"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/1096/1024"
+              imageAlt="transport"
+              url={"/services/transport"}
+            >
+              <p>
+                At Apex Aid Health Care, we understand how important it is to
+                access your community, appointments, education, and social life
+                with ease and confidence. Our
+                <span className="font-medium"> Transport Assistance </span>
+                service is designed to support individuals with disabilities to
+                travel safely, independently, and on time — whether it&apos;s
+                for daily routines or special events.
+              </p>
+            </ServiceContent>
+            <ServiceContent
+              value="household"
+              selectedKey={selectedKey}
+              imageSrc="https://picsum.photos/1096/1096"
+              imageAlt="household"
+              url={"/services/household"}
+            >
+              <p>
+                At Apex Aid Health Care, we provide
+                <span className="font-medium"> Household Assistance </span>
+                to help individuals with disabilities manage day-to-day domestic
+                tasks. Our support is designed to ensure your home remains
+                clean, safe, and functional — while also promoting your
+                independence and dignity.
               </p>
             </ServiceContent>
           </div>

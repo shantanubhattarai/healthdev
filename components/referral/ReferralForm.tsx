@@ -81,39 +81,47 @@ const ReferralForm = () => {
         <h4 className="border-b pb-2">Referrer Details</h4>
         <div>
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-            Full Name
+            Full Name<span className="text-red-700">*</span>
           </label>
           <input
             className="border border-zinc-300 rounded-sm p-2 block w-full"
-            placeholder="Your name"
+            placeholder="Referrer name"
+            name="referrer-name"
+            required
           />
         </div>
         <div>
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-            Organization
+            Organization<span className="text-red-700">*</span>
           </label>
           <input
             className="border border-zinc-300 rounded-sm p-2 block w-full"
-            placeholder="Your organization"
+            placeholder="Referrer organization"
+            name="referrer-organization"
+            required
           />
         </div>
         <div className="grid grid-cols-2 gap-x-4">
           <div>
             <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-              Phone Number
+              Phone Number<span className="text-red-700">*</span>
             </label>
             <input
               className="border border-zinc-300 rounded-sm p-2 block w-full"
-              placeholder="Your phone number"
+              placeholder="Referrer phone number"
+              required
+              name="referrer-phone"
             />
           </div>
           <div>
             <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-              Email
+              Email<span className="text-red-700">*</span>
             </label>
             <input
               className="border border-zinc-300 rounded-sm p-2 block w-full"
-              placeholder="Your email address"
+              placeholder="Referrer email address"
+              required
+              name="referrer-email"
             />
           </div>
         </div>
@@ -143,17 +151,19 @@ const ReferralForm = () => {
         <h4 className="border-b pb-2">Participant Details</h4>
         <div>
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-            Full Name
+            Full Name<span className="text-red-700">*</span>
           </label>
           <input
             className="border border-zinc-300 rounded-sm p-2 block w-full"
-            placeholder="Your name"
+            placeholder="Participant name"
+            name="participant-name"
+            required
           />
         </div>
         <div className="grid grid-cols-2 gap-x-4">
           <div>
             <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-              Date of Birth
+              Date of Birth<span className="text-red-700">*</span>
             </label>
             <Popover>
               <PopoverTrigger asChild>
@@ -186,7 +196,7 @@ const ReferralForm = () => {
                   className="border border-zinc-300"
                   type="radio"
                   id="gender-male"
-                  name="gender"
+                  name="participant-gender"
                 />
                 <label htmlFor="gender-male" className="text-zinc-800">
                   Male
@@ -197,7 +207,7 @@ const ReferralForm = () => {
                   className="border border-zinc-300"
                   type="radio"
                   id="gender-female"
-                  name="gender"
+                  name="participant-gender"
                 />
                 <label htmlFor="gender-female" className="text-zinc-800">
                   Female
@@ -208,7 +218,7 @@ const ReferralForm = () => {
                   className="border border-zinc-300"
                   type="radio"
                   id="gender-unanswered"
-                  name="gender"
+                  name="participant-gender"
                 />
                 <label htmlFor="gender-unanswered" className="text-zinc-800">
                   Prefer not to say
@@ -224,7 +234,8 @@ const ReferralForm = () => {
             </label>
             <input
               className="border border-zinc-300 rounded-sm p-2 block w-full"
-              placeholder="Your phone number"
+              placeholder="Participant phone number"
+              name="participant-phone"
             />
           </div>
           <div>
@@ -233,7 +244,8 @@ const ReferralForm = () => {
             </label>
             <input
               className="border border-zinc-300 rounded-sm p-2 block w-full"
-              placeholder="Your email address"
+              placeholder="Participant email address"
+              name="participant-email"
             />
           </div>
         </div>
@@ -243,25 +255,30 @@ const ReferralForm = () => {
           </label>
           <input
             className="border border-zinc-300 rounded-sm p-2 block w-full"
-            placeholder="Your address"
+            placeholder="Participant address"
+            name="participant-address"
           />
         </div>
         <div>
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-            Reason for referral
+            Reason for referral<span className="text-red-700">*</span>
           </label>
           <input
             className="border border-zinc-300 rounded-sm p-2 block w-full"
-            placeholder="What is your reason for referral?"
+            placeholder="What is the reason for referral?"
+            required
+            name="reason"
           />
         </div>
         <div>
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-            What is your disability?
+            What is the disability?<span className="text-red-700">*</span>
           </label>
           <input
             className="border border-zinc-300 rounded-sm p-2 block w-full"
-            placeholder="What is your disability?"
+            placeholder="What is the disability?"
+            required
+            name="disability"
           />
         </div>
       </section>
@@ -319,12 +336,14 @@ const ReferralForm = () => {
         </div>
         <div>
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
-            Enquiry
+            Enquiry<span className="text-red-700">*</span>
           </label>
           <textarea
             placeholder="Any additional information you would like to send"
             className="border border-zinc-300 rounded-sm p-2 block w-full resize-none"
             rows={5}
+            name="enquiry"
+            required
           />
         </div>
         <div>
@@ -361,7 +380,7 @@ const ReferralForm = () => {
         className="text-medium bg-brand-800 bg-noise bg-blend-color-burn text-white px-6 py-2 rounded-sm tracking-wide text-sm cursor-pointer ring ring-brand-600 hover:bg-brand-700 active:bg-brand-900 transition-all"
         type="submit"
       >
-        Send Message
+        Send
       </button>
     </form>
   );

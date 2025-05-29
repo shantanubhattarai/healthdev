@@ -2,6 +2,7 @@
 
 import clsx from "clsx";
 import { X } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const HowWeHelpSection = () => {
@@ -22,65 +23,190 @@ const HowWeHelpSection = () => {
         <HelpCard
           toggleCardSelect={toggleCardSelect}
           selected={selected}
-          variant="green"
-          label="Community Access"
-          cardKey="community-access"
+          label="Specialist Disability Accommodation"
+          cardKey="sda"
         >
-          <p>
-            From visiting family, attending spiritual and cultural events, or
-            fishing off the jetty, our team is excited to support you to access
-            all your community and beyond has to offer.
-          </p>
-          <p>
-            We also partner with other providers and community groups to help
-            you find activities that fit your interests.
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we understand that having the right home
+            environment is essential for people living with significant
+            disabilities. That is why we offer Specialist Disability
+            Accommodation (SDA) — high-quality housing solutions designed for
+            NDIS participants with complex needs or extreme functional
+            limitations.
           </p>
         </HelpCard>
         <HelpCard
           toggleCardSelect={toggleCardSelect}
           selected={selected}
-          variant="yellow"
-          label="Daily Support"
-          cardKey="daily-support"
+          label="Supported Independent Living"
+          cardKey="sil"
         >
-          <p>Community Access Description</p>
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, our Supported Independent Living (SIL)
+            services are designed to empower individuals with disabilities to
+            live as independently as possible while receiving the support they
+            need. We provide tailored assistance in shared or individual living
+            environments, guided by each participant&apos;s NDIS goals, daily
+            routines, and personal preferences.
+          </p>
         </HelpCard>
         <HelpCard
           toggleCardSelect={toggleCardSelect}
           selected={selected}
-          variant="cyan"
-          label="Independent Living"
-          cardKey="independent-living"
+          label="Respite Care & Short-Term Accommodation"
+          cardKey="sta"
         >
-          <p>Community Access Description</p>
+          <p className="line-clamp-3">
+            Short Term Accommodation (STA), often referred to as respite care,
+            provides temporary supported housing for people with disabilities.
+            It offers a break or relief for regular carers and families, while
+            giving participants an opportunity to experience living
+            independently or in a supported environment for a short period.
+          </p>
         </HelpCard>
         <HelpCard
           toggleCardSelect={toggleCardSelect}
           selected={selected}
-          variant="teal"
-          label="Transport"
+          label="Forensic Disability Services"
+          cardKey="fds"
+        >
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we recognise the unique and complex needs
+            of individuals with a disability who are involved in the criminal
+            justice system. Our
+            <span className="font-medium"> Forensic Disability Support </span>
+            services are designed to provide structured, therapeutic, and
+            person-centred care for people with cognitive, intellectual, or
+            psychosocial disabilities who have encountered legal or forensic
+            settings.
+          </p>
+        </HelpCard>
+        <HelpCard
+          toggleCardSelect={toggleCardSelect}
+          selected={selected}
+          label="Hospital to Home"
+          cardKey="htoh"
+        >
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we understand that leaving hospital is a
+            critical time that requires careful planning and the right support.
+            Our
+            <span className="font-medium"> Hospital to Home </span>
+            transition service is designed to help individuals with disability,
+            illness, or injury move safely and confidently from hospital or
+            rehabilitation settings back into their homes or supported living
+            environments.
+          </p>
+        </HelpCard>
+        <Link
+          className="text-zinc-800 underline underline-offset-2 hover:text-zinc-900 pl-2 text-center md:text-left"
+          href="/services"
+        >
+          Learn more
+        </Link>
+        {/* <HelpCard
+          toggleCardSelect={toggleCardSelect}
+          selected={selected}
+          label="Community Nursing"
+          cardKey="cn"
+        >
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, our
+            <span className="font-medium"> Community Nursing Services </span>
+            are designed to provide compassionate, clinical care to individuals
+            living with a disability or chronic health condition — delivered in
+            the comfort of their own home or supported accommodation.
+          </p>
+        </HelpCard> */}
+        {/* <HelpCard
+          toggleCardSelect={toggleCardSelect}
+          selected={selected}
+          label="Assistance with Daily Living"
+          cardKey="adl"
+        >
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we provide
+            <span className="font-medium">
+              {" "}
+              Assistance with Daily Living (ADL){" "}
+            </span>
+            to help individuals with disabilities manage everyday tasks and
+            routines in a way that supports
+            <span className="font-medium">
+              {" "}
+              independence, dignity, and personal choice.{" "}
+            </span>
+            Our goal is to empower people to live life on their own
+            terms—safely, confidently, and comfortably in their home or
+            community.
+          </p>
+        </HelpCard> */}
+        {/* <HelpCard
+          toggleCardSelect={toggleCardSelect}
+          selected={selected}
+          label="Community Participation"
+          cardKey="scp"
+        >
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we believe that everyone deserves the
+            opportunity to be an active part of their community. Our
+            <span className="font-medium"> Community Participation </span>
+            support services are designed to empower individuals with
+            disabilities to engage in meaningful, social, recreational, and
+            civic activities that enrich their lives and foster a sense of
+            belonging.
+          </p>
+        </HelpCard> */}
+        {/* <HelpCard
+          toggleCardSelect={toggleCardSelect}
+          selected={selected}
+          label="Group Activities"
+          cardKey="group"
+        >
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we offer a range of
+            <span className="font-medium"> group-based activities </span>
+            designed to foster
+            <span className="font-medium">
+              {" "}
+              social connection, skill development, and personal growth.{" "}
+            </span>
+            Group activities are a great way for participants to meet new
+            people, build confidence, and have fun in a safe and supportive
+            environment.
+          </p>
+        </HelpCard> */}
+        {/* <HelpCard
+          toggleCardSelect={toggleCardSelect}
+          selected={selected}
+          label="Transport Assistance"
           cardKey="transport"
         >
-          <p>Community Access Description</p>
-        </HelpCard>
-        <HelpCard
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we understand how important it is to access
+            your community, appointments, education, and social life with ease
+            and confidence. Our
+            <span className="font-medium"> Transport Assistance </span>
+            service is designed to support individuals with disabilities to
+            travel safely, independently, and on time — whether it&apos;s for
+            daily routines or special events.
+          </p>
+        </HelpCard> */}
+        {/* <HelpCard
           toggleCardSelect={toggleCardSelect}
           selected={selected}
-          variant="rose"
-          label="Skill Development"
-          cardKey="skill-development"
+          label="Household Assistance"
+          cardKey="household"
         >
-          <p>Community Access Description</p>
-        </HelpCard>
-        <HelpCard
-          toggleCardSelect={toggleCardSelect}
-          selected={selected}
-          variant="violet"
-          label="Employment Support"
-          cardKey="employment-support"
-        >
-          <p>Community Access Description</p>
-        </HelpCard>
+          <p className="line-clamp-3">
+            At Apex Aid Health Care, we provide
+            <span className="font-medium"> Household Assistance </span>
+            to help individuals with disabilities manage day-to-day domestic
+            tasks. Our support is designed to ensure your home remains clean,
+            safe, and functional — while also promoting your independence and
+            dignity.
+          </p>
+        </HelpCard> */}
       </div>
     </section>
   );
@@ -89,34 +215,23 @@ const HowWeHelpSection = () => {
 const HelpCard = ({
   cardKey,
   label,
-  variant,
   selected,
   toggleCardSelect,
   children,
 }: {
   cardKey: string;
   label: string;
-  variant: "green" | "cyan" | "teal" | "yellow" | "rose" | "violet";
   selected: string | null;
   toggleCardSelect: (key: string) => void;
   children: React.ReactNode;
 }) => {
-  const variantClassMap = {
-    green: "ring-green-900 hover:ring-green-600 bg-green-800",
-    cyan: "ring-cyan-900 hover:ring-cyan-600 bg-cyan-800",
-    teal: "ring-teal-900 hover:ring-teal-600 bg-teal-800",
-    yellow: "ring-yellow-900 hover:ring-yellow-600 bg-yellow-800",
-    rose: "ring-rose-900 hover:ring-rose-600 bg-rose-800",
-    violet: "ring-violet-900 hover:ring-violet-600 bg-violet-800",
-  };
-
   return (
     <>
       <div
         className={clsx(
-          "px-12 py-6 rounded-sm text-white cursor-pointer transition-all h-full inline-flex flex-col items-center justify-center",
-          `ring-2 ${variantClassMap[variant]}`,
-          `bg-noise bg-blend-overlay`
+          "px-2 py-6 rounded-sm cursor-pointer transition-all h-full inline-flex flex-col items-center justify-center",
+          `ring ring-zinc-500 hover:ring-2 hover:ring-zinc-600`,
+          `bg-zinc-50`
         )}
         key={cardKey}
         onClick={() => toggleCardSelect(cardKey)}
@@ -126,10 +241,11 @@ const HelpCard = ({
       {selected === cardKey ? (
         <div
           className={clsx(
-            "px-6 md:px-12 py-6 rounded-sm text-white cursor-pointer transition-all",
-            `ring-2 ${variantClassMap[variant]}`,
-            `bg-noise bg-blend-overlay`,
-            "absolute inset-0"
+            "px-6 py-6 rounded-sm cursor-pointer transition-all",
+            `ring-2 ring-zinc-900 hover:ring-zinc-600`,
+            `bg-zinc-50`,
+            "absolute inset-0",
+            " overflow-hidden"
           )}
           key={`overlay-${cardKey}`}
           onClick={() => toggleCardSelect(cardKey)}
@@ -137,7 +253,13 @@ const HelpCard = ({
           <p className={clsx("text-left font-medium tracking-wide", "text-lg")}>
             {label}
           </p>
-          <div className={clsx("text-zinc-100 mt-2", "block")}>{children}</div>
+          <div className={clsx("text-zinc-800 mt-2", "block")}>{children}</div>
+          <Link
+            href={`/services/${cardKey}`}
+            className="underline underline-offset-4 text-zinc-800 hover:text-zinc-900 mt-2 inline-block"
+          >
+            Learn More
+          </Link>
           <X
             className={clsx("absolute right-4 top-6 md:top-3")}
             onClick={() => toggleCardSelect(cardKey)}
