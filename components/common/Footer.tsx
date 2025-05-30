@@ -135,7 +135,7 @@ const Footer = () => {
         </ul>
       </div>
       <p className="text-right text-zinc-500">
-        &copy; 2025 Health. All rights reserved.
+        &copy; 2025 Apex Aid Services. All rights reserved.
       </p>
     </footer>
   );

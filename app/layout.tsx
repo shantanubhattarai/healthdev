@@ -4,8 +4,8 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
-  title: "Health (name pending)",
-  description: "Fostering healing",
+  title: "Apex Aid Services",
+  description: "Care that lifts, Support that Lasts",
 };
 
 export default function RootLayout({
