@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 const HowWeHelpSection = () => {
   const [selected, setSelected] = useState<string | null>(null);
@@ -98,11 +99,33 @@ const HowWeHelpSection = () => {
             environments.
           </p>
         </HelpCard>
-        <Link
-          className="text-zinc-800 underline underline-offset-2 hover:text-zinc-900 pl-2 text-center md:text-left"
-          href="/services"
-        >
-          Learn more
+        <Link className="block w-full" href="/services">
+          <div
+            className={clsx(
+              "pb-6 rounded-sm cursor-pointer transition-all h-full inline-flex flex-col items-center justify-center w-full overflow-clip",
+              `ring ring-zinc-500 hover:ring-2 hover:ring-zinc-600`,
+              `bg-zinc-50`
+            )}
+          >
+            <div className="w-full h-48 rounded-t-sm mb-4 overflow-clip">
+              <Image
+                src={"https://picsum.photos/500/500"}
+                alt={"See all services"}
+                width={500}
+                height={500}
+                className="object-cover object-center rounded-t-sm max-w-full max-h-full"
+              />
+            </div>
+            <p
+              className={clsx(
+                "text-center transition-all",
+                "text-lg",
+                "text-zinc-700 underline underline-offset-2"
+              )}
+            >
+              See all services
+            </p>
+          </div>
         </Link>
         {/* <HelpCard
           toggleCardSelect={toggleCardSelect}
@@ -214,6 +237,7 @@ const HowWeHelpSection = () => {
 
 const HelpCard = ({
   cardKey,
+  imageSrc,
   label,
   selected,
   toggleCardSelect,
@@ -221,6 +245,7 @@ const HelpCard = ({
 }: {
   cardKey: string;
   label: string;
+  imageSrc?: string;
   selected: string | null;
   toggleCardSelect: (key: string) => void;
   children: React.ReactNode;
@@ -229,13 +254,22 @@ const HelpCard = ({
     <>
       <div
         className={clsx(
-          "px-2 py-6 rounded-sm cursor-pointer transition-all h-full inline-flex flex-col items-center justify-center",
+          "pb-6 rounded-sm cursor-pointer transition-all h-full inline-flex flex-col items-center justify-center",
           `ring ring-zinc-500 hover:ring-2 hover:ring-zinc-600`,
           `bg-zinc-50`
         )}
         key={cardKey}
         onClick={() => toggleCardSelect(cardKey)}
       >
+        <div className="w-full h-48 rounded-t-sm mb-4 overflow-clip">
+          <Image
+            src={imageSrc || "https://picsum.photos/400/400"}
+            alt={label}
+            width={500}
+            height={500}
+            className="object-cover object-center rounded-t-sm max-w-full max-h-full"
+          />
+        </div>
         <p className={clsx("text-center transition-all", "text-lg")}>{label}</p>
       </div>
       {selected === cardKey ? (
