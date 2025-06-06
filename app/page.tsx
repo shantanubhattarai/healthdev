@@ -3,10 +3,16 @@ import HowWeHelpSection from "@/components/home/HowWeHelpSection";
 import Image from "next/image";
 import Link from "next/link";
 
+import HeroBG from "@/public/images/home.jpg";
+import Trees from "@/components/svg/Trees";
+
 export default function Home() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-8 rounded-md flex flex-col gap-8 justify-center items-center min-h-[46vh] bg-brand-900 bg-noise bg-blend-soft-light text-center">
+      <section
+        className="text-white px-4 py-8 rounded-md flex flex-col gap-8 justify-center items-center min-h-[46vh] text-center bg-center bg-cover bg-black/30 bg-blend-overlay"
+        style={{ backgroundImage: `url(${HeroBG.src})` }}
+      >
         <div className="max-w-xl">
           <h2 className="text-2xl md:text-4xl tracking-wide font-serif font-medium mb-4">
             Care that lifts, support that lasts
@@ -24,7 +30,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <section className="py-12 md:py-24">
+      <section className="py-12 md:pt-24">
         <div className="flex flex-col md:flex-row gap-4 md:gap-16 justify-center items-center">
           <div className="flex flex-col gap-6">
             <div>
@@ -32,14 +38,14 @@ export default function Home() {
                 Empowering Lives.
                 <br /> Supporting Independence.
               </h3>
-              <p className="text-zinc-800 text-lg md:text-xl">
-                Let us join you in your recovery.
-              </p>
             </div>
             <p className="text-zinc-800 text-lg md:text-xl max-w-xl">
-              Engage in opportunities you choose. You get an inclusive
-              environment, surrounded by our values to create the experience
-              that lets you put your foot forward.
+              <span className="mr-2">
+                Engage in opportunities you choose. You get an inclusive
+                environment, surrounded by our values to create the experience
+                that lets you put your foot forward.
+              </span>
+              <Trees />
             </p>
           </div>
           <div className="relative max-w-full w-96 h-96">
