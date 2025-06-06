@@ -32,7 +32,7 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           What are group activities?
         </h3>
         <div className="text-zinc-800">
@@ -58,7 +58,7 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           What do we offer?
         </h3>
         <p className="text-zinc-800">
@@ -136,7 +136,7 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           Why join our group activities?
         </h3>
         <div className="text-zinc-800">
@@ -150,7 +150,9 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our approach</h3>
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+          Our approach
+        </h3>
         <p className="text-zinc-800">Our group activities are:</p>
         <ul className="list-disc list-inside text-zinc-800 mt-2">
           <li>

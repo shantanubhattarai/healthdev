@@ -30,7 +30,7 @@ export default function TransportAssistance() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           What is transport assistance?
         </h3>
         <div className="text-zinc-800">
@@ -55,7 +55,7 @@ export default function TransportAssistance() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           How do we support you?
         </h3>
         <p className="text-zinc-800">
@@ -110,7 +110,7 @@ export default function TransportAssistance() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           How choose Apex Aid for transport?
         </h3>
         <div className="text-zinc-800 flex flex-col gap-2 mt-2">
@@ -142,7 +142,7 @@ export default function TransportAssistance() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           Making the journey matter
         </h3>
         <p className="mt-2 text-zinc-800">

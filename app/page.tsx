@@ -5,6 +5,12 @@ import Link from "next/link";
 
 import HeroBG from "@/public/images/home.jpg";
 import Trees from "@/components/svg/Trees";
+import {
+  AlarmClockIcon,
+  CalendarClockIcon,
+  ScanHeartIcon,
+  UserPenIcon,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -31,10 +37,65 @@ export default function Home() {
       </section>
 
       <section className="py-12 md:pt-24">
+        <div className="flex flex-col gap-4 justify-center items-center text-center">
+          <h3 className="text-2xl lg:text-4xl text-brand-800">
+            Define your own success with our care
+          </h3>
+          <p className="text-zinc-800 text-lg md:text-xl max-w-2xl">
+            Our dedicated team provide tailored supports that make a real
+            difference in your everyday life.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 text-left gap-x-4 gap-y-6 lg:gap-y-8 mt-4">
+            <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
+              <UserPenIcon className="mt-1 text-green-700 shrink-0" />
+              <div>
+                <h4 className="text-xl">Responsive, quick appointments</h4>
+                <p className="text-zinc-800">
+                  Receive quick support with an experienced professional in a
+                  matter of hours
+                </p>
+              </div>
+            </div>
+            <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
+              <AlarmClockIcon className="mt-1 text-green-700 shrink-0" />
+              <div>
+                <h4 className="text-xl">Personalized plans for you</h4>
+                <p className="text-zinc-800">
+                  We take time to understand your personal stories and goals and
+                  work to design truly effective supports.
+                </p>
+              </div>
+            </div>
+            <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
+              <CalendarClockIcon className="mt-1 text-green-700 shrink-0" />
+              <div>
+                <h4 className="text-xl">
+                  24/7 flexible support from start to finish
+                </h4>
+                <p className="text-zinc-800">
+                  Our support staff provide round-the-clock assistance ensuring
+                  safety, security and immediate help.
+                </p>
+              </div>
+            </div>
+            <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
+              <ScanHeartIcon className="mt-1 text-green-700 shrink-0" />
+              <div>
+                <h4 className="text-xl">Genuine care for every case</h4>
+                <p className="text-zinc-800">
+                  We offer care for complex behaviours, physical disabilities,
+                  psychosocial challenges and forensic disability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-12 md:pt-24">
         <div className="flex flex-col md:flex-row gap-4 md:gap-16 justify-center items-center">
           <div className="flex flex-col gap-6">
             <div>
-              <h3 className="text-2xl lg:text-4xl mb-2">
+              <h3 className="text-2xl lg:text-4xl mb-2 text-brand-800">
                 Empowering Lives.
                 <br /> Supporting Independence.
               </h3>

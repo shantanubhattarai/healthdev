@@ -29,7 +29,7 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           What is household assistance?
         </h3>
         <div className="text-zinc-800">
@@ -47,7 +47,7 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           What services do we provide?
         </h3>
         <p className="text-zinc-800">
@@ -129,7 +129,9 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our approach</h3>
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+          Our approach
+        </h3>
         <div className="text-zinc-800 flex flex-col gap-2">
           <div>
             <p className="font-medium">Person-Centred Support</p>
@@ -162,7 +164,7 @@ export default function GroupActivities() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           Why does it matter?
         </h3>
         <p className="text-zinc-800">

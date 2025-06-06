@@ -30,7 +30,7 @@ export default function SDA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           What makes SDA different?
         </h3>
         <div className="text-zinc-800">
@@ -53,7 +53,7 @@ export default function SDA() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           What types of SDA Homes do we provide?
         </h3>
         <p className="text-zinc-800">
@@ -105,7 +105,7 @@ export default function SDA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           Our commitment to SDA design standards
         </h3>
         <p className="text-zinc-800">
@@ -168,7 +168,7 @@ export default function SDA() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           Who is eligible for SDA?
         </h3>
         <p>To be eligible for SDA housing, participants must:</p>
@@ -185,7 +185,7 @@ export default function SDA() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
           Ready to take the next step?
         </h3>
         <p className="text-zinc-800">

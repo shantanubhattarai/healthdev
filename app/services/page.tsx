@@ -354,7 +354,7 @@ const ServiceContent = ({
       <div className="pt-8 text-zinc-800">{children}</div>
       <Link
         href={url}
-        className="underline underline-offset-4 text-zinc-800 hover:text-zinc-900 mt-2 inline-block"
+        className="underline underline-offset-4 text-zinc-800 hover:text-brand-800 mt-2 inline-block"
       >
         Learn More
       </Link>
@@ -378,7 +378,7 @@ const ServiceItem = ({
       className={clsx(
         "text-md lg:text-xl xl:text-2xl hover:cursor-pointer border-b-2 pb-2 pt-4 shrink-0 text-left",
         serviceKey === selectedKey
-          ? "border-zinc-900"
+          ? "border-brand-800 text-brand-800"
           : "border-zinc-300 text-zinc-500 hover:text-zinc-600 hover:border-zinc-600"
       )}
       onClick={() => selectService(serviceKey)}

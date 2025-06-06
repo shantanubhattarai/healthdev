@@ -33,7 +33,9 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">Who We Are</h3>
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+          Who We Are
+        </h3>
         <p className="text-zinc-800">
           Founded with a vision to raise the standard of disability care, Apex
           Aid Health Care brings together a dedicated team of{" "}
@@ -62,7 +64,9 @@ const About = () => {
         </ul>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Approach</h3>
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+          Our Approach
+        </h3>
         <p className="text-zinc-800">
           We don&apos;t believe in one-size-fits-all care. Instead, we take the
           time to
@@ -83,14 +87,18 @@ const About = () => {
         </ul>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Mission</h3>
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+          Our Mission
+        </h3>
         <p className="text-zinc-800">
           To support people with disabilities to lead fulfilling, independent
           lives by providing care that is personal, reliable, and empowering.
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Vision</h3>
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+          Our Vision
+        </h3>
         <p className="text-zinc-800">
           To be recognised as a leading, compassionate provider of disability
           and community health services—built on trust, integrity, and
@@ -98,7 +106,9 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium">Our Values</h3>
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+          Our Values
+        </h3>
         <ul className="text-zinc-800 list-decimal list-inside">
           <li>
             <span className="font-medium">Dignity & Respect - </span>We honour

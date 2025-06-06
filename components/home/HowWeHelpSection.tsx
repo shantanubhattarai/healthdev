@@ -39,7 +39,9 @@ const HowWeHelpSection = () => {
 
   return (
     <section className="pb-12 md:pb-24 lg:py-24">
-      <h3 className="text-center text-4xl leading-14 mb-8">How we help</h3>
+      <h3 className="text-center text-4xl leading-14 mb-8 text-brand-800">
+        How we help
+      </h3>
       <div ref={sliderRef} className="keen-slider rounded-md">
         <div className="keen-slider__slide rounded-md">
           <HelpCard label="Specialist Disability Accommodation" cardKey="sda">
@@ -197,7 +199,7 @@ const HowWeHelpSection = () => {
       <p className="text-center md:text-right">
         <Link
           href={`/services`}
-          className="underline underline-offset-4 text-zinc-700 hover:text-zinc-900 mt-2 inline-block"
+          className="underline underline-offset-4 text-zinc-700 hover:text-brand-700 mt-2 inline-block"
         >
           See all services
         </Link>
@@ -229,11 +231,11 @@ const HelpCard = ({
         key={cardKey}
       >
         <div className="px-6 py-6 h-full rounded-sm flex flex-col items-start justify-end w-full bg-gradient-to-tr from-black to-transparent">
-          <p className="text-xl">{label}</p>
+          <p className="text-xl text-white">{label}</p>
           <div className="text-zinc-200 mt-2 block max-w-2xl">{children}</div>
           <Link
             href={`/services/${cardKey}`}
-            className="underline underline-offset-4 text-zinc-200 hover:text-white mt-2 inline-block"
+            className="underline underline-offset-4 hover:text-brand-400 mt-2 inline-block text-zinc-200"
           >
             Learn More
           </Link>
