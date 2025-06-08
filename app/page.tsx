@@ -4,7 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 import HeroBG from "@/public/images/home.jpg";
+import EmpowerImage from "@/public/images/EmpowerSection.jpg";
+import EmpowerMini01 from "@/public/images/EmpowerMini01.jpg";
+import EmpowerMini02 from "@/public/images/EmpowerMini02.jpg";
+import EmpowerMini03 from "@/public/images/EmpowerMini03.jpg";
 import Trees from "@/components/svg/Trees";
+
 import {
   AlarmClockIcon,
   CalendarClockIcon,
@@ -38,18 +43,20 @@ export default function Home() {
 
       <section className="py-12 md:pt-24">
         <div className="flex flex-col gap-4 justify-center items-center text-center">
-          <h3 className="text-2xl lg:text-4xl text-brand-800">
+          <h3 className="text-2xl lg:text-4xl font-medium text-brand-800">
             Define your own success with our care
           </h3>
           <p className="text-zinc-800 text-lg md:text-xl max-w-2xl">
             Our dedicated team provide tailored supports that make a real
             difference in your everyday life.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 text-left gap-x-4 gap-y-6 lg:gap-y-8 mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 text-left gap-x-4 gap-y-6 lg:gap-y-8 mt-8 lg:mt-12">
             <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
               <UserPenIcon className="mt-1 text-green-700 shrink-0" />
               <div>
-                <h4 className="text-xl">Responsive, quick appointments</h4>
+                <h4 className="text-xl font-medium">
+                  Responsive, quick appointments
+                </h4>
                 <p className="text-zinc-800">
                   Receive quick support with an experienced professional in a
                   matter of hours
@@ -59,7 +66,9 @@ export default function Home() {
             <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
               <AlarmClockIcon className="mt-1 text-green-700 shrink-0" />
               <div>
-                <h4 className="text-xl">Personalized plans for you</h4>
+                <h4 className="text-xl font-medium">
+                  Personalized plans for you
+                </h4>
                 <p className="text-zinc-800">
                   We take time to understand your personal stories and goals and
                   work to design truly effective supports.
@@ -69,7 +78,7 @@ export default function Home() {
             <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
               <CalendarClockIcon className="mt-1 text-green-700 shrink-0" />
               <div>
-                <h4 className="text-xl">
+                <h4 className="text-xl font-medium">
                   24/7 flexible support from start to finish
                 </h4>
                 <p className="text-zinc-800">
@@ -81,7 +90,9 @@ export default function Home() {
             <div className="lg:px-8 flex flex-row items-start justify-start gap-x-4">
               <ScanHeartIcon className="mt-1 text-green-700 shrink-0" />
               <div>
-                <h4 className="text-xl">Genuine care for every case</h4>
+                <h4 className="text-xl font-medium">
+                  Genuine care for every case
+                </h4>
                 <p className="text-zinc-800">
                   We offer care for complex behaviours, physical disabilities,
                   psychosocial challenges and forensic disability.
@@ -95,7 +106,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-4 md:gap-16 justify-center items-center">
           <div className="flex flex-col gap-6">
             <div>
-              <h3 className="text-2xl lg:text-4xl mb-2 text-brand-800">
+              <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-brand-800">
                 Empowering Lives.
                 <br /> Supporting Independence.
               </h3>
@@ -111,30 +122,28 @@ export default function Home() {
           </div>
           <div className="relative max-w-full w-96 h-96">
             <Image
-              src="https://picsum.photos/1000/1000"
+              src={EmpowerImage}
               alt="home-1"
-              className="absolute inset-0 object-contain rounded-xl z-20 border-background border-0 md:border-4"
+              className="absolute inset-0 aspect-square object-cover object-center rounded-xl z-20 border-background border-0 md:border-4"
               width={480}
-              height={480}
             />
             <Image
-              src="https://picsum.photos/800/800"
+              src={EmpowerMini03}
               alt="home-1"
-              className="absolute hidden xl:block -top-12 -left-6 object-contain rounded-full border-background border-8 z-30"
+              className="absolute hidden xl:block -top-12 -left-6 rounded-full border-background border-8 z-30 aspect-square object-cover object-center"
+              width={100}
+            />
+            <Image
+              src={EmpowerMini02}
+              alt="home-1"
+              className="absolute hidden xl:block top-4 -right-18 rounded-full border-background border-6 z-30 aspect-square object-cover object-center"
               width={100}
               height={100}
             />
             <Image
-              src="https://picsum.photos/1024/1024"
+              src={EmpowerMini01}
               alt="home-1"
-              className="absolute hidden xl:block top-4 -right-18 object-contain rounded-full border-background border-6 z-30"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="https://picsum.photos/640/640"
-              alt="home-1"
-              className="absolute hidden xl:block -top-12 -right-24 object-contain rounded-full z-10"
+              className="absolute hidden xl:block -top-12 -right-24 rounded-full z-10 aspect-square object-cover object-center"
               width={64}
               height={64}
             />

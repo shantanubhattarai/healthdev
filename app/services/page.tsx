@@ -5,6 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
+import SDAImage from "@/public/images/SDA.jpg";
+import SILImage from "@/public/images/SIL.jpg";
+import STAImage from "@/public/images/STA.jpg";
+import FDSImage from "@/public/images/FDS.jpg";
+import HToHImage from "@/public/images/HtoH.jpg";
+import CNImage from "@/public/images/CN.jpg";
+import ADLImage from "@/public/images/ADL.jpg";
+import SCPImage from "@/public/images/SCP.jpg";
+import GroupImage from "@/public/images/Group.jpg";
+import TransportImage from "@/public/images/Transport.jpg";
+import HouseholdImage from "@/public/images/Household.jpg";
+
 const Services = () => {
   const [selectedKey, setSelectedKey] = useState<string | null>("sda");
 
@@ -120,7 +132,7 @@ const Services = () => {
             <ServiceContent
               value="sda"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/800/800"
+              imageSrc={SDAImage.src}
               imageAlt="sda"
               url={"/services/sda"}
             >
@@ -136,7 +148,7 @@ const Services = () => {
             <ServiceContent
               value="sil"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/900/900"
+              imageSrc={SILImage.src}
               imageAlt="sil"
               url={"/services/sil"}
             >
@@ -153,7 +165,7 @@ const Services = () => {
             <ServiceContent
               value="sta"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/1024/900"
+              imageSrc={STAImage.src}
               imageAlt="sta"
               url={"/services/sta"}
             >
@@ -169,7 +181,7 @@ const Services = () => {
             <ServiceContent
               value="fds"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/1024/900"
+              imageSrc={FDSImage.src}
               imageAlt="forensic disability services"
               url={"/services/fds"}
             >
@@ -190,7 +202,7 @@ const Services = () => {
             <ServiceContent
               value="htoh"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/800/900"
+              imageSrc={HToHImage.src}
               imageAlt="htoh"
               url={"/services/htoh"}
             >
@@ -208,7 +220,7 @@ const Services = () => {
             <ServiceContent
               value="cn"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/800/1000"
+              imageSrc={CNImage.src}
               imageAlt="cn"
               url={"/services/cn"}
             >
@@ -227,7 +239,7 @@ const Services = () => {
             <ServiceContent
               value="adl"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/960/1000"
+              imageSrc={ADLImage.src}
               imageAlt="adl"
               url={"/services/adl"}
             >
@@ -251,7 +263,7 @@ const Services = () => {
             <ServiceContent
               value="scp"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/960/1024"
+              imageSrc={SCPImage.src}
               imageAlt="scp"
               url={"/services/scp"}
             >
@@ -268,7 +280,7 @@ const Services = () => {
             <ServiceContent
               value="group"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/1000/1024"
+              imageSrc={GroupImage.src}
               imageAlt="group"
               url={"/services/group"}
             >
@@ -288,7 +300,7 @@ const Services = () => {
             <ServiceContent
               value="transport"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/1096/1024"
+              imageSrc={TransportImage.src}
               imageAlt="transport"
               url={"/services/transport"}
             >
@@ -305,7 +317,7 @@ const Services = () => {
             <ServiceContent
               value="household"
               selectedKey={selectedKey}
-              imageSrc="https://picsum.photos/1096/1096"
+              imageSrc={HouseholdImage.src}
               imageAlt="household"
               url={"/services/household"}
             >
@@ -343,7 +355,7 @@ const ServiceContent = ({
   if (selectedKey !== value) return;
   return (
     <>
-      <div className="w-full relative h-96">
+      <div className="w-full relative h-96 lg:h-[640px]">
         <Image
           src={imageSrc}
           fill

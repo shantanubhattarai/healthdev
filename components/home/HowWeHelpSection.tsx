@@ -5,6 +5,18 @@ import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react.es";
 
+import SDAImage from "@/public/images/SDA.jpg";
+import SILImage from "@/public/images/SIL.jpg";
+import STAImage from "@/public/images/STA.jpg";
+import FDSImage from "@/public/images/FDS.jpg";
+import HToHImage from "@/public/images/HtoH.jpg";
+import CNImage from "@/public/images/CN.jpg";
+import ADLImage from "@/public/images/ADL.jpg";
+import SCPImage from "@/public/images/SCP.jpg";
+import GroupImage from "@/public/images/Group.jpg";
+import TransportImage from "@/public/images/Transport.jpg";
+import HouseholdImage from "@/public/images/Household.jpg";
+
 const HowWeHelpSection = () => {
   const [sliderRef] = useKeenSlider({ loop: true, slides: { spacing: 4 } }, [
     (slider) => {
@@ -39,12 +51,16 @@ const HowWeHelpSection = () => {
 
   return (
     <section className="pb-12 md:pb-24 lg:py-24">
-      <h3 className="text-center text-4xl leading-14 mb-8 text-brand-800">
+      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 mb-8 text-brand-800">
         How we help
       </h3>
       <div ref={sliderRef} className="keen-slider rounded-md">
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Specialist Disability Accommodation" cardKey="sda">
+          <HelpCard
+            label="Specialist Disability Accommodation"
+            cardKey="sda"
+            imageSrc={SDAImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we understand that having the right home
               environment is essential for people living with significant
@@ -56,7 +72,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Supported Independent Living" cardKey="sil">
+          <HelpCard
+            label="Supported Independent Living"
+            cardKey="sil"
+            imageSrc={SILImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, our Supported Independent Living (SIL)
               services are designed to empower individuals with disabilities to
@@ -71,6 +91,7 @@ const HowWeHelpSection = () => {
           <HelpCard
             label="Respite Care & Short-Term Accommodation"
             cardKey="sta"
+            imageSrc={STAImage.src}
           >
             <p className="line-clamp-3">
               Short Term Accommodation (STA), often referred to as respite care,
@@ -82,7 +103,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Forensic Disability Services" cardKey="fds">
+          <HelpCard
+            label="Forensic Disability Services"
+            cardKey="fds"
+            imageSrc={FDSImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we recognise the unique and complex needs
               of individuals with a disability who are involved in the criminal
@@ -96,7 +121,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Hospital to Home" cardKey="htoh">
+          <HelpCard
+            label="Hospital to Home"
+            cardKey="htoh"
+            imageSrc={HToHImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we understand that leaving hospital is a
               critical time that requires careful planning and the right
@@ -110,7 +139,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Community Nursing" cardKey="cn">
+          <HelpCard
+            label="Community Nursing"
+            cardKey="cn"
+            imageSrc={CNImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, our
               <span className="font-medium"> Community Nursing Services </span>
@@ -122,7 +155,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Assistance with Daily Living" cardKey="adl">
+          <HelpCard
+            label="Assistance with Daily Living"
+            cardKey="adl"
+            imageSrc={ADLImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we provide
               <span className="font-medium">
@@ -142,7 +179,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Community Participation" cardKey="scp">
+          <HelpCard
+            label="Community Participation"
+            cardKey="scp"
+            imageSrc={SCPImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we believe that everyone deserves the
               opportunity to be an active part of their community. Our
@@ -155,7 +196,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Group Activities" cardKey="group">
+          <HelpCard
+            label="Group Activities"
+            cardKey="group"
+            imageSrc={GroupImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we offer a range of
               <span className="font-medium"> group-based activities </span>
@@ -171,7 +216,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Transport Assistance" cardKey="transport">
+          <HelpCard
+            label="Transport Assistance"
+            cardKey="transport"
+            imageSrc={TransportImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we understand how important it is to
               access your community, appointments, education, and social life
@@ -184,7 +233,11 @@ const HowWeHelpSection = () => {
           </HelpCard>
         </div>
         <div className="keen-slider__slide rounded-md">
-          <HelpCard label="Household Assistance" cardKey="household">
+          <HelpCard
+            label="Household Assistance"
+            cardKey="household"
+            imageSrc={HouseholdImage.src}
+          >
             <p className="line-clamp-3">
               At Apex Aid Health Care, we provide
               <span className="font-medium"> Household Assistance </span>
