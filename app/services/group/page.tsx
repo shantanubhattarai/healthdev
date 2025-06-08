@@ -1,4 +1,6 @@
 import Image from "next/image";
+import GroupImage from "@/public/images/Group.jpg";
+import SDA02Image from "@/public/images/SDA02.png";
 
 export default function GroupActivities() {
   return (
@@ -22,10 +24,10 @@ export default function GroupActivities() {
           Group activities are a great way for participants to meet new people,
           build confidence, and have fun in a safe and supportive environment.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
-            alt="sda"
+            src={GroupImage}
+            alt="group activities"
             fill
             className="rounded-md object-cover object-center"
           />
@@ -67,7 +69,7 @@ export default function GroupActivities() {
         <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src="https://picsum.photos/1000/1000"
+              src={SDA02Image}
               alt="What do we offer?"
               fill
               className="rounded-md object-cover object-center"
@@ -123,16 +125,6 @@ export default function GroupActivities() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="pt-12">
-        <div className="w-full h-96 relative">
-          <Image
-            src="https://picsum.photos/2000/2000"
-            alt="Hospital to home"
-            fill
-            className="rounded-md object-cover object-center"
-          />
         </div>
       </section>
       <section className="pt-12">

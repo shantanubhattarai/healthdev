@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ADLImage from "@/public/images/ADL.jpg";
+import ADL01Image from "@/public/images/SDA01.png";
 
 export default function SDA() {
   return (
@@ -28,8 +30,8 @@ export default function SDA() {
         </p>
         <div className="relative h-96 rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
-            alt="sda"
+            src={ADLImage}
+            alt="Assistance with Daily Living"
             fill
             className="rounded-md object-cover object-center"
           />
@@ -104,7 +106,7 @@ export default function SDA() {
           </div>
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src="https://picsum.photos/1000/1000"
+              src={ADL01Image}
               alt="Design standards"
               fill
               className="rounded-md object-cover object-center"

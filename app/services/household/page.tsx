@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HouseholdImage from "@/public/images/Household.jpg";
 
 export default function GroupActivities() {
   return (
@@ -19,9 +20,9 @@ export default function GroupActivities() {
           safe, and functional — while also promoting your independence and
           dignity.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
+            src={HouseholdImage}
             alt="sda"
             fill
             className="rounded-md object-cover object-center"
@@ -56,10 +57,10 @@ export default function GroupActivities() {
         <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src="https://picsum.photos/1000/1000"
+              src={HouseholdImage}
               alt="What do we offer?"
               fill
-              className="rounded-md object-cover object-center"
+              className="rounded-md object-cover object-top"
             />
           </div>
           <div className="text-zinc-800 flex flex-col gap-2">
@@ -116,16 +117,6 @@ export default function GroupActivities() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="pt-12">
-        <div className="w-full h-96 relative">
-          <Image
-            src="https://picsum.photos/2000/2000"
-            alt="Hospital to home"
-            fill
-            className="rounded-md object-cover object-center"
-          />
         </div>
       </section>
       <section className="pt-12">

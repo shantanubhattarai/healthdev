@@ -1,4 +1,6 @@
 import Image from "next/image";
+import CNImage from "@/public/images/CN.jpg";
+import ADLImage from "@/public/images/ADL.jpg";
 
 export default function CN() {
   return (
@@ -25,8 +27,8 @@ export default function CN() {
         </p>
         <div className="relative h-96 rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
-            alt="sda"
+            src={CNImage}
+            alt="Community Nursing"
             fill
             className="rounded-md object-cover object-center"
           />
@@ -61,7 +63,7 @@ export default function CN() {
       <section className="pt-12">
         <div className="w-full h-96 relative">
           <Image
-            src="https://picsum.photos/2000/2000"
+            src={ADLImage}
             alt="Hospital to home"
             fill
             className="rounded-md object-cover object-center"

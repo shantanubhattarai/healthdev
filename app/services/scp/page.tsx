@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SCPImage from "@/public/images/SCP.jpg";
+import GroupImage from "@/public/images/Group.jpg";
 
 export default function HTOH() {
   return (
@@ -19,10 +21,10 @@ export default function HTOH() {
           to engage in meaningful, social, recreational, and civic activities
           that enrich their lives and foster a sense of belonging.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
-            alt="sda"
+            src={SCPImage}
+            alt="Social and Community Participation"
             fill
             className="rounded-md object-cover object-center"
           />
@@ -117,7 +119,7 @@ export default function HTOH() {
       <section className="pt-12">
         <div className="w-full h-96 relative">
           <Image
-            src="https://picsum.photos/2000/2000"
+            src={GroupImage}
             alt="Hospital to home"
             fill
             className="rounded-md object-cover object-center"

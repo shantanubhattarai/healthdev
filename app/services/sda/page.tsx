@@ -1,6 +1,9 @@
 import ContactDetails from "@/components/contact/ContactDetails";
 import ContactForm from "@/components/contact/ContactForm";
 import Image from "next/image";
+import SDAImage from "@/public/images/SDA.jpg";
+import SDA01 from "@/public/images/SDA01.png";
+import SDA02 from "@/public/images/SDA02.png";
 
 export default function SDA() {
   return (
@@ -22,7 +25,7 @@ export default function SDA() {
         </p>
         <div className="relative h-96 rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
+            src={SDAImage}
             alt="sda"
             fill
             className="rounded-md object-cover object-center"
@@ -98,7 +101,7 @@ export default function SDA() {
             <Image
               className="rounded-md object-cover object-center"
               fill
-              src="https://picsum.photos/1000/1000"
+              src={SDA02}
               alt="sda homes"
             />
           </div>
@@ -118,7 +121,7 @@ export default function SDA() {
         <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src="https://picsum.photos/1000/1000"
+              src={SDA01}
               alt="Design standards"
               fill
               className="rounded-md object-cover object-center"

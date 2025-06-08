@@ -1,4 +1,6 @@
 import Image from "next/image";
+import FDSImage from "@/public/images/FDS.jpg";
+import SCP from "@/public/images/SCP.jpg";
 
 export default function FDS() {
   return (
@@ -23,8 +25,8 @@ export default function FDS() {
         </p>
         <div className="relative h-96 rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
-            alt="sda"
+            src={FDSImage}
+            alt="fds"
             fill
             className="rounded-md object-cover object-center"
           />
@@ -122,7 +124,7 @@ export default function FDS() {
 
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src="https://picsum.photos/1000/1000"
+              src={SCP}
               alt="Design standards"
               fill
               className="rounded-md object-cover object-center"

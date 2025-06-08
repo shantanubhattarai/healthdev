@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SILImage from "@/public/images/SIL.jpg";
+import CN from "@/public/images/CN.jpg";
 
 export default function SIL() {
   return (
@@ -19,12 +21,12 @@ export default function SIL() {
           environments, guided by each participant&apos;s NDIS goals, daily
           routines, and personal preferences.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
+            src={SILImage}
             alt="sda"
             fill
-            className="rounded-md object-cover object-center"
+            className="rounded-md object-cover object-top"
           />
         </div>
       </section>
@@ -100,7 +102,7 @@ export default function SIL() {
           </div>
           <div className="w-full xl:w-96 h-72 relative shrink-0">
             <Image
-              src="https://picsum.photos/1000/1000"
+              src={CN}
               alt="Design standards"
               fill
               className="rounded-md object-cover object-center"

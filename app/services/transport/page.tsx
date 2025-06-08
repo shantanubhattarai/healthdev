@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TransportImage from "@/public/images/Transport.jpg";
 
 export default function TransportAssistance() {
   return (
@@ -20,10 +21,10 @@ export default function TransportAssistance() {
           safely, independently, and on time — whether it&apos;s for daily
           routines or special events.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
-            src="https://picsum.photos/1024/1024"
-            alt="sda"
+            src={TransportImage}
+            alt="transport assistance"
             fill
             className="rounded-md object-cover object-center"
           />
@@ -97,16 +98,6 @@ export default function TransportAssistance() {
               work around your life.
             </p>
           </div>
-        </div>
-      </section>
-      <section className="pt-12">
-        <div className="w-full h-96 relative">
-          <Image
-            src="https://picsum.photos/2000/2000"
-            alt="Hospital to home"
-            fill
-            className="rounded-md object-cover object-center"
-          />
         </div>
       </section>
       <section className="pt-12">
