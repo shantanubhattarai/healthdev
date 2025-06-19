@@ -23,7 +23,7 @@ export default function FDS() {
           psychosocial disabilities who have encountered legal or forensic
           settings.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96  lg:h-[640px] rounded-md mt-4">
           <Image
             src={FDSImage}
             alt="fds"

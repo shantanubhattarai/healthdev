@@ -23,12 +23,12 @@ export default function SDA() {
           (SDA) — high-quality housing solutions designed for NDIS participants
           with complex needs or extreme functional limitations.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
             src={SDAImage}
             alt="sda"
             fill
-            className="rounded-md object-cover object-center"
+            className="rounded-md object-cover object-top"
           />
         </div>
       </section>

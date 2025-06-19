@@ -65,6 +65,10 @@ body {
   .bg-noise {
     background-image: url("/noise.png");
   }
+
+  .bg-paper {
+    background-image: url("/paper.webp");
+  }
 }
 
 :root {

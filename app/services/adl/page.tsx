@@ -28,7 +28,7 @@ export default function SDA() {
           Our goal is to empower people to live life on their own terms—safely,
           confidently, and comfortably in their home or community.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
             src={ADLImage}
             alt="Assistance with Daily Living"

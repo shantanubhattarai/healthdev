@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SILImage from "@/public/images/SIL.jpg";
-import CN from "@/public/images/CN.jpg";
+import SIL_01 from "@/public/images/SIL_01.jpg";
 
 export default function SIL() {
   return (
@@ -100,12 +100,12 @@ export default function SIL() {
               </p>
             </div>
           </div>
-          <div className="w-full xl:w-96 h-72 relative shrink-0">
+          <div className="w-full xl:w-96 h-72 xl:h-96 relative shrink-0">
             <Image
-              src={CN}
+              src={SIL_01}
               alt="Design standards"
               fill
-              className="rounded-md object-cover object-center"
+              className="rounded-md object-cover object-top"
             />
           </div>
         </div>

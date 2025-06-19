@@ -1,3 +1,6 @@
+import Image from "next/image";
+import STAImage from "@/public/images/STA.jpg";
+
 export default function STA() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
@@ -23,6 +26,14 @@ export default function STA() {
           STA can range from overnight stays to several weeks, depending on
           individual needs and NDIS funding.
         </p>
+        <div className="relative h-96  lg:h-[640px] rounded-md mt-4">
+          <Image
+            src={STAImage}
+            alt="fds"
+            fill
+            className="rounded-md object-cover object-center"
+          />
+        </div>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">

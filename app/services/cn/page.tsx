@@ -25,7 +25,7 @@ export default function CN() {
           support, our qualified nursing team ensures your health needs are met
           with dignity, precision, and professionalism.
         </p>
-        <div className="relative h-96 rounded-md mt-4">
+        <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
             src={CNImage}
             alt="Community Nursing"

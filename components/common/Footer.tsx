@@ -4,16 +4,74 @@ import {
   SiWhatsapp,
 } from "@icons-pack/react-simple-icons";
 import { SquareArrowOutUpRight } from "lucide-react";
+import NDISImage from "@/public/ndis2.png";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto px-4 pt-12 pb-8">
-      <div className="flex flex-col lg:flex-row items-start justify-start gap-x-4 lg:gap-x-16 gap-y-4">
+    <footer className="mt-12 pt-16 pb-8 bg-zinc-900 bg-paper bg-blend-multiply bg-cover bg-center">
+      <div className="container mx-auto px-4 py-4 mb-8 rounded-sm md:bg-zinc-900 text-zinc-200">
+        <p className="font-medium mb-1">Empowering your NDIS journey</p>
+        <p className="text-zinc-300">
+          What makes Apex Aid Health Care stand out?
+        </p>
+        <div className="text-zinc-300 flex flex-col gap-2 mt-4">
+          <div>
+            <p className="font-medium text-zinc-200">
+              Skilled and Supportive Team
+            </p>
+            <p>
+              Our experienced staff are committed to delivering compassionate
+              and respectful care that supports participants to live
+              independently and confidently.
+            </p>
+          </div>
+          <div>
+            <p className="font-medium text-zinc-200">Care Tailored to You</p>
+            <p>
+              We develop flexible, person-centred support plans that align with
+              your goals, lifestyle, and preferences.
+            </p>
+          </div>
+          <div>
+            <p className="font-medium text-zinc-200">
+              Dependable Service Delivery
+            </p>
+            <p>
+              We pride ourselves on reliability, responsiveness, and consistent
+              support — ensuring peace of mind for you and your family.
+            </p>
+          </div>
+          <div>
+            <p className="font-medium text-zinc-200">
+              Inclusive and Culturally Aware Approach
+            </p>
+            <p>
+              We recognise and value the diversity of the people we support,
+              ensuring culturally safe and inclusive services.
+            </p>
+          </div>
+          <div>
+            <p className="font-medium text-zinc-200">
+              Participant-Focused Outcomes
+            </p>
+            <p>
+              Our goal is to help you achieve meaningful progress — whether
+              that&apos;s building daily living skills, increasing social
+              participation, or reaching your personal milestones.
+            </p>
+          </div>
+          <p>
+            Let us support your goals - contact us to find out how we can help.
+          </p>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-start justify-start gap-x-4 lg:gap-x-16 gap-y-4 text-zinc-200">
         <div>
           <h3 className="font-medium text-lg mb-4">Links</h3>
-          <ul className="flex flex-col gap-2 text-zinc-700">
+          <ul className="flex flex-col gap-2 text-zinc-300">
             <Link
               href="/about"
               className="hover:underline hover:underline-offset-2"
@@ -43,7 +101,7 @@ const Footer = () => {
         <div>
           <h3 className="font-medium text-lg mb-4">Services</h3>
           <div className="flex flex-col lg:flex-row justify-start items-start gap-x-4 lg:gap-x-16 gap-y-2">
-            <ul className="flex flex-col gap-2 text-zinc-700">
+            <ul className="flex flex-col gap-2 text-zinc-300">
               <Link
                 href="/services/sda"
                 className="hover:underline hover:underline-offset-2"
@@ -82,7 +140,7 @@ const Footer = () => {
               </Link>
             </ul>
 
-            <ul className="flex flex-col gap-2 text-zinc-800">
+            <ul className="flex flex-col gap-2 text-zinc-300">
               <Link
                 href="/services/adl"
                 className="hover:underline hover:underline-offset-2"
@@ -124,19 +182,44 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-8 justify-between items-center py-4 my-4 border-t border-b">
+      <div className="container mx-auto px-4 py-4 my-8 rounded-sm md:bg-zinc-900 text-zinc-200">
+        <p>
+          In the spirit of reconciliation, Apex Aid Health Care acknowledges the
+          Traditional Custodians of the lands on which we live and provide care.
+          We recognize and respect the enduring connection that Aboriginal and
+          Torres Strait Islander peoples have to country, culture, community and
+          spiritually.
+        </p>
+        <p className="mt-2">
+          We pay our respects to Elders past, present, and emerging, and honour
+          their resilience, leadership, and contributions across generations.
+        </p>
+        <p className="mt-2">
+          Apex Aid Health Care is committed to walking alongside First Nations
+          peoples on the path to reconciliation. We strive to foster meaningful
+          relationships, promote inclusive practices, and celebrate the rich
+          histories, cultures, and achievements of Aboriginal and Torres Strait
+          Islander communities.
+        </p>
+      </div>
+      <div className="container mx-auto px-4 flex gap-8 justify-between items-center py-4 my-4 text-zinc-200">
         <Link href="/" className="font-semibold text-lg py-1">
           Apex Aid
         </Link>
-        <ul className="flex gap-6 items-center justify-end">
+        <ul className="flex gap-3 md:gap-6 items-center justify-end">
           <SiFacebook />
           <SiInstagram />
           <SiWhatsapp />
         </ul>
       </div>
-      <p className="text-right text-zinc-500">
-        &copy; 2025 Apex Aid Services. All rights reserved.
-      </p>
+      <div className="container mx-auto flex gap-8 justify-between items-center py-4 my-4 text-zinc-200">
+        <p className="pl-3 lg:pl-0">
+          <Image src={NDISImage} alt="Registered NDIS Provider" height={96} />
+        </p>
+        <p className="container mx-auto px-4 text-right text-zinc-300">
+          &copy; 2025 Apex Aid Services. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 };
