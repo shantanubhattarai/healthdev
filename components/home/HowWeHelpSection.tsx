@@ -16,7 +16,7 @@ import SCPImage from "@/public/images/SCP.jpg";
 import GroupImage from "@/public/images/Group.jpg";
 import TransportImage from "@/public/images/Transport.jpg";
 import HouseholdImage from "@/public/images/Household.jpg";
-import { useState } from "react";
+import React, { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 
 const HowWeHelpSection = () => {
@@ -71,11 +71,13 @@ const HowWeHelpSection = () => {
     ]
   );
 
-  const handleArrowClick = (e: any, dir: "left" | "right") => {
+  const handleArrowClick = (e: React.MouseEvent, dir: "left" | "right") => {
     if (dir === "left") {
-      e.stopPropagation() || instanceRef.current?.prev();
+      e.stopPropagation();
+      instanceRef.current?.prev();
     } else {
-      e.stopPropagation() || instanceRef.current?.next();
+      e.stopPropagation();
+      instanceRef.current?.next();
     }
   };
 
@@ -313,7 +315,7 @@ const Arrow = ({
   onClick,
 }: {
   dir: "left" | "right";
-  onClick: (e: any) => void;
+  onClick: (e: React.MouseEvent) => void;
 }) => {
   return dir === "left" ? (
     <ChevronLeftIcon
