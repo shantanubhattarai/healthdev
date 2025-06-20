@@ -8,7 +8,7 @@ import SDA02 from "@/public/images/SDA02.png";
 export default function SDA() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-brand-800 bg-noise bg-blend-soft-light text-center">
+      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-teal-800 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
             Specialist Disability Accommodation
@@ -33,7 +33,7 @@ export default function SDA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           What makes SDA different?
         </h3>
         <div className="text-zinc-800">
@@ -56,7 +56,7 @@ export default function SDA() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           What types of SDA Homes do we provide?
         </h3>
         <p className="text-zinc-800">
@@ -108,7 +108,7 @@ export default function SDA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Our commitment to SDA design standards
         </h3>
         <p className="text-zinc-800">
@@ -171,7 +171,7 @@ export default function SDA() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Who is eligible for SDA?
         </h3>
         <p>To be eligible for SDA housing, participants must:</p>
@@ -188,7 +188,7 @@ export default function SDA() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Ready to take the next step?
         </h3>
         <p className="text-zinc-800">
@@ -199,7 +199,7 @@ export default function SDA() {
         </p>
       </section>
       <section className="py-12 flex flex-col lg:flex-row items-start gap-8">
-        <div className="w-full lg:w-96 px-6 py-4 text-brand-950 bg-brand-50 rounded-md">
+        <div className="w-full lg:w-96 px-6 py-4 text-teal-950 bg-teal-50 rounded-md">
           <ContactDetails />
         </div>
         <div className="w-full">

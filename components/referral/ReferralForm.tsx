@@ -101,7 +101,7 @@ const ReferralForm = () => {
             required
           />
         </div>
-        <div className="grid grid-cols-2 gap-x-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
               Phone Number<span className="text-red-700">*</span>
@@ -133,9 +133,13 @@ const ReferralForm = () => {
             {interestedServices.map((item) => (
               <li
                 key={`interested-service-${item.value}`}
-                className="flex items-center space-x-2"
+                className="flex items-start md:items-center space-x-2"
               >
-                <input type="checkbox" id={`check-${item.value}`} />
+                <input
+                  type="checkbox"
+                  id={`check-${item.value}`}
+                  className="mt-1 md:mt-0"
+                />
                 <label
                   htmlFor={`check-${item.value}`}
                   className="text-zinc-800"
@@ -160,7 +164,7 @@ const ReferralForm = () => {
             required
           />
         </div>
-        <div className="grid grid-cols-2 gap-x-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
               Date of Birth<span className="text-red-700">*</span>
@@ -227,7 +231,7 @@ const ReferralForm = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-x-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
               Phone Number
@@ -287,7 +291,7 @@ const ReferralForm = () => {
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
             Where did you hear about us?
           </label>
-          <div className="flex space-x-2 wrap">
+          <div className="flex flex-col md:flex-row space-x-2 wrap">
             <div className="flex space-x-1 items-center">
               <input
                 className="border border-zinc-300"
@@ -350,7 +354,7 @@ const ReferralForm = () => {
           <label className="block mb-1 text-zinc-600 text-sm tracking-wide">
             Who should we contact?
           </label>
-          <div className="flex space-x-2 wrap">
+          <div className="flex flex-col md:flex-row space-x-2 wrap">
             <div className="flex space-x-1 items-center">
               <input
                 className="border border-zinc-300"

@@ -3,14 +3,12 @@ import ContactForm from "../contact/ContactForm";
 
 const ContactSection = () => {
   return (
-    <section className="py-12 grid grid-cols-1 md:grid-cols-2 gap-8 min-h-96">
-      <div className="text-white bg-amber-800 bg-noise bg-blend-soft-light rounded-md py-12 px-8">
+    <section className="mt-4 mb-8 px-4 lg:px-12 py-4 lg:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 min-h-96 rounded-md bg-zinc-50">
+      <div className="text-white bg-teal-900 bg-noise bg-blend-multiply rounded-md py-12 px-8">
         <h3 className="text-2xl lg:text-4xl mb-4 font-medium">Contact Us</h3>
         <ContactDetails />
       </div>
-      <div className="md:p-4">
-        <ContactForm />
-      </div>
+      <ContactForm />
     </section>
   );
 };

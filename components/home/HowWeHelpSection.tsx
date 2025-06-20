@@ -82,8 +82,8 @@ const HowWeHelpSection = () => {
   };
 
   return (
-    <section className="pb-12 md:pb-24 lg:py-24">
-      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 mb-8 text-brand-800">
+    <section className="pb-12 md:pb-24 lg:py-36">
+      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 mb-8 text-teal-700">
         How we help
       </h3>
       <div className="relative">
@@ -301,7 +301,7 @@ const HowWeHelpSection = () => {
       <p className="text-center md:text-right">
         <Link
           href={`/services`}
-          className="underline underline-offset-4 text-zinc-700 hover:text-brand-700 mt-2 inline-block"
+          className="underline underline-offset-4 text-brand-800 hover:text-brand-600 mt-2 inline-block"
         >
           See all services
         </Link>

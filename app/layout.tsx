@@ -18,10 +18,8 @@ export default function RootLayout({
       <body
         className={"antialiased flex flex-col justify-between min-h-screen"}
       >
-        <main>
-          <Header />
-          {children}
-        </main>
+        <Header />
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

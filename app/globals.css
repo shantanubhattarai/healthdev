@@ -43,7 +43,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-brand: oklch(41.355% 0.10881 13.131);
+  /* --color-brand: oklch(41.355% 0.10881 13.131);
   --color-brand-50: oklch(93.52% 0.01764 8.7813);
   --color-brand-100: oklch(89.862% 0.02933 7.1503);
   --color-brand-200: oklch(82.442% 0.05265 7.8152);
@@ -54,7 +54,18 @@
   --color-brand-700: oklch(48.155% 0.12988 13.513);
   --color-brand-800: oklch(41.355% 0.10881 13.131);
   --color-brand-900: oklch(31.597% 0.07809 12.093);
-  --color-brand-950: oklch(26.26% 0.06161 11.218);
+  --color-brand-950: oklch(26.26% 0.06161 11.218); */
+  --color-brand-50: #fef3f2;
+  --color-brand-100: #fee4e2;
+  --color-brand-200: #fececa;
+  --color-brand-300: #fcaca5;
+  --color-brand-400: #f88379;
+  --color-brand-500: #ee5245;
+  --color-brand-600: #db3527;
+  --color-brand-700: #b9281c;
+  --color-brand-800: #99251b;
+  --color-brand-900: #7f251d;
+  --color-brand-950: #450f0a;
 }
 
 body {
@@ -68,6 +79,26 @@ body {
 
   .bg-paper {
     background-image: url("/paper.webp");
+  }
+
+  .sticking-nav {
+    @apply top-4 max-w-4xl py-0 px-6;
+  }
+
+  .sticking-nav .nav-wrapper {
+    @apply rounded-full shadow-lg bg-white/100 px-4 md:px-8;
+  }
+
+  .sticking-nav .mobile-nav-wrapper {
+    @apply pl-4 pr-6;
+  }
+
+  .mobile-nav-wrapper {
+    @apply px-0 pl-4;
+  }
+
+  .no-scroll {
+    @apply overflow-hidden;
   }
 }
 

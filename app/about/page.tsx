@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-brand-800 bg-noise bg-blend-soft-light text-center">
+      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-teal-800 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
             About Us
@@ -33,7 +33,7 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Who We Are
         </h3>
         <p className="text-zinc-800">
@@ -64,7 +64,7 @@ const About = () => {
         </ul>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Our Approach
         </h3>
         <p className="text-zinc-800">
@@ -87,7 +87,7 @@ const About = () => {
         </ul>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Our Mission
         </h3>
         <p className="text-zinc-800">
@@ -96,7 +96,7 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Our Vision
         </h3>
         <p className="text-zinc-800">
@@ -106,7 +106,7 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           Our Values
         </h3>
         <ul className="text-zinc-800 list-decimal list-inside">
@@ -138,7 +138,9 @@ const About = () => {
         </ul>
       </section>
       <section className="py-12">
-        <h3 className="text-4xl tracking-wide text-center">Our Team</h3>
+        <h3 className="text-4xl tracking-wide text-center text-teal-700">
+          Our Team
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-8 gap-8">
           <div className="flex flex-col gap-3 border rounded-md pb-2">
             <div className="relative w-full aspect-square">

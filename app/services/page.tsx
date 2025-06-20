@@ -26,7 +26,7 @@ const Services = () => {
 
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-brand-800 bg-noise bg-blend-soft-light text-center">
+      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-teal-800 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
             Our Services
@@ -366,7 +366,7 @@ const ServiceContent = ({
       <div className="pt-8 text-zinc-800">{children}</div>
       <Link
         href={url}
-        className="underline underline-offset-4 text-zinc-800 hover:text-brand-800 mt-2 inline-block"
+        className="underline underline-offset-4 text-brand-800 hover:text-brand-700 mt-2 inline-block"
       >
         Learn More
       </Link>

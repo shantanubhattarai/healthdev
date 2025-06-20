@@ -4,7 +4,7 @@ import STAImage from "@/public/images/STA.jpg";
 export default function STA() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-brand-800 bg-noise bg-blend-soft-light text-center">
+      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-teal-800 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
             Respite Care & Short-Term Accommodation
@@ -12,7 +12,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           What is Short-Term Accommodation?
         </h3>
         <p className="text-zinc-800">
@@ -36,7 +36,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           How to access STA through the NDIS
         </h3>
         <p className="text-zinc-800">
@@ -79,7 +79,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           What can you use STA for?
         </h3>
         <p className="text-zinc-800">
@@ -100,7 +100,7 @@ export default function STA() {
         </ul>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           What to expect at Apex Aid Health Care Respite
         </h3>
         <p className="text-zinc-800">
@@ -150,7 +150,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-brand-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           For more independent clients
         </h3>
         <p className="text-zinc-800">
