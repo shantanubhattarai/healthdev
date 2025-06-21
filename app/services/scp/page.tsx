@@ -1,13 +1,13 @@
 import Image from "next/image";
 import SCPImage from "@/public/images/SCP.jpg";
-import GroupImage from "@/public/images/Group.jpg";
+import GroupImage from "@/public/images/SCP_01.jpg";
 
 export default function HTOH() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-teal-800 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
-          <h2 className="text-4xl tracking-wide font-serif font-medium mb-4">
+          <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
             Social & Community Participation
           </h2>
         </div>
@@ -117,7 +117,7 @@ export default function HTOH() {
         </div>
       </section>
       <section className="pt-12">
-        <div className="w-full h-96 relative">
+        <div className="w-full h-96 lg:h-[640px] relative">
           <Image
             src={GroupImage}
             alt="Hospital to home"

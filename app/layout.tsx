@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import { PrefProvider } from "./context/PrefContext";
 
 export const metadata: Metadata = {
   title: "Apex Aid Services",
@@ -18,9 +19,11 @@ export default function RootLayout({
       <body
         className={"antialiased flex flex-col justify-between min-h-screen"}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <PrefProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </PrefProvider>
       </body>
     </html>
   );

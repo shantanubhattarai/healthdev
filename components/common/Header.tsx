@@ -1,7 +1,22 @@
 "use client";
-import { MenuIcon, XIcon } from "lucide-react";
+import { usePrefs } from "@/app/context/PrefContext";
+import {
+  ALargeSmallIcon,
+  CodeIcon,
+  MenuIcon,
+  SettingsIcon,
+  TypeIcon,
+  XIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -47,9 +62,12 @@ const Header = () => {
           <Link href="/" className="font-semibold text-lg">
             Apex Aid
           </Link>
-          <button onClick={toggleNav} className="md:hidden">
-            <MenuIcon />
-          </button>
+          <div className="flex gap-x-4 justify-start items-center md:hidden">
+            <AccessibilityWidget />
+            <button onClick={toggleNav}>
+              <MenuIcon />
+            </button>
+          </div>
         </div>
         <nav className="hidden md:block">
           <ul className="flex gap-2">
@@ -83,6 +101,7 @@ const Header = () => {
             >
               Contact
             </Link>
+            <AccessibilityWidget />
           </ul>
         </nav>
         <nav
@@ -139,6 +158,41 @@ const Header = () => {
         </nav>
       </div>
     </header>
+  );
+};
+
+const AccessibilityWidget = () => {
+  const { font, changeFont } = usePrefs();
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger>
+        <SettingsIcon />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent>
+        <DropdownMenuLabel>Accessibility Settings</DropdownMenuLabel>
+        <DropdownMenuCheckboxItem
+          checked={font === "dyslexic"}
+          onCheckedChange={() => changeFont()}
+        >
+          <ALargeSmallIcon />
+          <span>Dyslexia Friendly</span>
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={false}
+          // onCheckedChange={() => changeFont()}
+        >
+          <TypeIcon />
+          <span>Bigger Text</span>
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={false}
+          // onCheckedChange={() => changeFont()}
+        >
+          <CodeIcon />
+          <span>Larger spacing</span>
+        </DropdownMenuCheckboxItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 

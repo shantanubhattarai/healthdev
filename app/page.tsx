@@ -20,7 +20,7 @@ export default function Home() {
         style={{ backgroundImage: `url(${HeroBG.src})` }}
       >
         <div className="max-w-2xl">
-          <h2 className="text-2xl md:text-4xl tracking-wide font-serif font-medium mb-4">
+          <h2 className="text-2xl md:text-4xl tracking-wide font-current-serif font-medium mb-4">
             Care that uplifts, support that endures
           </h2>
           <p className="text-zinc-200 leading-5">
