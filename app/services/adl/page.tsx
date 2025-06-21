@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ADLImage from "@/public/images/ADL.jpg";
-import ADL01Image from "@/public/images/SDA01.png";
+import ADL01Image from "@/public/images/ADL_01.jpg";
 
 export default function SDA() {
   return (
