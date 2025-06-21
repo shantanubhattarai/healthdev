@@ -75,7 +75,7 @@ export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
       changeFont(f as TFont);
     }
     setIsLoading(false);
-  }, [changeFont]);
+  }, []);
 
   return (
     <PrefContext.Provider value={{ font, changeFont }}>
