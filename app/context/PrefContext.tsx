@@ -45,7 +45,7 @@ export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
       return;
     }
 
-    if (font === "default") {
+    if (font === "default" || !font) {
       setFont("dyslexic");
       localStorage.setItem("font", "dyslexic");
 
