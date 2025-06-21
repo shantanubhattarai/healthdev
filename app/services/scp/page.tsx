@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SCPImage from "@/public/images/SCP.jpg";
-import GroupImage from "@/public/images/SCP_01.jpg";
+import GroupImage from "@/public/images/Group.jpg";
 
 export default function HTOH() {
   return (

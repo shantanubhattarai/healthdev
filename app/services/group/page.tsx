@@ -1,6 +1,6 @@
 import Image from "next/image";
 import GroupImage from "@/public/images/Group.jpg";
-import SDA02Image from "@/public/images/SDA02.png";
+import SCPImage from "@/public/images/SCP.jpg";
 
 export default function GroupActivities() {
   return (
@@ -69,7 +69,7 @@ export default function GroupActivities() {
         <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src={SDA02Image}
+              src={SCPImage}
               alt="What do we offer?"
               fill
               className="rounded-md object-cover object-center"
