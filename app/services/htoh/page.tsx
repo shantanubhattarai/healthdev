@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HtoHImage from "@/public/images/HtoH.jpg";
-import CNImage from "@/public/images/CN.jpg";
+import HtoH01Image from "@/public/images/HtoH_01.jpg";
 
 export default function HTOH() {
   return (
@@ -67,7 +67,7 @@ export default function HTOH() {
       <section className="pt-12">
         <div className="w-full h-96 lg:h-[480px] relative">
           <Image
-            src={CNImage}
+            src={HtoH01Image}
             alt="Hospital to home"
             fill
             className="rounded-md object-cover object-center"
