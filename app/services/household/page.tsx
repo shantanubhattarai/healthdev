@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HouseholdImage from "@/public/images/Household.jpg";
+import Household01Image from "@/public/images/Household_01.jpg";
 
 export default function GroupActivities() {
   return (
@@ -57,7 +58,7 @@ export default function GroupActivities() {
         <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src={HouseholdImage}
+              src={Household01Image}
               alt="What do we offer?"
               fill
               className="rounded-md object-cover object-top"

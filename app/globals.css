@@ -47,18 +47,6 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  /* --color-brand: oklch(41.355% 0.10881 13.131);
-  --color-brand-50: oklch(93.52% 0.01764 8.7813);
-  --color-brand-100: oklch(89.862% 0.02933 7.1503);
-  --color-brand-200: oklch(82.442% 0.05265 7.8152);
-  --color-brand-300: oklch(75.106% 0.07781 7.7561);
-  --color-brand-400: oklch(67.891% 0.10416 9.3239);
-  --color-brand-500: oklch(60.982% 0.13096 11.343);
-  --color-brand-600: oklch(54.728% 0.15011 13.781);
-  --color-brand-700: oklch(48.155% 0.12988 13.513);
-  --color-brand-800: oklch(41.355% 0.10881 13.131);
-  --color-brand-900: oklch(31.597% 0.07809 12.093);
-  --color-brand-950: oklch(26.26% 0.06161 11.218); */
   --color-brand-50: #fef3f2;
   --color-brand-100: #fee4e2;
   --color-brand-200: #fececa;
@@ -77,8 +65,21 @@
   --font-current-serif: var(--font-default-serif);
 }
 
+:root {
+  --font-size-default: 16px;
+  --font-size-large: 20px;
+  --letter-spacing-default: normal;
+  --letter-spacing-large: 3px;
+  font-size: var(--font-size-default);
+  letter-spacing: var(--letter-spacing-default);
+}
+
 body {
   font-family: var(--font-current);
+}
+
+.font-current-serif {
+  font-family: var(--font-current-serif);
 }
 
 @layer utilities {

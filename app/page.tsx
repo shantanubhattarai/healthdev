@@ -5,8 +5,8 @@ import Link from "next/link";
 
 import HeroBG from "@/public/images/home.jpg";
 import EmpowerImage from "@/public/images/EmpowerSection.jpg";
-import EmpowerMini01 from "@/public/images/EmpowerMini01.jpg";
-import EmpowerMini02 from "@/public/images/EmpowerMini02.jpg";
+// import EmpowerMini01 from "@/public/images/EmpowerMini01.jpg";
+// import EmpowerMini02 from "@/public/images/EmpowerMini02.jpg";
 import EmpowerMini03 from "@/public/images/EmpowerMini03.jpg";
 import Trees from "@/components/svg/Trees";
 
@@ -114,20 +114,20 @@ export default function Home() {
                 className="absolute hidden xl:block -top-12 -left-6 rounded-full border-background border-8 z-30 aspect-square object-cover object-center"
                 width={100}
               />
-              <Image
+              {/* <Image
                 src={EmpowerMini02}
                 alt="home-1"
                 className="absolute hidden xl:block top-4 -right-18 rounded-full border-background border-6 z-30 aspect-square object-cover object-center"
                 width={100}
                 height={100}
-              />
-              <Image
+              /> */}
+              {/* <Image
                 src={EmpowerMini01}
                 alt="home-1"
                 className="absolute hidden xl:block -top-12 -right-24 rounded-full z-10 aspect-square object-cover object-center"
                 width={64}
                 height={64}
-              />
+              /> */}
             </div>
           </div>
         </section>

@@ -1,7 +1,7 @@
 "use client";
 import { usePrefs } from "@/app/context/PrefContext";
 import {
-  ALargeSmallIcon,
+  AArrowUpIcon,
   CodeIcon,
   MenuIcon,
   SettingsIcon,
@@ -71,6 +71,7 @@ const Header = () => {
         </div>
         <nav className="hidden md:block">
           <ul className="flex gap-2">
+            <AccessibilityWidget />
             <Link
               className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
               href="/"
@@ -101,7 +102,6 @@ const Header = () => {
             >
               Contact
             </Link>
-            <AccessibilityWidget />
           </ul>
         </nav>
         <nav
@@ -162,31 +162,46 @@ const Header = () => {
 };
 
 const AccessibilityWidget = () => {
-  const { font, changeFont } = usePrefs();
+  const {
+    font,
+    changeFont,
+    largeText,
+    changeLargeText,
+    largeTracking,
+    changeLargeTracking,
+  } = usePrefs();
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
         <SettingsIcon />
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuLabel>Accessibility Settings</DropdownMenuLabel>
+        <DropdownMenuLabel className="text-zinc-700">
+          Accessibility Settings
+        </DropdownMenuLabel>
         <DropdownMenuCheckboxItem
           checked={font === "dyslexic"}
-          onCheckedChange={() => changeFont()}
+          onCheckedChange={() =>
+            changeFont(font === "dyslexic" ? "default" : "dyslexic")
+          }
+          className="text-md"
         >
-          <ALargeSmallIcon />
+          <TypeIcon />
           <span>Dyslexia Friendly</span>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
-          checked={false}
-          // onCheckedChange={() => changeFont()}
+          className="text-md"
+          checked={largeText === true}
+          onCheckedChange={() => changeLargeText(!largeText)}
         >
-          <TypeIcon />
+          <AArrowUpIcon />
           <span>Bigger Text</span>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
-          checked={false}
-          // onCheckedChange={() => changeFont()}
+          className="text-md"
+          checked={largeTracking === true}
+          onCheckedChange={() => changeLargeTracking(!largeTracking)}
         >
           <CodeIcon />
           <span>Larger spacing</span>

@@ -11,8 +11,12 @@ import {
 export type TFont = "default" | "dyslexic";
 
 type TPrefContext = {
-  font: TFont | null;
-  changeFont: () => void;
+  font: TFont;
+  changeFont: (f: TFont) => void;
+  largeText: boolean;
+  changeLargeText: (large: boolean) => void;
+  largeTracking: boolean;
+  changeLargeTracking: (large: boolean) => void;
 };
 
 const PrefContext = createContext<TPrefContext | undefined>(undefined);
@@ -22,38 +26,16 @@ type PrefProviderProps = {
 };
 
 export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
-  const [font, setFont] = useState<TFont | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const changeFont = (f?: TFont) => {
+  const [font, setFont] = useState<TFont>("default");
+  const [largeText, setLargeText] = useState<boolean>(false);
+  const [largeTracking, setLargeTracking] = useState<boolean>(false);
+
+  const changeFont = (f: TFont) => {
     const r: HTMLElement | null = document.querySelector(":root");
 
-    if (f) {
-      setFont(f);
-      if (r) {
-        if (f === "default") {
-          r.style.setProperty("--font-current", "var(--font-default)");
-          r.style.setProperty(
-            "--font-current-serif",
-            "var(--font-default-serif)"
-          );
-        } else {
-          r.style.setProperty("--font-current", "var(--font-dyslexic)");
-          r.style.setProperty("--font-current-serif", "var(--font-dyslexic)");
-        }
-      }
-      return;
-    }
-
-    if (font === "default" || !font) {
-      setFont("dyslexic");
-      localStorage.setItem("font", "dyslexic");
-
-      if (r) {
-        r.style.setProperty("--font-current", "var(--font-dyslexic)");
-        r.style.setProperty("--font-current-serif", "var(--font-dyslexic)");
-      }
-    } else {
+    if (f === "default") {
       setFont("default");
       localStorage.setItem("font", "default");
 
@@ -64,21 +46,96 @@ export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
           "var(--font-default-serif)"
         );
       }
+    } else {
+      setFont("dyslexic");
+      localStorage.setItem("font", "dyslexic");
+
+      if (r) {
+        r.style.setProperty("--font-current", "var(--font-dyslexic)");
+        r.style.setProperty("--font-current-serif", "var(--font-dyslexic)");
+      }
+    }
+  };
+
+  const changeLargeText = (large: boolean) => {
+    const r: HTMLElement | null = document.querySelector(":root");
+
+    if (large === false) {
+      setLargeText(false);
+      localStorage.setItem("largeText", "false");
+
+      if (r) {
+        r.style.fontSize = "var(--font-size-default)";
+      }
+    } else {
+      setLargeText(true);
+      localStorage.setItem("largeText", "true");
+
+      if (r) {
+        r.style.fontSize = "var(--font-size-large)";
+      }
+    }
+  };
+
+  const changeLargeTracking = (large: boolean) => {
+    const r: HTMLElement | null = document.querySelector(":root");
+
+    if (large === false) {
+      setLargeTracking(false);
+      localStorage.setItem("largeTracking", "false");
+
+      if (r) {
+        r.style.letterSpacing = "var(--letter-spacing-default)";
+      }
+    } else {
+      setLargeTracking(true);
+      localStorage.setItem("largeTracking", "true");
+
+      if (r) {
+        r.style.letterSpacing = "var(--letter-spacing-large)";
+      }
     }
   };
 
   useEffect(() => {
     setIsLoading(true);
     const f = localStorage.getItem("font");
+    const l = localStorage.getItem("largeText");
+    const lt = localStorage.getItem("largeTracking");
 
     if (f && (f as TFont)) {
       changeFont(f as TFont);
+    }
+
+    if (l) {
+      if (l === "true") {
+        changeLargeText(true);
+      } else {
+        changeLargeText(false);
+      }
+    }
+
+    if (lt) {
+      if (lt === "true") {
+        changeLargeTracking(true);
+      } else {
+        changeLargeTracking(false);
+      }
     }
     setIsLoading(false);
   }, []);
 
   return (
-    <PrefContext.Provider value={{ font, changeFont }}>
+    <PrefContext.Provider
+      value={{
+        font,
+        changeFont,
+        largeText,
+        changeLargeText,
+        largeTracking,
+        changeLargeTracking,
+      }}
+    >
       {children}
       {isLoading && (
         <div className="w-screen h-screen fixed z-50 inset-0 bg-black/50">
