@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import SDAImage from "@/public/images/SDA.jpg";
 import SILImage from "@/public/images/SIL.jpg";
 import STAImage from "@/public/images/STA.jpg";
-import FDSImage from "@/public/images/FDS.jpg";
+// import FDSImage from "@/public/images/FDS.jpg";
 import HToHImage from "@/public/images/HtoH.jpg";
 import CNImage from "@/public/images/CN.jpg";
 import ADLImage from "@/public/images/ADL.jpg";
@@ -78,12 +78,12 @@ const Services = () => {
                 selectedKey={selectedKey}
                 selectService={selectService}
               />
-              <ServiceItem
+              {/* <ServiceItem
                 serviceKey="fds"
                 label="Forensic Disability Services"
                 selectedKey={selectedKey}
                 selectService={selectService}
-              />
+              /> */}
               <ServiceItem
                 serviceKey="htoh"
                 label="Hospital to Home"
@@ -178,7 +178,7 @@ const Services = () => {
                 period.
               </p>
             </ServiceContent>
-            <ServiceContent
+            {/* <ServiceContent
               value="fds"
               selectedKey={selectedKey}
               imageSrc={FDSImage.src}
@@ -198,7 +198,7 @@ const Services = () => {
                 psychosocial disabilities who have encountered legal or forensic
                 settings.
               </p>
-            </ServiceContent>
+            </ServiceContent> */}
             <ServiceContent
               value="htoh"
               selectedKey={selectedKey}
