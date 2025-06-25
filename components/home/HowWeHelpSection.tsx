@@ -15,7 +15,6 @@ import {
   UsersRoundIcon,
 } from "lucide-react";
 import React from "react";
-import { cn } from "@/lib/utils";
 
 const HowWeHelpSection = () => {
   return (
@@ -120,22 +119,16 @@ const HelpCard = ({
   icon,
   label,
   children,
-  additionalClasses,
 }: {
   cardKey: string;
   label: string;
   icon: React.ReactNode;
   children: React.ReactNode;
-  additionalClasses?: string;
 }) => {
   return (
     <Link href={`/services/${cardKey}`} className="group">
       <div
-        className={cn(
-          "px-6 py-12 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-zinc-50",
-          "group-hover:bg-teal-50 transition-all",
-          additionalClasses
-        )}
+        className="px-6 py-12 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-zinc-50 group-hover:bg-teal-50 transition-all"
         key={cardKey}
       >
         <p className="text-teal-700">{icon}</p>
