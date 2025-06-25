@@ -225,9 +225,13 @@ const Footer = () => {
         <p className="pl-3 lg:pl-0">
           <Image src={NDISImage} alt="Registered NDIS Provider" height={96} />
         </p>
-        <p className="container mx-auto px-4 text-right text-zinc-300">
-          &copy; 2025 Apex Aid Services. All rights reserved.
-        </p>
+        <div className="container mx-auto px-4 text-right text-zinc-300">
+          <p>&copy; 2025 Apex Aid Services. All rights reserved.</p>
+          <p>
+            <span className="mr-2">ABN</span>
+            <span>84 677 907 881</span>
+          </p>
+        </div>
       </div>
     </footer>
   );

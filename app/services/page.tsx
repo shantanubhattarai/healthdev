@@ -7,7 +7,7 @@ import React, { useState } from "react";
 
 import SDAImage from "@/public/images/SDA.jpg";
 import SILImage from "@/public/images/SIL.jpg";
-import STAImage from "@/public/images/STA.jpg";
+// import STAImage from "@/public/images/STA.jpg";
 // import FDSImage from "@/public/images/FDS.jpg";
 import HToHImage from "@/public/images/HtoH.jpg";
 import CNImage from "@/public/images/CN.jpg";
@@ -165,8 +165,8 @@ const Services = () => {
             <ServiceContent
               value="sta"
               selectedKey={selectedKey}
-              imageSrc={STAImage.src}
-              imageAlt="sta"
+              imageSrc={""}
+              imageAlt="Respite Care & Short-Term Accommodation"
               url={"/services/sta"}
             >
               <p>
@@ -348,22 +348,26 @@ const ServiceContent = ({
   children: React.ReactNode;
   value: string;
   selectedKey: string | null;
-  imageSrc: string;
+  imageSrc?: string;
   imageAlt: string;
   url: string;
 }) => {
   if (selectedKey !== value) return;
   return (
     <>
-      <div className="w-full relative h-96 lg:h-[640px]">
-        <Image
-          src={imageSrc}
-          fill
-          alt={imageAlt}
-          className="rounded-lg object-cover object-center"
-        />
-      </div>
-      <div className="pt-8 text-zinc-800">{children}</div>
+      {imageSrc ? (
+        <div className="w-full relative h-96 lg:h-[640px] mb-8">
+          <Image
+            src={imageSrc}
+            fill
+            alt={imageAlt}
+            className="rounded-lg object-cover object-center"
+          />
+        </div>
+      ) : (
+        <p className="mb-2 text-2xl"> {imageAlt} </p>
+      )}
+      <div className="text-zinc-800">{children}</div>
       <Link
         href={url}
         className="underline underline-offset-4 text-brand-800 hover:text-brand-700 mt-2 inline-block"

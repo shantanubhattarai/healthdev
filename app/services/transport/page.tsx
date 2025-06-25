@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TransportImage from "@/public/images/Transport.jpg";
+import Transport01Image from "@/public/images/Transport_01.jpg";
 
 export default function TransportAssistance() {
   return (
@@ -100,6 +101,18 @@ export default function TransportAssistance() {
           </div>
         </div>
       </section>
+
+      <section className="pt-12">
+        <div className="w-full h-96 lg:h-[720px] relative">
+          <Image
+            src={Transport01Image}
+            alt="Hospital to home"
+            fill
+            className="rounded-md object-cover object-center"
+          />
+        </div>
+      </section>
+
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
           How choose Apex Aid for transport?
