@@ -221,11 +221,11 @@ const Footer = () => {
           Islander communities.
         </p>
       </div>
-      <div className="container mx-auto flex gap-8 justify-between items-center py-4 my-4 text-zinc-200">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-8 justify-between items-center py-4 my-4 text-zinc-200">
         <p className="pl-3 lg:pl-0">
           <Image src={NDISImage} alt="Registered NDIS Provider" height={96} />
         </p>
-        <div className="container mx-auto px-4 text-right text-zinc-300">
+        <div className="container mx-auto px-4 text-center lg:text-right text-zinc-300">
           <p>&copy; 2025 Apex Aid Services. All rights reserved.</p>
           <p>
             <span className="mr-2">ABN</span>
