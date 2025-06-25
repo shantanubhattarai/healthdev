@@ -128,7 +128,7 @@ const HelpCard = ({
   return (
     <Link href={`/services/${cardKey}`} className="group">
       <div
-        className="px-6 py-12 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-zinc-100 group-hover:bg-teal-50 transition-all"
+        className="px-6 py-12 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-zinc-50 group-hover:bg-teal-50 transition-all"
         key={cardKey}
       >
         <p className="text-teal-700">{icon}</p>
