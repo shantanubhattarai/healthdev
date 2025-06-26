@@ -47,7 +47,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-brand-50: #fef3f2;
+  /* --color-brand-50: #fef3f2;
   --color-brand-100: #fee4e2;
   --color-brand-200: #fececa;
   --color-brand-300: #fcaca5;
@@ -57,7 +57,7 @@
   --color-brand-700: #b9281c;
   --color-brand-800: #99251b;
   --color-brand-900: #7f251d;
-  --color-brand-950: #450f0a;
+  --color-brand-950: #450f0a; */
   --font-default: Inter, Arial, Helvetica, sans-serif;
   --font-default-serif: "Crimson Pro", ui-serif, serif;
   --font-dyslexic: OpenDyslexic;
@@ -193,6 +193,6 @@ body {
 @layer components {
   input[type="checkbox"]:checked,
   input[type="radio"]:checked {
-    accent-color: var(--color-brand-700);
+    accent-color: var(--color-sky-700);
   }
 }

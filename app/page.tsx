@@ -19,7 +19,7 @@ export default function Home() {
         className="text-white px-4 py-8 flex flex-col gap-8 justify-center items-center min-h-[75dvh] text-center bg-center bg-cover bg-black/30 bg-blend-overlay"
         style={{ backgroundImage: `url(${HeroBG.src})` }}
       >
-        <div className="max-w-2xl">
+        <div className="max-w-2xl bg-black/30 px-4 pt-6 pb-8 rounded-md">
           <h2 className="text-2xl md:text-4xl tracking-wide font-current-serif font-medium mb-4">
             Care that uplifts, support that endures
           </h2>
@@ -29,8 +29,8 @@ export default function Home() {
           </p>
         </div>
         <Link
-          className="bg-brand-800 bg-noise bg-blend-color-burn
-            hover:ring hover:ring-brand-400 hover:bg-brand-700 active:bg-brand-900 transition-all
+          className="bg-sky-800 ring ring-sky-600 bg-noise bg-blend-multiply
+            hover:ring-sky-500 hover:bg-sky-700 active:bg-sky-900 transition-all
             cursor-pointer
             px-6 py-2 rounded-sm
             text-white tracking-wide
@@ -50,9 +50,9 @@ export default function Home() {
               Our dedicated team provide tailored supports that make a real
               difference in your everyday life.
             </p>
-            <div className="grid grid-cols-1 lg:grid-cols-3 text-left gap-x-4 gap-y-6 lg:gap-y-8 mt-8 lg:mt-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 text-left gap-x-4 gap-y-6 lg:gap-y-8 mt-8 lg:mt-16">
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <Clock3Icon className="text-teal-700" />
+                <Clock3Icon className="text-teal-700" size={42} />
                 <div>
                   <h4 className="text-xl font-medium">
                     Responsive, quick appointments
@@ -63,14 +63,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <HeartIcon className="text-teal-700" />
+                <HeartIcon className="text-teal-700" size={42} />
                 <div>
                   <h4 className="text-xl font-medium">Personalized Support</h4>
                   <p className="text-zinc-800">Care tailored to your needs</p>
                 </div>
               </div>
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <ShieldCheckIcon className="text-teal-700" />
+                <ShieldCheckIcon className="text-teal-700" size={42} />
                 <div>
                   <h4 className="text-xl font-medium">
                     Experienced Professionals

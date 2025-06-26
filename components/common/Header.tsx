@@ -73,31 +73,31 @@ const Header = () => {
           <ul className="flex gap-2">
             <AccessibilityWidget />
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
               href="/"
             >
               Home
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
               href="/about"
             >
               About
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
               href="/services"
             >
               Services
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
               href="/referral"
             >
               Referral
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
               href="/contact"
             >
               Contact
@@ -119,35 +119,35 @@ const Header = () => {
             </div>
             <ul className="flex flex-col items-start gap-y-6 mt-4 px-2 text-3xl">
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
                 href="/"
                 onClick={toggleNav}
               >
                 Home
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
                 href="/about"
                 onClick={toggleNav}
               >
                 About
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
                 href="/services"
                 onClick={toggleNav}
               >
                 Services
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
                 href="/referral"
                 onClick={toggleNav}
               >
                 Referral
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-brand-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
                 href="/contact"
                 onClick={toggleNav}
               >

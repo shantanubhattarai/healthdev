@@ -46,7 +46,7 @@ const Footer = () => {
               FAQ
             </Link>
             <Link
-              href="/contact"
+              href="/referral"
               className="hover:underline hover:underline-offset-2"
             >
               Make a referral
