@@ -50,7 +50,7 @@ export default function Home() {
               Our dedicated team provide tailored supports that make a real
               difference in your everyday life.
             </p>
-            <div className="grid grid-cols-1 lg:grid-cols-3 text-left gap-x-4 gap-y-6 lg:gap-y-8 mt-8 lg:mt-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 text-left gap-x-4 gap-y-12 lg:gap-y-8 mt-12 lg:mt-16">
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
                 <Clock3Icon className="text-teal-700" size={42} />
                 <div>
