@@ -29,8 +29,8 @@ export default function Home() {
           </p>
         </div>
         <Link
-          className="bg-indigo-700 ring ring-indigo-500 bg-noise bg-blend-multiply
-            hover:ring-indigo-300 hover:bg-indigo-600 active:ring-indigo-500 active:bg-indigo-800 transition-all
+          className="bg-sky-800 ring ring-sky-600 bg-noise bg-blend-multiply
+            hover:ring-sky-500 hover:bg-sky-700 active:ring-sky-600 active:bg-sky-900 transition-all
             cursor-pointer
             px-6 py-2 rounded-sm
             text-white tracking-wide
