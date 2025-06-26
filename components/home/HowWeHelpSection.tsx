@@ -15,8 +15,11 @@ import {
   UsersRoundIcon,
 } from "lucide-react";
 import React from "react";
+import { usePrefs } from "@/app/context/PrefContext";
+import { cn } from "@/lib/utils";
 
 const HowWeHelpSection = () => {
+  const { highlightLinks } = usePrefs();
   return (
     <section className="pb-12 md:pb-24 lg:py-36">
       <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 mb-8 text-teal-700">
@@ -103,7 +106,14 @@ const HowWeHelpSection = () => {
           >
             <div className="text-center text-xl md:text-2xl col-span-2 flex justify-center items-center flex-col h-full text-white">
               <p className="inline-flex gap-x-2 justify-start items-center  group-hover:gap-x-4 transition-all">
-                <span className="inline-block">See all services</span>
+                <span
+                  className={cn(
+                    "inline-block",
+                    highlightLinks && "underline underline-offset-4"
+                  )}
+                >
+                  See all services
+                </span>
                 <ArrowRightIcon className="mt-1" />
               </p>
             </div>
@@ -125,10 +135,14 @@ const HelpCard = ({
   icon: React.ReactNode;
   children: React.ReactNode;
 }) => {
+  const { highlightLinks } = usePrefs();
   return (
     <Link href={`/services/${cardKey}`} className="group">
       <div
-        className="px-6 py-16 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-zinc-100 lg:bg-zinc-50 group-hover:bg-teal-50 transition-all border border-zinc-200"
+        className={cn(
+          "px-6 py-16 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-zinc-100 lg:bg-zinc-50 group-hover:bg-teal-50 transition-all",
+          highlightLinks ? "border-2 border-zinc-500" : "border border-zinc-200"
+        )}
         key={cardKey}
       >
         <p className="text-teal-700">{icon}</p>

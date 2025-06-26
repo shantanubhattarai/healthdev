@@ -1,9 +1,7 @@
 import ContactSection from "@/components/home/ContactSection";
 import HowWeHelpSection from "@/components/home/HowWeHelpSection";
 import Image from "next/image";
-import Link from "next/link";
 
-import HeroBG from "@/public/images/home.jpg";
 import EmpowerImage from "@/public/images/EmpowerSection.jpg";
 // import EmpowerMini01 from "@/public/images/EmpowerMini01.jpg";
 // import EmpowerMini02 from "@/public/images/EmpowerMini02.jpg";
@@ -11,35 +9,12 @@ import EmpowerMini03 from "@/public/images/EmpowerMini03.jpg";
 import Trees from "@/components/svg/Trees";
 
 import { Clock3Icon, HeartIcon, ShieldCheckIcon } from "lucide-react";
+import HeroSection from "@/components/home/HeroSection";
 
 export default function Home() {
   return (
     <article>
-      <section
-        className="text-white px-4 py-8 flex flex-col gap-8 justify-center items-center min-h-[75dvh] text-center bg-center bg-cover bg-black/30 bg-blend-overlay"
-        style={{ backgroundImage: `url(${HeroBG.src})` }}
-      >
-        <div className="max-w-2xl bg-black/30 px-4 pt-6 pb-8 rounded-md">
-          <h2 className="text-2xl md:text-4xl tracking-wide font-current-serif font-medium mb-4">
-            Care that uplifts, support that endures
-          </h2>
-          <p className="text-zinc-200 leading-5">
-            Disability is not a limitation, but a call for equity, inclusion,
-            and empowerment.
-          </p>
-        </div>
-        <Link
-          className="bg-sky-800 ring ring-sky-600 bg-noise bg-blend-multiply
-            hover:ring-sky-500 hover:bg-sky-700 active:ring-sky-600 active:bg-sky-900 transition-all
-            cursor-pointer
-            px-6 py-2 rounded-sm
-            text-white tracking-wide
-            "
-          href="/contact"
-        >
-          Enquire Now
-        </Link>
-      </section>
+      <HeroSection />
       <section className="px-4 pt-12 md:pt-8 container mx-auto">
         <section className="py-12 md:pt-24">
           <div className="flex flex-col gap-4 justify-center items-center text-center">

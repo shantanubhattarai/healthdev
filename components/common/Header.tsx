@@ -3,6 +3,7 @@ import { usePrefs } from "@/app/context/PrefContext";
 import {
   AArrowUpIcon,
   CodeIcon,
+  LinkIcon,
   MenuIcon,
   SettingsIcon,
   TypeIcon,
@@ -17,10 +18,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
   const mobileNavRef = useRef<HTMLElement>(null);
+  const { highlightLinks } = usePrefs();
 
   useEffect(() => {
     if (!headerRef.current) return;
@@ -59,7 +62,13 @@ const Header = () => {
     >
       <div className="py-1 md:py-4 flex flex-col md:flex-row md:justify-between md:items-center nav-wrapper transition-all relative">
         <div className="w-full flex gap-x-2 justify-between py-1 items-center">
-          <Link href="/" className="font-semibold text-lg">
+          <Link
+            href="/"
+            className={cn(
+              "font-semibold text-lg",
+              highlightLinks && "border-b-2 border-sky-600"
+            )}
+          >
             Apex Aid
           </Link>
           <div className="flex gap-x-4 justify-start items-center md:hidden">
@@ -73,31 +82,46 @@ const Header = () => {
           <ul className="flex gap-2">
             <AccessibilityWidget />
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+              className={cn(
+                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
+                highlightLinks ? "border-sky-600" : "border-transparent"
+              )}
               href="/"
             >
               Home
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+              className={cn(
+                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
+                highlightLinks ? "border-sky-600" : "border-transparent"
+              )}
               href="/about"
             >
               About
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+              className={cn(
+                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
+                highlightLinks ? "border-sky-600" : "border-transparent"
+              )}
               href="/services"
             >
               Services
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+              className={cn(
+                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
+                highlightLinks ? "border-sky-600" : "border-transparent"
+              )}
               href="/referral"
             >
               Referral
             </Link>
             <Link
-              className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+              className={cn(
+                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
+                highlightLinks ? "border-sky-600" : "border-transparent"
+              )}
               href="/contact"
             >
               Contact
@@ -169,6 +193,8 @@ const AccessibilityWidget = () => {
     changeLargeText,
     largeTracking,
     changeLargeTracking,
+    highlightLinks,
+    changeHighlightLinks,
   } = usePrefs();
 
   return (
@@ -205,6 +231,14 @@ const AccessibilityWidget = () => {
         >
           <CodeIcon />
           <span>Larger spacing</span>
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          className="text-md"
+          checked={highlightLinks === true}
+          onCheckedChange={() => changeHighlightLinks(!highlightLinks)}
+        >
+          <LinkIcon />
+          <span>Highlight Links</span>
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>

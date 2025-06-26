@@ -1,7 +1,12 @@
+"use client";
+
+import { usePrefs } from "@/app/context/PrefContext";
+import { cn } from "@/lib/utils";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
 const ContactDetails = () => {
+  const { highlightLinks } = usePrefs();
   return (
     <ul className="flex flex-col gap-4">
       <li className="flex gap-2 items-center">
@@ -9,14 +14,20 @@ const ContactDetails = () => {
         <span>15/16 Charlton Ct, Woolner</span>
       </li>
       <Link
-        className="flex gap-2 items-center underline underline-offset-2"
+        className={cn(
+          "flex gap-2 items-center underline underline-offset-2",
+          highlightLinks && "font-semibold"
+        )}
         href="tel:123456789#"
       >
         <Phone size={18} />
         <span>1300 675 144</span>
       </Link>
       <Link
-        className="flex gap-2 items-center underline underline-offset-2"
+        className={cn(
+          "flex gap-2 items-center underline underline-offset-2",
+          highlightLinks && "font-semibold"
+        )}
         href="mailto:info@health.dev"
       >
         <Mail size={18} />

@@ -16,6 +16,8 @@ import SCPImage from "@/public/images/SCP.jpg";
 import GroupImage from "@/public/images/Group.jpg";
 import TransportImage from "@/public/images/Transport.jpg";
 import HouseholdImage from "@/public/images/Household.jpg";
+import { usePrefs } from "../context/PrefContext";
+import { cn } from "@/lib/utils";
 
 const Services = () => {
   const [selectedKey, setSelectedKey] = useState<string | null>("sda");
@@ -352,6 +354,7 @@ const ServiceContent = ({
   imageAlt: string;
   url: string;
 }) => {
+  const { highlightLinks } = usePrefs();
   if (selectedKey !== value) return;
   return (
     <>
@@ -370,7 +373,10 @@ const ServiceContent = ({
       <div className="text-zinc-800">{children}</div>
       <Link
         href={url}
-        className="underline underline-offset-4 text-sky-800 hover:text-sky-700 mt-2 inline-block"
+        className={cn(
+          "underline underline-offset-4 text-sky-800 hover:text-sky-700 mt-2 inline-block",
+          highlightLinks && "font-semibold font-lg"
+        )}
       >
         Learn More
       </Link>

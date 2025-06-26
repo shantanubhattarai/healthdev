@@ -1,3 +1,4 @@
+"use client";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
@@ -9,8 +10,11 @@ import NDISImage from "@/public/ndis2.png";
 import Link from "next/link";
 import Image from "next/image";
 import ContactDetails from "../contact/ContactDetails";
+import { usePrefs } from "@/app/context/PrefContext";
+import { cn } from "@/lib/utils";
 
 const Footer = () => {
+  const { highlightLinks } = usePrefs();
   return (
     <footer className="mt-12 pt-16 pb-8 bg-zinc-900 bg-paper bg-blend-multiply bg-cover bg-center">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-start justify-start gap-x-4 lg:gap-x-16 gap-y-4 text-zinc-200 mb-12">
@@ -29,7 +33,12 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="font-medium text-lg mb-4">Links</h3>
-          <ul className="flex flex-col gap-2 text-zinc-300">
+          <ul
+            className={cn(
+              "flex flex-col gap-2 text-zinc-300",
+              highlightLinks && "underline underline-offset-2 font-semibold"
+            )}
+          >
             <Link href="/" className="hover:underline hover:underline-offset-2">
               Home
             </Link>
@@ -64,7 +73,12 @@ const Footer = () => {
         <div>
           <h3 className="font-medium text-lg mb-4">Services</h3>
           <div className="flex flex-col lg:flex-row justify-start items-start gap-x-4 lg:gap-x-16 gap-y-2">
-            <ul className="flex flex-col gap-2 text-zinc-300">
+            <ul
+              className={cn(
+                "flex flex-col gap-2 text-zinc-300",
+                highlightLinks && "underline underline-offset-2 font-semibold"
+              )}
+            >
               <Link
                 href="/services/sda"
                 className="hover:underline hover:underline-offset-2"
@@ -103,7 +117,12 @@ const Footer = () => {
               </Link>
             </ul>
 
-            <ul className="flex flex-col gap-2 text-zinc-300">
+            <ul
+              className={cn(
+                "flex flex-col gap-2 text-zinc-300",
+                highlightLinks && "underline underline-offset-2 font-semibold"
+              )}
+            >
               <Link
                 href="/services/adl"
                 className="hover:underline hover:underline-offset-2"

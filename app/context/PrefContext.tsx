@@ -17,6 +17,8 @@ type TPrefContext = {
   changeLargeText: (large: boolean) => void;
   largeTracking: boolean;
   changeLargeTracking: (large: boolean) => void;
+  highlightLinks: boolean;
+  changeHighlightLinks: (h: boolean) => void;
 };
 
 const PrefContext = createContext<TPrefContext | undefined>(undefined);
@@ -31,6 +33,7 @@ export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
   const [font, setFont] = useState<TFont>("default");
   const [largeText, setLargeText] = useState<boolean>(false);
   const [largeTracking, setLargeTracking] = useState<boolean>(false);
+  const [highlightLinks, setHighlightLinks] = useState<boolean>(false);
 
   const changeFont = (f: TFont) => {
     const r: HTMLElement | null = document.querySelector(":root");
@@ -97,11 +100,21 @@ export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
     }
   };
 
+  const changeHighlightLinks = (h: boolean) => {
+    setHighlightLinks(h);
+    if (h) {
+      localStorage.setItem("highlightLinks", "true");
+    } else {
+      localStorage.setItem("highlightLinks", "false");
+    }
+  };
+
   useEffect(() => {
     setIsLoading(true);
     const f = localStorage.getItem("font");
     const l = localStorage.getItem("largeText");
     const lt = localStorage.getItem("largeTracking");
+    const h = localStorage.getItem("highlightLinks");
 
     if (f && (f as TFont)) {
       changeFont(f as TFont);
@@ -122,6 +135,14 @@ export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
         changeLargeTracking(false);
       }
     }
+
+    if (h) {
+      if (h === "true") {
+        changeHighlightLinks(true);
+      } else {
+        changeHighlightLinks(false);
+      }
+    }
     setIsLoading(false);
   }, []);
 
@@ -134,6 +155,8 @@ export const PrefProvider: React.FC<PrefProviderProps> = ({ children }) => {
         changeLargeText,
         largeTracking,
         changeLargeTracking,
+        highlightLinks,
+        changeHighlightLinks,
       }}
     >
       {children}
