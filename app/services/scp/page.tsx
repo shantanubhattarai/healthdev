@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SCPImage from "@/public/images/SCP.jpg";
-import GroupImage from "@/public/images/Group.jpg";
+import SCP01Image from "@/public/images/SCP_01.jpg";
 
 export default function HTOH() {
   return (
@@ -26,7 +26,7 @@ export default function HTOH() {
             src={SCPImage}
             alt="Social and Community Participation"
             fill
-            className="rounded-md object-cover object-center"
+            className="rounded-md object-cover object-top"
           />
         </div>
       </section>
@@ -119,7 +119,7 @@ export default function HTOH() {
       <section className="pt-12">
         <div className="w-full h-96 lg:h-[640px] relative">
           <Image
-            src={GroupImage}
+            src={SCP01Image}
             alt="Hospital to home"
             fill
             className="rounded-md object-cover object-center"

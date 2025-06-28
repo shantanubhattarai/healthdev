@@ -7,7 +7,7 @@ import React, { useState } from "react";
 
 import SDAImage from "@/public/images/SDA.jpg";
 import SILImage from "@/public/images/SIL.jpg";
-// import STAImage from "@/public/images/STA.jpg";
+import STAImage from "@/public/images/STA.jpg";
 // import FDSImage from "@/public/images/FDS.jpg";
 import HToHImage from "@/public/images/HtoH.jpg";
 import CNImage from "@/public/images/CN.jpg";
@@ -167,7 +167,7 @@ const Services = () => {
             <ServiceContent
               value="sta"
               selectedKey={selectedKey}
-              imageSrc={""}
+              imageSrc={STAImage.src}
               imageAlt="Respite Care & Short-Term Accommodation"
               url={"/services/sta"}
             >
