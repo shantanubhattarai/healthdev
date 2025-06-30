@@ -18,6 +18,7 @@ import TransportImage from "@/public/images/Transport.jpg";
 import HouseholdImage from "@/public/images/Household.jpg";
 import { usePrefs } from "../context/PrefContext";
 import { cn } from "@/lib/utils";
+import FAQSection from "@/components/services/FAQSection";
 
 const Services = () => {
   const [selectedKey, setSelectedKey] = useState<string | null>("sda");
@@ -335,6 +336,7 @@ const Services = () => {
           </div>
         </div>
       </section>
+      <FAQSection />
     </article>
   );
 };

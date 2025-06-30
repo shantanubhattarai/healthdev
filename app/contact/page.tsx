@@ -7,14 +7,10 @@ const Contact = () => {
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-teal-800 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
-            Contact Us
+            Contact Apex Aid Health Care
           </h2>
           <p className="text-zinc-200 leading-5">
-            Use this form to reach out to us regarding any questions or
-            feedback.
-          </p>
-          <p className="text-zinc-200 leading-5 mt-1">
-            You can also check our FAQ for answers to commonly asked questions.
+            We are here to help — reach out anytime.
           </p>
         </div>
       </section>

@@ -1,15 +1,11 @@
 import ContactSection from "@/components/home/ContactSection";
 import HowWeHelpSection from "@/components/home/HowWeHelpSection";
-import Image from "next/image";
-
-import EmpowerImage from "@/public/images/EmpowerSection.jpg";
-// import EmpowerMini01 from "@/public/images/EmpowerMini01.jpg";
-// import EmpowerMini02 from "@/public/images/EmpowerMini02.jpg";
-import EmpowerMini03 from "@/public/images/EmpowerMini03.jpg";
-import Trees from "@/components/svg/Trees";
 
 import { Clock3Icon, HeartIcon, ShieldCheckIcon } from "lucide-react";
 import HeroSection from "@/components/home/HeroSection";
+import EmpowerSection from "@/components/home/EmpowerSection";
+import AboutSection from "@/components/home/AboutSection";
+import Banner from "@/components/common/Banner";
 
 export default function Home() {
   return (
@@ -58,55 +54,16 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-12 md:pt-36">
-          <div className="flex flex-col md:flex-row gap-4 md:gap-16 justify-center items-center">
-            <div className="flex flex-col gap-6">
-              <div>
-                <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-teal-700">
-                  Empowering Lives.
-                  <br /> Supporting Independence.
-                </h3>
-              </div>
-              <p className="text-zinc-800 text-lg md:text-xl max-w-xl">
-                <span className="mr-2">
-                  Engage in opportunities you choose. You get an inclusive
-                  environment, surrounded by our values to create the experience
-                  that lets you put your foot forward.
-                </span>
-                <Trees />
-              </p>
-            </div>
-            <div className="relative max-w-full w-96 h-96">
-              <Image
-                src={EmpowerImage}
-                alt="home-1"
-                className="absolute inset-0 aspect-square object-cover object-center rounded-xl z-20 border-background border-0 md:border-4"
-                width={480}
-              />
-              <Image
-                src={EmpowerMini03}
-                alt="home-1"
-                className="absolute hidden xl:block -top-12 -left-6 rounded-full border-background border-8 z-30 aspect-square object-cover object-center"
-                width={100}
-              />
-              {/* <Image
-                src={EmpowerMini02}
-                alt="home-1"
-                className="absolute hidden xl:block top-4 -right-18 rounded-full border-background border-6 z-30 aspect-square object-cover object-center"
-                width={100}
-                height={100}
-              /> */}
-              {/* <Image
-                src={EmpowerMini01}
-                alt="home-1"
-                className="absolute hidden xl:block -top-12 -right-24 rounded-full z-10 aspect-square object-cover object-center"
-                width={64}
-                height={64}
-              /> */}
-            </div>
-          </div>
-        </section>
+        <EmpowerSection />
+        <AboutSection />
         <HowWeHelpSection />
+        <section className="pb-16">
+          <Banner
+            mainText="Ready to explore how Apex Aid Health Care can support you?"
+            urlText="Talk to Our Team"
+            url="/contact"
+          />
+        </section>
         <ContactSection />
       </section>
     </article>

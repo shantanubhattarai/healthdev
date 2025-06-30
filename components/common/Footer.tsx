@@ -49,10 +49,10 @@ const Footer = () => {
               About
             </Link>
             <Link
-              href="/faq"
+              href="/services"
               className="hover:underline hover:underline-offset-2"
             >
-              FAQ
+              Services
             </Link>
             <Link
               href="/referral"
@@ -249,6 +249,10 @@ const Footer = () => {
           <p>
             <span className="mr-2">ABN</span>
             <span>84 677 907 881</span>
+          </p>
+          <p>
+            <span className="mr-2">Registered NDIS Provider ID:</span>
+            <span>4-KQIEHWQ</span>
           </p>
         </div>
       </div>

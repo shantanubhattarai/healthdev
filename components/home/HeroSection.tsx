@@ -28,7 +28,7 @@ const HeroSection = () => {
         )}
         href="/contact"
       >
-        Enquire Now
+        Get Support Now
       </Link>
     </section>
   );

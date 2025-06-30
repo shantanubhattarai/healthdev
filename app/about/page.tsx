@@ -1,3 +1,4 @@
+import Banner from "@/components/common/Banner";
 import Image from "next/image";
 
 const About = () => {
@@ -8,28 +9,23 @@ const About = () => {
           <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
             About Us
           </h2>
-          <p className="text-zinc-200 leading-5">
-            Empowering Lives. Supporting Independence.
-          </p>
         </div>
       </section>
       <section className="pt-12 lg:pt-24 pb-8">
-        <p className="text-zinc-800">
-          At <span className="font-semibold">Apex Aid Health Care</span>, we are
-          committed to delivering high-quality, person-centred disability
-          support services that empower individuals to live independently,
-          safely, and with dignity.
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+          Welcome to Apex Health Care
+        </h3>
+        <p className="text-zinc-800 mb-8">
+          Your trusted partner in person-centered disability support
         </p>
-        <p className="text-zinc-800 mt-3">
-          As a registered NDIS provider, we proudly support people with a wide
-          range of abilities, backgrounds, and support needs—including complex
-          behaviours, physical disabilities, psychosocial challenges, and
-          forensic disability. Our services are built around
-          <span className="font-semibold">
-            &nbsp;individual choice, genuine care,&nbsp;
-          </span>
-          and a <span className="font-semibold">holistic approach</span> to
-          wellbeing.
+        <p className="text-zinc-800">
+          At Apex Aid Health Care, we deliver high-quality, person-centred
+          disability supports that empower individuals to live safely,
+          independently, and with dignity.
+        </p>
+        <p className="text-zinc-800 mt-1">
+          As a registered NDIS provider, we proudly serve people of all
+          backgrounds and abilities, including those with complex needs.
         </p>
       </section>
       <section className="py-6">
@@ -37,21 +33,12 @@ const About = () => {
           Who We Are
         </h3>
         <p className="text-zinc-800">
-          Founded with a vision to raise the standard of disability care, Apex
-          Aid Health Care brings together a dedicated team of{" "}
-          <span className="font-semibold">
-            experienced support workers, registered nurses, allied health
-            professionals,
-          </span>{" "}
-          and
-          <span className="font-semibold"> specialist carers.</span> Our goal is
-          simple: to provide tailored supports that
-          <span className="font-semibold"> make a real difference </span>in
-          everyday life.
+          Our skilled team of support workers, nurses, allied health
+          professionals, and specialist carers is dedicated to raising the
+          standard of disability care. We provide tailored, reliable supports
+          that make a genuine difference.
         </p>
-        <p className="text-zinc-800 mt-2">
-          We offer a broad range of NDIS supports including:
-        </p>
+        <p className="text-zinc-800 mt-2">Our services include:</p>
         <ul className="py-1 text-zinc-800 list-disc list-inside">
           <li>Supported Independent Living (SIL) </li>
           <li>Specialist Disability Accommodation (SDA) </li>
@@ -59,7 +46,7 @@ const About = () => {
           <li>Community Nursing</li>
           <li>Community Participation & Group Activities</li>
           <li>Household Tasks & Assistance with Daily Living</li>
-          <li>Forensic & Complex Behavioural Supports</li>
+          <li>Complex Behavioural & Forensic Supports</li>
           <li>Transition Programs (Hospital to Home, Youth to Adult Care)</li>
         </ul>
       </section>
@@ -68,22 +55,21 @@ const About = () => {
           Our Approach
         </h3>
         <p className="text-zinc-800">
-          We don&apos;t believe in one-size-fits-all care. Instead, we take the
-          time to
-          <span className="font-semibold">
-            &nbsp;understand each person&apos;s story, strengths, and
-            goals,&nbsp;
-          </span>
-          working collaboratively with participants, families, support
-          coordinators, and healthcare professionals to design supports that are
-          truly effective and respectful.
+          We focus on individual needs, working collaboratively with
+          participants, families, and professionals to deliver respectful,
+          effective supports.
         </p>
+      </section>
+      <section className="py-6">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+          Our Key Principles
+        </h3>
         <ul className="py-1 text-zinc-800 list-disc list-inside">
-          <li>Individualized Support Plans</li>
-          <li>Culturally Safe & Trauma-Informed Care</li>
+          <li>Individualized Plans</li>
+          <li>Culturally Safe, Trauma-Informed Care</li>
           <li>24/7 Flexible Support Options</li>
           <li>Genuine Community Engagement</li>
-          <li>Outcome-Focused & Goal-Driven Care</li>
+          <li>Outcome-Driven Services</li>
         </ul>
       </section>
       <section className="py-6">
@@ -91,8 +77,8 @@ const About = () => {
           Our Mission
         </h3>
         <p className="text-zinc-800">
-          To support people with disabilities to lead fulfilling, independent
-          lives by providing care that is personal, reliable, and empowering.
+          To empower people with disabilities through personal, reliable, and
+          respectful care.
         </p>
       </section>
       <section className="py-6">
@@ -100,9 +86,8 @@ const About = () => {
           Our Vision
         </h3>
         <p className="text-zinc-800">
-          To be recognised as a leading, compassionate provider of disability
-          and community health services—built on trust, integrity, and
-          person-centred care.
+          To be a trusted leader in compassionate, person-centered disability
+          and community health services.
         </p>
       </section>
       <section className="py-6">
@@ -111,36 +96,38 @@ const About = () => {
         </h3>
         <ul className="text-zinc-800 list-decimal list-inside">
           <li>
-            <span className="font-medium">Dignity & Respect - </span>We honour
-            each person&nbsp;s worth, voice, and choices. Every interaction
-            reflects our deep respect for individual identity and autonomy.
+            <span className="font-medium">Dignity & Respect - </span>Honouring
+            every person&apos;s worth and choice
           </li>
           <li>
-            <span className="font-medium">Empowerment - </span>We support people
-            to lead their own lives, make their own decisions, and build their
-            confidence to achieve what matters most to them.
+            <span className="font-medium">Empowerment - </span>Building
+            confidence and independence
           </li>
           <li>
-            <span className="font-medium">Inclusion - </span>We are committed to
-            creating inclusive environments where everyone belongs — not just in
-            words, but in actions, spaces, and attitudes.
+            <span className="font-medium">Inclusion - </span>Creating true
+            belonging
           </li>
           <li>
-            <span className="font-medium">Integrity - </span>We act with
-            honesty, transparency, and accountability. Trust is the foundation
-            of everything we do.
+            <span className="font-medium">Integrity - </span>Acting with honesty
+            and accountability
           </li>
           <li>
-            <span className="font-medium">Person-centred Practice - </span>We
-            see the person first, not the disability. Services are shaped around
-            individual needs, goals, strengths, and stories.
+            <span className="font-medium">Person-centred - </span>
+            Seeing the person first, not the disability
           </li>
         </ul>
       </section>
-      <section className="py-12">
-        <h3 className="text-4xl tracking-wide text-center text-teal-700">
-          Our Team
+      <section className="py-16">
+        <h3 className="text-2xl lg:text-4xl font-medium text-teal-700 text-center mb-6">
+          People Who Care
         </h3>
+        <p className="text-zinc-800">
+          Our diverse and qualified team is passionate about making a difference
+          in the lives of the people we support. From experienced disability
+          support workers to dedicated coordinators and allied health
+          professionals, every member of Apex Aid Health Care shares a
+          commitment to your safety, wellbeing, and empowerment.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-8 gap-8">
           <div className="flex flex-col gap-3 border rounded-md pb-2">
             <div className="relative w-full aspect-square">
@@ -213,6 +200,28 @@ const About = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="py-6">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+          Your Registered NDIS Provider
+        </h3>
+        <p className="text-zinc-800">
+          We are a fully registered NDIS provider, meeting all required quality
+          and safeguarding standards. Our team is trained to deliver safe,
+          evidence-based supports that comply with the NDIS Practice Standards,
+          giving you peace of mind.
+        </p>
+        <p className="mt-2 text-zinc-800">
+          <span className="mr-2">Registered NDIS Provider ID:</span>
+          <span>4-KQIEHWQ</span>
+        </p>
+      </section>
+      <section className="pt-16 pb-4">
+        <Banner
+          mainText="Want to learn more about our supports or how we can help you?"
+          urlText="Explore our Services"
+          url="/services"
+        />
       </section>
     </article>
   );
