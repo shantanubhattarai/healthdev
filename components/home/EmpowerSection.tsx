@@ -17,7 +17,7 @@ const EmpowerSection = () => {
       <div className="flex flex-col md:flex-row gap-4 md:gap-16 justify-center items-center">
         <div className="flex flex-col gap-6 items-start">
           <div>
-            <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-teal-700">
+            <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-sky-700">
               Empowering your independence
               <br /> with compassionate, professional care.
             </h3>
@@ -27,7 +27,7 @@ const EmpowerSection = () => {
           </p>
           <Link
             className={cn(
-              "bg-sky-800 ring ring-sky-600 hover:ring-sky-500 hover:bg-sky-700 active:ring-sky-600 active:bg-sky-900 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide",
+              "font-medium bg-green-700 ring ring-green-600 hover:ring-green-400 hover:bg-green-600 active:ring-green-600 active:bg-green-700 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide",
               highlightLinks && "underline underline-offset-2"
             )}
             href="/contact"

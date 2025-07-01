@@ -9,7 +9,7 @@ const FAQSection = () => {
   return (
     <>
       <section className="mt-12 mb-8 px-0 lg:px-8 py-4 lg:py-8 rounded-md lg:bg-zinc-50">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-sky-800">
           Frequently Asked Questions
         </h3>
         <div className="flex flex-col gap-y-4 justify-start items-start">
@@ -42,7 +42,7 @@ const FAQSection = () => {
           </div>
           <Link
             className={cn(
-              "bg-sky-800 ring ring-sky-600 hover:ring-sky-500 hover:bg-sky-700 active:ring-sky-600 active:bg-sky-900 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide mt-2",
+              "mt-3 font-medium bg-green-700 ring ring-green-600 hover:ring-green-400 hover:bg-green-600 active:ring-green-600 active:bg-green-700 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide",
               highlightLinks && "underline underline-offset-2"
             )}
             href="/contact"

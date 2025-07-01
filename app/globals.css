@@ -194,6 +194,6 @@ body {
 @layer components {
   input[type="checkbox"]:checked,
   input[type="radio"]:checked {
-    accent-color: var(--color-sky-700);
+    accent-color: var(--color-green-600);
   }
 }

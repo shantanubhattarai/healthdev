@@ -23,7 +23,7 @@ const HeroSection = () => {
       </div>
       <Link
         className={cn(
-          "bg-sky-800 ring ring-sky-600 hover:ring-sky-500 hover:bg-sky-700 active:ring-sky-600 active:bg-sky-900 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide",
+          "bg-green-600 ring-2 ring-green-500 hover:ring-green-400 hover:bg-green-600 active:ring-green-600 active:bg-green-700 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide",
           highlightLinks && "underline underline-offset-2"
         )}
         href="/contact"

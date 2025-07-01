@@ -75,7 +75,7 @@ const ContactForm = () => {
         />
       </div>
       <button
-        className="font-medium bg-sky-800 bg-noise bg-blend-color-burn text-white px-6 py-2 rounded-sm tracking-wide cursor-pointer ring ring-sky-600 hover:bg-sky-700 hover:ring-sky-500 active:bg-sky-900 transition-all"
+        className="font-medium bg-green-700 ring ring-green-600 hover:ring-green-400 hover:bg-green-600 active:ring-green-600 active:bg-green-700 bg-noise bg-blend-color-burn text-white px-6 py-2 rounded-sm tracking-wide cursor-pointer transition-all"
         type="submit"
       >
         Send

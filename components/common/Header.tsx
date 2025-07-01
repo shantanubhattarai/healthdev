@@ -69,7 +69,7 @@ const Header = () => {
             href="/"
             className={cn(
               "font-semibold text-lg",
-              highlightLinks && "border-b-2 border-sky-600"
+              highlightLinks && "border-b-2 border-green-600"
             )}
           >
             <Image src={LogoAlpha} alt="Apex Aid Health Care" height={42} />
@@ -86,8 +86,8 @@ const Header = () => {
             <AccessibilityWidget />
             <Link
               className={cn(
-                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
-                highlightLinks ? "border-sky-600" : "border-transparent"
+                "px-2 py-1 font-medium border-b-2 hover:border-green-800 transition-all",
+                highlightLinks ? "border-green-600" : "border-transparent"
               )}
               href="/"
             >
@@ -95,8 +95,8 @@ const Header = () => {
             </Link>
             <Link
               className={cn(
-                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
-                highlightLinks ? "border-sky-600" : "border-transparent"
+                "px-2 py-1 font-medium border-b-2 hover:border-green-800 transition-all",
+                highlightLinks ? "border-green-600" : "border-transparent"
               )}
               href="/about"
             >
@@ -104,8 +104,8 @@ const Header = () => {
             </Link>
             <Link
               className={cn(
-                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
-                highlightLinks ? "border-sky-600" : "border-transparent"
+                "px-2 py-1 font-medium border-b-2 hover:border-green-800 transition-all",
+                highlightLinks ? "border-green-600" : "border-transparent"
               )}
               href="/services"
             >
@@ -113,8 +113,8 @@ const Header = () => {
             </Link>
             <Link
               className={cn(
-                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
-                highlightLinks ? "border-sky-600" : "border-transparent"
+                "px-2 py-1 font-medium border-b-2 hover:border-green-800 transition-all",
+                highlightLinks ? "border-green-600" : "border-transparent"
               )}
               href="/referral"
             >
@@ -122,8 +122,8 @@ const Header = () => {
             </Link>
             <Link
               className={cn(
-                "px-2 py-1 font-medium border-b-2 hover:border-sky-800 transition-all",
-                highlightLinks ? "border-sky-600" : "border-transparent"
+                "px-2 py-1 font-medium border-b-2 hover:border-green-800 transition-all",
+                highlightLinks ? "border-green-600" : "border-transparent"
               )}
               href="/contact"
             >
@@ -146,35 +146,35 @@ const Header = () => {
             </div>
             <ul className="flex flex-col items-start gap-y-6 mt-4 px-2 text-3xl">
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-green-800 transition-all"
                 href="/"
                 onClick={toggleNav}
               >
                 Home
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-green-800 transition-all"
                 href="/about"
                 onClick={toggleNav}
               >
                 About
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-green-800 transition-all"
                 href="/services"
                 onClick={toggleNav}
               >
                 Services
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-green-800 transition-all"
                 href="/referral"
                 onClick={toggleNav}
               >
                 Referral
               </Link>
               <Link
-                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-sky-800 transition-all"
+                className="px-2 py-1 font-medium border-b-2 border-transparent hover:border-green-800 transition-all"
                 href="/contact"
                 onClick={toggleNav}
               >

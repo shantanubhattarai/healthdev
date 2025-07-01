@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils";
 const HowWeHelpSection = () => {
   return (
     <section className="pb-12 md:pb-24 lg:py-36">
-      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 text-teal-700">
+      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 text-sky-700">
         Core Services Overview
       </h3>
       <p className="text-center text-zinc-800 text-lg mb-8">
@@ -121,7 +121,7 @@ const HelpCard = ({
         </div>
         <p
           className={cn(
-            "underline underline-offset-4 text-sky-800 hover:text-sky-700 mt-2 inline-block",
+            "underline underline-offset-4 text-green-800 hover:text-green-700 mt-2 inline-block",
             highlightLinks && "font-semibold font-lg"
           )}
         >

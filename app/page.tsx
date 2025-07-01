@@ -14,7 +14,7 @@ export default function Home() {
       <section className="px-4 pt-12 md:pt-8 container mx-auto">
         <section className="py-12 md:pt-24">
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <h3 className="text-2xl lg:text-4xl font-medium text-teal-700">
+            <h3 className="text-2xl lg:text-4xl font-medium text-sky-700">
               Define your own success with our care
             </h3>
             <p className="text-zinc-800 text-lg md:text-xl max-w-2xl">
@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-3 text-left gap-x-4 gap-y-12 lg:gap-y-8 mt-12 lg:mt-16">
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <Clock3Icon className="text-teal-700" size={42} />
+                <Clock3Icon className="text-sky-700" size={42} />
                 <div>
                   <h4 className="text-xl font-medium">
                     Responsive, quick appointments
@@ -34,14 +34,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <HeartIcon className="text-teal-700" size={42} />
+                <HeartIcon className="text-sky-700" size={42} />
                 <div>
                   <h4 className="text-xl font-medium">Personalized Support</h4>
                   <p className="text-zinc-800">Care tailored to your needs</p>
                 </div>
               </div>
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <ShieldCheckIcon className="text-teal-700" size={42} />
+                <ShieldCheckIcon className="text-sky-700" size={42} />
                 <div>
                   <h4 className="text-xl font-medium">
                     Experienced Professionals

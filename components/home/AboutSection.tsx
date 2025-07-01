@@ -9,7 +9,7 @@ const AboutSection = () => {
   return (
     <section className="py-12 md:pt-36">
       <div className="flex flex-col gap-4 items-center justify-center">
-        <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-teal-700">
+        <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-sky-700">
           About Apex Aid Health Care
         </h3>
         <p className="text-zinc-800 text-lg text-center">
@@ -21,7 +21,7 @@ const AboutSection = () => {
           <Link
             href="/about"
             className={cn(
-              "underline underline-offset-4 text-sky-800 hover:text-sky-700 mt-2 inline-block",
+              "underline underline-offset-4 text-green-800 hover:text-green-700 mt-2 inline-block",
               highlightLinks && "font-semibold font-lg"
             )}
           >

@@ -5,7 +5,7 @@ import SIL_01 from "@/public/images/SIL_01.jpg";
 export default function SIL() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
-      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-teal-800 bg-noise bg-blend-multiply text-center">
+      <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-sky-800 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
             Supported Independent Living
@@ -31,7 +31,7 @@ export default function SIL() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-sky-800">
           What we offer
         </h3>
         <p className="text-zinc-800">
@@ -117,7 +117,7 @@ export default function SIL() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-sky-800">
           Empowering independence, every step of the way
         </h3>
         <p className="text-zinc-800 mt-2">
@@ -139,7 +139,7 @@ export default function SIL() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-sky-800">
           Shared Accommodation: Finding the right fit
         </h3>
         <p className="text-zinc-800">
@@ -156,7 +156,7 @@ export default function SIL() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-teal-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-sky-800">
           Holistic supported accommodation: integrating SIL and SDA
         </h3>
         <p className="text-zinc-800">

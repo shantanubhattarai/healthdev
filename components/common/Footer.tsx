@@ -4,7 +4,7 @@ import {
   IconBrandInstagram,
   IconBrandWhatsapp,
 } from "@tabler/icons-react";
-import { SquareArrowOutUpRight } from "lucide-react";
+// import { SquareArrowOutUpRight } from "lucide-react";
 import NDISImage from "@/public/ndis2.png";
 import Logo from "@/public/logoalpha.png";
 
@@ -104,12 +104,6 @@ const Footer = () => {
                 Respite Care & Short-Term Accommodation
               </Link>
               <Link
-                href="/services/fds"
-                className="hover:underline hover:underline-offset-2"
-              >
-                Forensic Disability Services
-              </Link>
-              <Link
                 href="/services/htoh"
                 className="hover:underline hover:underline-offset-2"
               >
@@ -159,13 +153,13 @@ const Footer = () => {
               >
                 Household Assistance
               </Link>
-              <Link
+              {/* <Link
                 href="/services"
                 className="hover:underline hover:underline-offset-2 inline-flex items-center justify-start gap-x-2"
               >
                 <span>All Services</span>
                 <SquareArrowOutUpRight size={14} />
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>
