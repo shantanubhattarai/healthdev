@@ -6,6 +6,7 @@ import {
 } from "@tabler/icons-react";
 import { SquareArrowOutUpRight } from "lucide-react";
 import NDISImage from "@/public/ndis2.png";
+import Logo from "@/public/logoalpha.png";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -19,10 +20,15 @@ const Footer = () => {
     <footer className="mt-12 pt-16 pb-8 bg-zinc-900 bg-paper bg-blend-multiply bg-cover bg-center">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-start justify-start gap-x-4 lg:gap-x-16 gap-y-4 text-zinc-200 mb-12">
         <div className="flex flex-col gap-y-8 justify-start items-start">
-          <Link href="/" className="font-semibold text-2xl">
-            Apex Aid
-          </Link>
           <div>
+            <Link href="/" className="font-semibold text-2xl">
+              <Image
+                src={Logo}
+                alt="Apex Aid Health Care"
+                width={96}
+                className="mb-2"
+              />
+            </Link>
             <ContactDetails />
           </div>
           <ul className="flex gap-3 md:gap-6 items-center justify-end -ml-1">

@@ -10,6 +10,7 @@ import {
   XIcon,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import {
   DropdownMenu,
@@ -19,6 +20,8 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { cn } from "@/lib/utils";
+
+import LogoAlpha from "@/public/logohorizontalalpha.png";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -69,7 +72,7 @@ const Header = () => {
               highlightLinks && "border-b-2 border-sky-600"
             )}
           >
-            Apex Aid
+            <Image src={LogoAlpha} alt="Apex Aid Health Care" height={42} />
           </Link>
           <div className="flex gap-x-4 justify-start items-center md:hidden">
             <AccessibilityWidget />
