@@ -13,7 +13,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What is Short-Term Accommodation?
         </h3>
         <p className="text-zinc-800">
@@ -37,7 +37,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           How to access STA through the NDIS
         </h3>
         <p className="text-zinc-800">
@@ -80,7 +80,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What can you use STA for?
         </h3>
         <p className="text-zinc-800">
@@ -101,7 +101,7 @@ export default function STA() {
         </ul>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What to expect at Apex Aid Health Care Respite
         </h3>
         <p className="text-zinc-800">
@@ -161,7 +161,7 @@ export default function STA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           For more independent clients
         </h3>
         <p className="text-zinc-800">

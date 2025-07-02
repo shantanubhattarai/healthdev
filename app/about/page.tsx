@@ -12,10 +12,10 @@ const About = () => {
         </div>
       </section>
       <section className="pt-12 lg:pt-24 pb-8">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Welcome to Apex Health Care
         </h3>
-        <p className="text-zinc-800 mb-8">
+        <p className="text-green-800 mb-8 text-lg">
           Your trusted partner in person-centered disability support
         </p>
         <p className="text-zinc-800">
@@ -29,7 +29,7 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Who We Are
         </h3>
         <p className="text-zinc-800">
@@ -51,7 +51,7 @@ const About = () => {
         </ul>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our Approach
         </h3>
         <p className="text-zinc-800">
@@ -61,7 +61,7 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our Key Principles
         </h3>
         <ul className="py-1 text-zinc-800 list-disc list-inside">
@@ -73,7 +73,7 @@ const About = () => {
         </ul>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our Mission
         </h3>
         <p className="text-zinc-800">
@@ -82,7 +82,7 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our Vision
         </h3>
         <p className="text-zinc-800">
@@ -91,7 +91,7 @@ const About = () => {
         </p>
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our Values
         </h3>
         <ul className="text-zinc-800 list-decimal list-inside">
@@ -121,7 +121,7 @@ const About = () => {
         {/* <h3 className="text-2xl lg:text-4xl font-medium text-green-700 text-center mb-6">
           People Who Care
         </h3> */}
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           People Who Care
         </h3>
         <p className="text-zinc-800">
@@ -205,7 +205,7 @@ const About = () => {
         </div> */}
       </section>
       <section className="py-6">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Your Registered NDIS Provider
         </h3>
         <p className="text-zinc-800">

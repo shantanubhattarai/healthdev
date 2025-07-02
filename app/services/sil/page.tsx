@@ -31,7 +31,7 @@ export default function SIL() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What we offer
         </h3>
         <p className="text-zinc-800">
@@ -117,7 +117,7 @@ export default function SIL() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Empowering independence, every step of the way
         </h3>
         <p className="text-zinc-800 mt-2">
@@ -139,7 +139,7 @@ export default function SIL() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Shared Accommodation: Finding the right fit
         </h3>
         <p className="text-zinc-800">
@@ -156,7 +156,7 @@ export default function SIL() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Holistic supported accommodation: integrating SIL and SDA
         </h3>
         <p className="text-zinc-800">

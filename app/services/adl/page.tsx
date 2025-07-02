@@ -38,7 +38,7 @@ export default function SDA() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What is Assistance with Daily Living?
         </h3>
         <p className="text-zinc-800">
@@ -50,7 +50,7 @@ export default function SDA() {
       </section>
 
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           How do we support you?
         </h3>
         <p className="text-zinc-800">
@@ -116,7 +116,7 @@ export default function SDA() {
       </section>
 
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           NDIS and Daily Living Support
         </h3>
         <p className="mt-2 text-zinc-800">
@@ -139,7 +139,7 @@ export default function SDA() {
       </section>
 
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Why choose Apex Aid?
         </h3>
         <ul className="list-disc list-inside text-zinc-800 mt-2">

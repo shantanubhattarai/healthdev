@@ -32,8 +32,18 @@ const Footer = () => {
             <ContactDetails />
           </div>
           <ul className="flex gap-3 md:gap-6 items-center justify-end -ml-1">
-            <IconBrandFacebook stroke={1.5} />
-            <IconBrandInstagram stroke={1.5} />
+            <Link
+              href={"https://www.facebook.com/profile.php?id=61566110080866"}
+              className={cn(highlightLinks && "border-b-2 pb-1")}
+            >
+              <IconBrandFacebook stroke={1.5} className="hover:text-white" />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/apex_aid2025"}
+              className={cn(highlightLinks && "border-b-2 pb-1")}
+            >
+              <IconBrandInstagram stroke={1.5} className="hover:text-white" />
+            </Link>
             <IconBrandWhatsapp stroke={1.5} />
           </ul>
         </div>

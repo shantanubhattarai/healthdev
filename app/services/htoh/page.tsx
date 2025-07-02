@@ -13,7 +13,7 @@ export default function HTOH() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Hospital to Home: Safe, Supported Transitions
         </h3>
         <p className="text-zinc-800">
@@ -39,7 +39,7 @@ export default function HTOH() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Who do we support?
         </h3>
         <div className="text-zinc-800">
@@ -75,7 +75,7 @@ export default function HTOH() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What do we offer?
         </h3>
         <div className="text-zinc-800 flex flex-col gap-2 mt-2">
@@ -126,7 +126,7 @@ export default function HTOH() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our commitment
         </h3>
         <ul className="list-disc list-inside text-zinc-800 mt-2">

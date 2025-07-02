@@ -9,7 +9,7 @@ const AboutSection = () => {
   return (
     <section className="py-12 md:pt-36">
       <div className="flex flex-col gap-4 items-center justify-center">
-        <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-green-800">
+        <h3 className="text-2xl lg:text-4xl font-semibold mb-2 text-green-800">
           About Apex Aid Health Care
         </h3>
         <p className="text-zinc-800 text-lg text-center">

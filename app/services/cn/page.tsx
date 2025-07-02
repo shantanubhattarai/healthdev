@@ -34,7 +34,7 @@ export default function CN() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Who do we support?
         </h3>
         <div className="text-zinc-800">
@@ -61,7 +61,7 @@ export default function CN() {
       </section>
 
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What services do we provide?
         </h3>
         <div className="text-zinc-800 flex flex-col gap-2 mt-2">
@@ -123,7 +123,7 @@ export default function CN() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           NDIS and community nursing
         </h3>
         <p className="mt-2 text-zinc-800">
@@ -145,7 +145,7 @@ export default function CN() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our commitment
         </h3>
         <div className="text-zinc-800 flex flex-col gap-2 mt-2">

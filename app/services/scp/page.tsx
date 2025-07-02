@@ -31,7 +31,7 @@ export default function HTOH() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What is Community Participation?
         </h3>
         <p className="text-zinc-800">
@@ -46,7 +46,7 @@ export default function HTOH() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           NDIS and community participation
         </h3>
         <p className="mt-2 text-zinc-800">
@@ -63,7 +63,7 @@ export default function HTOH() {
         </ul>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           How do we support you?
         </h3>
         <p className="text-zinc-800 mt-2">
@@ -127,7 +127,7 @@ export default function HTOH() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Why does community participation matter?
         </h3>
         <div className="text-zinc-800">
@@ -141,7 +141,7 @@ export default function HTOH() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our approach
         </h3>
         <p className="mt-2 text-zinc-800">

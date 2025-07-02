@@ -9,7 +9,7 @@ const FAQSection = () => {
   return (
     <>
       <section className="mt-12 mb-8 px-0 lg:px-8 py-4 lg:py-8 rounded-md lg:bg-zinc-50">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Frequently Asked Questions
         </h3>
         <div className="flex flex-col gap-y-4 justify-start items-start">

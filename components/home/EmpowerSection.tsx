@@ -17,7 +17,7 @@ const EmpowerSection = () => {
       <div className="flex flex-col md:flex-row gap-4 md:gap-16 justify-center items-center">
         <div className="flex flex-col gap-6 items-start">
           <div>
-            <h3 className="text-2xl lg:text-4xl font-medium mb-2 text-green-700">
+            <h3 className="text-2xl lg:text-4xl font-semibold mb-2 text-green-800">
               Empowering your Independence
               <br /> with Compassionate, Professional Care.
             </h3>

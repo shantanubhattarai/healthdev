@@ -33,7 +33,7 @@ export default function FDS() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What is Forensic Disability Support?
         </h3>
         <div className="text-zinc-800">
@@ -68,7 +68,7 @@ export default function FDS() {
         </p>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Our approach
         </h3>
         <p className="text-zinc-800">
@@ -133,7 +133,7 @@ export default function FDS() {
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Eligibility and Access
         </h3>
         <div className="text-zinc-800">

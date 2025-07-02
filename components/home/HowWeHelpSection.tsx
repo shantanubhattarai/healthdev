@@ -4,14 +4,8 @@ import Link from "next/link";
 
 import {
   AccessibilityIcon,
-  // AmbulanceIcon,
-  // ArrowRightIcon,
   HandHelpingIcon,
-  // HeartHandshakeIcon,
-  // HospitalIcon,
-  // HouseIcon,
   HousePlusIcon,
-  // UsersIcon,
   UsersRoundIcon,
 } from "lucide-react";
 import React from "react";
@@ -21,7 +15,7 @@ import { cn } from "@/lib/utils";
 const HowWeHelpSection = () => {
   return (
     <section className="pb-12 md:pb-24 lg:py-36">
-      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 text-green-800">
+      <h3 className="text-center text-2xl lg:text-4xl font-semibold leading-14 text-green-800">
         Core Services Overview
       </h3>
       <p className="text-center text-lg mb-8 text-green-700">
@@ -121,12 +115,20 @@ const HelpCard = ({
         </div>
         <p
           className={cn(
+            "bg-green-700 ring ring-green-500 hover:ring-green-400 hover:bg-green-600 active:ring-green-600 active:bg-green-800 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide shrink-0",
+            highlightLinks && "underline underline-offset-2"
+          )}
+        >
+          Learn More about {label}
+        </p>
+        {/* <p
+          className={cn(
             "underline underline-offset-4 text-green-800 hover:text-green-700 mt-2 inline-block",
             highlightLinks && "font-semibold font-lg"
           )}
         >
           Learn More
-        </p>
+        </p> */}
       </div>
     </Link>
   );
