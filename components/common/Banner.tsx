@@ -15,11 +15,11 @@ const Banner = ({
 }) => {
   const { highlightLinks } = usePrefs();
   return (
-    <div className="flex items-center rounded-md justify-between gap-x-2 lg:gap-x-12 px-6 lg:px-16 py-8 bg-sky-800 bg-noise bg-blend-multiply text-white">
-      <p>{mainText}</p>
+    <div className="flex flex-col md:flex-row items-center rounded-md justify-between gap-y-4 gap-x-2 lg:gap-x-12 px-6 lg:px-16 py-8 bg-green-900 bg-noise bg-blend-multiply text-white">
+      <p className="text-center md:text-left">{mainText}</p>
       <Link
         className={cn(
-          "bg-sky-600 ring ring-sky-500 hover:ring-sky-400 hover:bg-sky-500 active:ring-sky-600 active:bg-sky-900 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide shrink-0",
+          "bg-green-600 ring ring-green-500 hover:ring-green-400 hover:bg-green-500 active:ring-green-600 active:bg-green-700 transition-all cursor-pointer px-6 py-2 rounded-sm text-white tracking-wide shrink-0",
           highlightLinks && "underline underline-offset-2"
         )}
         href={url}

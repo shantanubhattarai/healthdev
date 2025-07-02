@@ -23,7 +23,7 @@ const ServiceListSection = () => {
   const { highlightLinks } = usePrefs();
   return (
     <section className="py-12">
-      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 mb-8 text-sky-700">
+      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 mb-8 text-green-700">
         Our services
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
@@ -147,9 +147,9 @@ const HelpCard = ({
         key={cardKey}
       >
         <div className="flex justify-start gap-x-4 items-center">
-          <p className="text-teal-700">{icon}</p>
+          <p className="text-green-700">{icon}</p>
           <div>
-            <p className="text-lg md:text-xl text-teal-900 font-medium">
+            <p className="text-lg md:text-xl text-green-900 font-medium">
               {label}
             </p>
             <div className="text-teal-950 hidden lg:block">{children}</div>
@@ -158,7 +158,7 @@ const HelpCard = ({
         <ChevronRight className="text-green-700" size={24} />
         {/* <Link
         href={`/services/${cardKey}`}
-        className="underline underline-offset-4 hover:text-sky-600 mt-2 inline-block text-sky-700"
+        className="underline underline-offset-4 hover:text-sky-600 mt-2 inline-block text-green-700"
       >
         Learn More
       </Link> */}

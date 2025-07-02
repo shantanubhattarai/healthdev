@@ -21,10 +21,10 @@ import { cn } from "@/lib/utils";
 const HowWeHelpSection = () => {
   return (
     <section className="pb-12 md:pb-24 lg:py-36">
-      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 text-sky-700">
+      <h3 className="text-center text-2xl lg:text-4xl font-medium leading-14 text-green-800">
         Core Services Overview
       </h3>
-      <p className="text-center text-zinc-800 text-lg mb-8">
+      <p className="text-center text-lg mb-8 text-green-700">
         Our Support Services
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
@@ -114,9 +114,9 @@ const HelpCard = ({
           highlightLinks ? "border-2 border-zinc-500" : "border border-zinc-200"
         )}
       >
-        <p className="text-teal-700">{icon}</p>
+        <p className="text-green-700">{icon}</p>
         <div>
-          <p className="text-xl text-teal-900 font-medium">{label}</p>
+          <p className="text-xl text-green-900 font-medium">{label}</p>
           <div className="text-teal-950 mt-2">{children}</div>
         </div>
         <p

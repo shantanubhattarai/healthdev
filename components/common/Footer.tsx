@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 const Footer = () => {
   const { highlightLinks } = usePrefs();
   return (
-    <footer className="mt-12 pt-16 pb-8 bg-zinc-900 bg-paper bg-blend-multiply bg-cover bg-center">
+    <footer className="mt-12 pt-16 pb-8 bg-green-900 bg-noise bg-blend-multiply bg-center">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-start justify-start gap-x-4 lg:gap-x-16 gap-y-4 text-zinc-200 mb-12">
         <div className="flex flex-col gap-y-8 justify-start items-start">
           <div>
@@ -164,7 +164,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 py-4 mb-8 rounded-sm md:bg-zinc-900 text-zinc-200">
+      <div className="container mx-auto px-4 py-4 mb-8 rounded-sm md:bg-green-950 text-zinc-200">
         <p className="font-medium text-lg mb-4">Empowering your NDIS journey</p>
         <p className="text-zinc-300">
           What makes Apex Aid Health Care stand out?
@@ -220,7 +220,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="container mx-auto px-4 py-4 my-8 rounded-sm md:bg-zinc-900 text-zinc-200">
+      <div className="container mx-auto px-4 py-4 my-8 rounded-sm md:bg-green-950 text-zinc-200">
         <p>
           In the spirit of reconciliation, Apex Aid Health Care acknowledges the
           Traditional Custodians of the lands on which we live and provide care.
@@ -239,21 +239,21 @@ const Footer = () => {
           histories, cultures, and achievements of Aboriginal and Torres Strait
           Islander communities.
         </p>
-      </div>
-      <div className="container mx-auto flex flex-col lg:flex-row gap-8 justify-between items-center py-4 my-4 text-zinc-200">
-        <p className="pl-3 lg:pl-0">
-          <Image src={NDISImage} alt="Registered NDIS Provider" height={96} />
-        </p>
-        <div className="container mx-auto px-4 text-center lg:text-right text-zinc-300">
-          <p>&copy; 2025 Apex Aid Services. All rights reserved.</p>
-          <p>
-            <span className="mr-2">ABN</span>
-            <span>84 677 907 881</span>
+        <div className="container mx-auto flex flex-col lg:flex-row gap-8 justify-between items-center py-4 mt-8">
+          <p className="pl-3 lg:pl-0">
+            <Image src={NDISImage} alt="Registered NDIS Provider" height={96} />
           </p>
-          <p>
-            <span className="mr-2">Registered NDIS Provider ID:</span>
-            <span>4-KQIEHWQ</span>
-          </p>
+          <div className="container mx-auto px-4 text-center lg:text-right text-zinc-300">
+            <p>&copy; 2025 Apex Aid Services. All rights reserved.</p>
+            <p>
+              <span className="mr-2">ABN</span>
+              <span>84 677 907 881</span>
+            </p>
+            <p>
+              <span className="mr-2">Registered NDIS Provider ID:</span>
+              <span>4-KQIEHWQ</span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

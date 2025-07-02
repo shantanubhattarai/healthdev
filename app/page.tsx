@@ -14,18 +14,18 @@ export default function Home() {
       <section className="px-4 pt-12 md:pt-8 container mx-auto">
         <section className="py-12 md:pt-24">
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <h3 className="text-2xl lg:text-4xl font-medium text-sky-700">
+            <h3 className="text-2xl lg:text-4xl font-medium text-green-800">
               Define your own success with our care
             </h3>
-            <p className="text-zinc-800 text-lg md:text-xl max-w-2xl">
+            <p className="text-lg md:text-xl max-w-2xl text-green-700">
               Our dedicated team provide tailored supports that make a real
               difference in your everyday life.
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-3 text-left gap-x-4 gap-y-12 lg:gap-y-8 mt-12 lg:mt-16">
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <Clock3Icon className="text-sky-700" size={42} />
+                <Clock3Icon className="text-green-700" size={42} />
                 <div>
-                  <h4 className="text-xl font-medium">
+                  <h4 className="text-xl font-medium text-green-800">
                     Responsive, quick appointments
                   </h4>
                   <p className="text-zinc-800">
@@ -34,16 +34,18 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <HeartIcon className="text-sky-700" size={42} />
+                <HeartIcon className="text-green-700" size={42} />
                 <div>
-                  <h4 className="text-xl font-medium">Personalized Support</h4>
+                  <h4 className="text-xl font-medium text-green-800">
+                    Personalized Support
+                  </h4>
                   <p className="text-zinc-800">Care tailored to your needs</p>
                 </div>
               </div>
               <div className="lg:px-8 flex flex-col items-center justify-center text-center gap-y-4">
-                <ShieldCheckIcon className="text-sky-700" size={42} />
+                <ShieldCheckIcon className="text-green-700" size={42} />
                 <div>
-                  <h4 className="text-xl font-medium">
+                  <h4 className="text-xl font-medium text-green-800">
                     Experienced Professionals
                   </h4>
                   <p className="text-zinc-800">
