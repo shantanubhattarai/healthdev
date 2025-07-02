@@ -22,6 +22,7 @@ import {
 import { cn } from "@/lib/utils";
 
 import LogoAlpha from "@/public/logohorizontalalpha.png";
+import LogoWhite from "@/public/logohorizontalwhite.png";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -133,12 +134,12 @@ const Header = () => {
         </nav>
         <nav
           ref={mobileNavRef}
-          className="hidden fixed bg-white inset-0 w-full h-full px-4 py-4"
+          className="hidden fixed bg-green-900 bg-noise bg-blend-multiply inset-0 w-full h-full px-4 py-4 text-white"
         >
           <div className="flex flex-col justify-start h-full gap-y-24">
             <div className="w-full flex gap-x-2 justify-between py-2 mobile-nav-wrapper items-center">
-              <Link href="/" className="font-semibold text-4xl">
-                Apex Aid
+              <Link href="/" className="font-semibold text-4xl -mx-6">
+                <Image src={LogoWhite} alt="Apex Aid Health Care" height={96} />
               </Link>
               <button onClick={toggleNav}>
                 <XIcon />

@@ -37,7 +37,7 @@ const Footer = () => {
             <IconBrandWhatsapp stroke={1.5} />
           </ul>
         </div>
-        <div>
+        <div className="mt-8 lg:mt-0">
           <h3 className="font-medium text-lg mb-4">Links</h3>
           <ul
             className={cn(
@@ -165,13 +165,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 py-4 mb-8 rounded-sm md:bg-green-950 text-zinc-200">
-        <p className="font-medium text-lg mb-4">Empowering your NDIS journey</p>
-        <p className="text-zinc-300">
+        <p className="font-medium text-xl mb-1">Empowering your NDIS Journey</p>
+        <p className="text-zinc-200 text-lg">
           What makes Apex Aid Health Care stand out?
         </p>
         <div className="text-zinc-300 flex flex-col gap-2 mt-4">
           <div>
-            <p className="font-medium text-zinc-200">
+            <p className="font-medium text-zinc-200 text-lg">
               Skilled and Supportive Team
             </p>
             <p>
@@ -181,14 +181,16 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <p className="font-medium text-zinc-200">Care Tailored to You</p>
+            <p className="font-medium text-zinc-200 text-lg">
+              Care Tailored to You
+            </p>
             <p>
               We develop flexible, person-centred support plans that align with
               your goals, lifestyle, and preferences.
             </p>
           </div>
           <div>
-            <p className="font-medium text-zinc-200">
+            <p className="font-medium text-zinc-200 text-lg">
               Dependable Service Delivery
             </p>
             <p>
@@ -197,7 +199,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <p className="font-medium text-zinc-200">
+            <p className="font-medium text-zinc-200 text-lg">
               Inclusive and Culturally Aware Approach
             </p>
             <p>
@@ -206,7 +208,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <p className="font-medium text-zinc-200">
+            <p className="font-medium text-zinc-200 text-lg">
               Participant-Focused Outcomes
             </p>
             <p>
@@ -239,7 +241,7 @@ const Footer = () => {
           histories, cultures, and achievements of Aboriginal and Torres Strait
           Islander communities.
         </p>
-        <div className="container mx-auto flex flex-col lg:flex-row gap-8 justify-between items-center py-4 mt-8">
+        <div className="container mx-auto flex flex-col lg:flex-row gap-8 justify-between items-center py-4 mt-8 bg-green-950 rounded-sm">
           <p className="pl-3 lg:pl-0">
             <Image src={NDISImage} alt="Registered NDIS Provider" height={96} />
           </p>

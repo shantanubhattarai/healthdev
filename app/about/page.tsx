@@ -1,5 +1,5 @@
 import Banner from "@/components/common/Banner";
-import Image from "next/image";
+// import Image from "next/image";
 
 const About = () => {
   return (
@@ -118,7 +118,10 @@ const About = () => {
         </ul>
       </section>
       <section className="py-16">
-        <h3 className="text-2xl lg:text-4xl font-medium text-green-700 text-center mb-6">
+        {/* <h3 className="text-2xl lg:text-4xl font-medium text-green-700 text-center mb-6">
+          People Who Care
+        </h3> */}
+        <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">
           People Who Care
         </h3>
         <p className="text-zinc-800">
@@ -128,7 +131,7 @@ const About = () => {
           professionals, every member of Apex Aid Health Care shares a
           commitment to your safety, wellbeing, and empowerment.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-8 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-8 gap-8">
           <div className="flex flex-col gap-3 border rounded-md pb-2">
             <div className="relative w-full aspect-square">
               <Image
@@ -199,7 +202,7 @@ const About = () => {
               <p>Human Resources Manager</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className="py-6">
         <h3 className="text-xl lg:text-2xl mb-2 font-medium text-green-800">

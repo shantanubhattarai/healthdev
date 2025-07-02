@@ -13,8 +13,8 @@ const HeroSection = () => {
       style={{ backgroundImage: `url(${HeroBG.src})` }}
     >
       <div className="max-w-2xl bg-black/30 px-4 pt-6 pb-8 rounded-md">
-        <h2 className="text-2xl md:text-4xl tracking-wide font-current-serif font-medium mb-4">
-          Care that uplifts, support that endures
+        <h2 className="text-4xl md:text-4xl tracking-wide font-current-serif font-medium mb-4">
+          Care that Uplifts, Support that Endures
         </h2>
         <p className="text-zinc-200 leading-5">
           Disability is not a limitation, but a call for equity, inclusion, and
