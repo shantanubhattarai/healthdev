@@ -1,6 +1,8 @@
 import Image from "next/image";
 import SILImage from "@/public/images/SIL.jpg";
 import SIL_01 from "@/public/images/SIL_01.jpg";
+import Banner from "@/components/common/Banner";
+import ContactDetails from "@/components/contact/ContactDetails";
 
 export default function SIL() {
   return (
@@ -16,10 +18,10 @@ export default function SIL() {
         <p className="text-zinc-800">
           At Apex Aid Health Care, our Supported Independent Living (SIL)
           services are designed to empower individuals with disabilities to live
-          as independently as possible while receiving the support they need. We
-          provide tailored assistance in shared or individual living
-          environments, guided by each participant&apos;s NDIS goals, daily
-          routines, and personal preferences.
+          confidently and independently while receiving the support they need.
+          We provide tailored assistance in shared or individual living
+          environments, guided by each participant&apos;s NDIS goals, routines,
+          and preferences.
         </p>
         <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
@@ -37,105 +39,96 @@ export default function SIL() {
         <p className="text-zinc-800">
           Our SIL services cover a wide range of supports, including:
         </p>
-        <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
-          <div className="text-zinc-800 flex flex-col gap-2">
-            <div>
-              <p className="font-medium">Daily Living Assistance</p>
-              <p>
-                Support with everyday activities such as personal care, meal
-                preparation, cleaning, laundry, and household management — all
-                delivered with respect for the participant&apos;s autonomy and
-                routines.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">24/7 On-Site Support</p>
-              <p>
-                Depending on the individual&apos;s needs, we offer
-                round-the-clock assistance from qualified support staff,
-                ensuring safety, security, and immediate help whenever required.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Skill Building and Development</p>
-              <p>
-                We actively support participants in developing life skills such
-                as budgeting, cooking, using public transport, and managing
-                appointments — promoting confidence and long-term independence.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Medication and Health Management</p>
-              <p>
-                Trained staff assist with medication prompts, health monitoring,
-                and coordination with healthcare professionals to ensure
-                continuity of care and overall wellbeing.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Person-Centered Planning</p>
-              <p>
-                We start with understanding the unique needs, preferences, and
-                goals of every participant. Through collaborative planning with
-                individuals, families, and support coordinators, we design
-                tailored SIL arrangements that reflect each person&apos;s vision
-                for their life.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Safe, Supportive Homes</p>
-              <p>
-                Our SIL homes are welcoming, inclusive, and safe environments
-                where participants feel a sense of belonging. We foster positive
-                relationships among housemates and create spaces where people
-                can enjoy both independence and community.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Social and Community Engagement</p>
-              <p>
-                Our team encourages and supports residents to participate in
-                social, recreational, and community activities, helping to build
-                meaningful connections and reduce isolation.
-              </p>
-            </div>
-          </div>
-          <div className="w-full xl:w-96 h-72 xl:h-96 relative shrink-0">
-            <Image
-              src={SIL_01}
-              alt="Design standards"
-              fill
-              className="rounded-md object-cover object-top"
-            />
-          </div>
-        </div>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>Daily Living Assistance</li>
+          <li>Personal Care</li>
+          <li>Meal Preparation</li>
+          <li>Cleaning, Laundry and Home Organization</li>
+        </ul>
         <p className="mt-2 text-zinc-800">
-          Every SIL arrangement at Apex Aid Health Care is tailored through a
-          person-centred planning approach. We work closely with participants,
-          families, and support networks to create safe, supportive, and
-          inclusive environments where individuals can thrive.
+          Delivered with respect for autonomy and routine
         </p>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Empowering independence, every step of the way
+          24/7 On-Site Support
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>Qualified, compassionate staff</li>
+          <li>Round-the-clock help based on individual needs</li>
+          <li>Ensuring safety, security, and peace of mind</li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Skill Building and Development
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>Cooking, budgeting, shopping</li>
+          <li>Appointment management</li>
+          <li>Using public transport</li>
+          <li>Boosting confidence and lifelong independence</li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Medication and Health Management
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>Medication prompts</li>
+          <li>Health monitoring</li>
+          <li>Coordination with health professionals</li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Person-Centred Planning
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>
+            Collaborative planning with participants, families, and coordinators
+          </li>
+          <li>
+            Individualised plans reflecting personal vision and life goals
+          </li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Safe, Supportive Homes
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>Welcoming, inclusive, and secure</li>
+          <li>A sense of belonging and community</li>
+          <li>Respecting privacy and independence</li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Social and Community Engagement
+        </h3>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>
+            Participation in social, recreational, and community activities
+          </li>
+          <li>Building meaningful connections</li>
+          <li>Reducing isolation</li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Empowering Independence, Every Step of the Way
         </h3>
         <p className="text-zinc-800 mt-2">
-          At Apex Aid Health Care, we believe that everyone deserves the right
-          to live life on their own terms. That&apos;s why our services are
-          built around one simple goal: empowering individuals to live
-          independently, with confidence and dignity.
+          Everyone deserves the right to live life on their own terms.
         </p>
         <p className="text-zinc-800 mt-2">
-          We don&apos;t just provide support — we build pathways. Whether
-          it&apos;s learning new life skills, navigating daily routines, or
-          connecting with the community, we&apos;re here to walk alongside you,
-          offering the tools, encouragement, and care you need to shape your own
-          future.
+          Our mission is to build pathways, not just provide support. We support
+          you to develop skills, manage routines, and connect with the
+          community.
         </p>
         <p className="text-zinc-800 mt-2">
-          Because independence isn&apos;t about doing everything alone —
-          it&apos;s about having the right support to do things your way.
+          Independence is about having the right support to do things your way.
         </p>
       </section>
       <section className="pt-12">
@@ -179,6 +172,13 @@ export default function SIL() {
           services to offer personalised, flexible support tailored to each
           individual&apos;s unique needs.
         </p>
+      </section>
+      <section className="py-12">
+        <Banner
+          mainText={<ContactDetails horizontal />}
+          url="/contact"
+          urlText="Talk to Our Team"
+        />
       </section>
     </article>
   );

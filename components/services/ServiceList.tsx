@@ -6,11 +6,13 @@ import {
   AccessibilityIcon,
   AmbulanceIcon,
   ArrowRightIcon,
+  BrainIcon,
   ChevronRight,
   HandHelpingIcon,
   HeartHandshakeIcon,
   HospitalIcon,
   HouseIcon,
+  HousePlugIcon,
   HousePlusIcon,
   UsersIcon,
   UsersRoundIcon,
@@ -27,78 +29,197 @@ const ServiceListSection = () => {
         Our services
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-        <HelpCard
-          label="Specialist Disability Accommodation"
+        <ServiceCard
+          label="Supported Independent Living (SIL)"
+          cardKey="sil"
+          icon={<HandHelpingIcon size={48} />}
+        >
+          <p>
+            Personalised support to help you build skills and live as
+            independently as possible, whether in a shared environment or your
+            own home.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Specialist Disability Accommodation (SDA)"
           cardKey="sda"
           icon={<AccessibilityIcon size={48} />}
         >
-          <p>High-quality housing solutions designed for you</p>
-        </HelpCard>
-        <HelpCard
-          label="Supported Independent Living"
-          cardKey="sil"
-          icon={<HousePlusIcon size={48} />}
-        >
-          <p>Independent living with support you need</p>
-        </HelpCard>
-        <HelpCard
-          label="Respite Care & Short-Term Accommodation"
+          <p>
+            High-quality housing designed for participants with extreme
+            functional impairment or very high support needs, promoting safety,
+            comfort, and independence.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Short-Term Accommodation (STA) / Respite"
           cardKey="sta"
           icon={<HouseIcon size={48} />}
         >
-          <p>Temporary Supported housing</p>
-        </HelpCard>
-        <HelpCard
-          label="Hospital to Home"
-          cardKey="htoh"
-          icon={<HospitalIcon size={48} />}
-        >
-          <p>Move safely and confidently between the hospital and your home </p>
-        </HelpCard>
-        <HelpCard
-          label="Community Nursing"
+          <p>
+            Flexible short-term stays that provide you with a change of scenery
+            and give carers a break, all while maintaining your daily support
+            needs.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Community Nursing Care"
           cardKey="cn"
-          icon={<HandHelpingIcon size={48} />}
-        >
-          <p>Compassionate, clinical care in the comfort of their own home</p>
-        </HelpCard>
-        <HelpCard
-          label="Assistance with Daily Living"
-          cardKey="adl"
           icon={<HeartHandshakeIcon size={48} />}
         >
-          <p>Manage everyday tasks and routines</p>
-        </HelpCard>
-        <HelpCard
+          <p className="text-green-800 mb-1">Including High-intensity</p>
+          <p>
+            Professional nursing care in the home or community, including
+            medication management, wound care, and complex health support.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Innovative Community Participation"
+          cardKey="scp"
+          icon={<UsersRoundIcon size={48} />}
+        >
+          <p>
+            Creative, flexible supports to help you try new activities, develop
+            skills, and build confidence in community life.
+          </p>
+        </ServiceCard>
+        {/* <ServiceCard
           label="Community Participation"
           cardKey="scp"
           icon={<UsersRoundIcon size={48} />}
         >
-          <p>Engage in social, recreational, and civic activities</p>
-        </HelpCard>
-        <HelpCard
-          label="Group Activities"
+          <p>
+            Engage in social, educational, or recreational activities with our
+            support, strengthening skills and building community connections.
+          </p>
+        </ServiceCard> */}
+        <ServiceCard
+          label="Group & Centre-Based Activities"
           cardKey="group"
           icon={<UsersIcon size={48} />}
         >
           <p>
-            Foster social connections, skill development, and personal growth
+            Structured programs in group settings to encourage social
+            interaction, skill-building, and a sense of belonging.
           </p>
-        </HelpCard>
-        <HelpCard
-          label="Transport Assistance"
-          cardKey="transport"
-          icon={<AmbulanceIcon size={48} />}
+        </ServiceCard>
+        <ServiceCard
+          label="Daily Tasks / Shared Living"
+          cardKey="adl"
+          icon={<HeartHandshakeIcon size={48} />}
         >
-          <p>Travel safely, independently, and on time</p>
-        </HelpCard>
-        <HelpCard
-          label="Household Assistance"
+          <p>
+            Support with personal and household tasks in shared living or family
+            homes, helping you maintain a comfortable and healthy routine.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Household Tasks and Home Maintenance"
           cardKey="household"
           icon={<HousePlusIcon size={48} />}
         >
-          <p>Help manage day-to-day domestic tasks</p>
-        </HelpCard>
+          <p>
+            Reliable assistance with everyday tasks such as cleaning, laundry,
+            and meal preparation, ensuring your home remains safe and welcoming.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Assist Personal Activities"
+          cardKey="adl"
+          icon={<HeartHandshakeIcon size={48} />}
+        >
+          <p className="text-green-800 mb-1">Standard & High</p>
+          <p>
+            Support with daily personal care needs — from showering and dressing
+            to mobility assistance — tailored to your individual requirements.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Complex Behavorial & Forensic Supports"
+          cardKey="adl"
+          icon={<BrainIcon size={48} />}
+        >
+          <p>
+            Specialised care for participants with complex behaviours or
+            justice-related needs, delivered with respect, skill, and
+            understanding.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Transition Supports"
+          cardKey="htoh"
+          icon={<HospitalIcon size={48} />}
+        >
+          <p className="text-green-800 mb-1">
+            Hospital-to-Home, Youth-to-Adult
+          </p>
+          <p>
+            Guidance and support to help you navigate major life transitions
+            smoothly, whether moving from hospital to home or transitioning
+            through age-based services.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Development of Life Skills"
+          cardKey="sil"
+          icon={<HandHelpingIcon size={48} />}
+        >
+          <p>
+            Programs that build capacity for everyday living, including
+            communication, budgeting, travel training, and problem-solving
+            skills.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Travel & Transport Assistance"
+          cardKey="transport"
+          icon={<AmbulanceIcon size={48} />}
+        >
+          <p>
+            Safe, reliable transport options to get you to appointments, social
+            events, and community activities with confidence.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Assistive Technology"
+          cardKey="transport"
+          icon={<HousePlugIcon size={48} />}
+        >
+          <p>
+            Advice, setup, and training on devices and equipment to help you
+            achieve greater independence in daily life.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Personal Mobility Equipment"
+          cardKey="transport"
+          icon={<HousePlugIcon size={48} />}
+        >
+          <p>
+            Provision and support for mobility aids, helping you move safely and
+            freely in your community.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Home Modifications"
+          cardKey="household"
+          icon={<HousePlusIcon size={48} />}
+        >
+          <p>
+            Practical changes to your home to improve safety, accessibility, and
+            independence.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Household Equipment & Assitive Products"
+          cardKey="household"
+          icon={<HousePlugIcon size={48} />}
+        >
+          <p>
+            Access to tools and products that support your day-to-day living
+            needs and enhance your quality of life.
+          </p>
+        </ServiceCard>
         <Link href={`/services`} className="group">
           <div
             className={
@@ -125,7 +246,7 @@ const ServiceListSection = () => {
   );
 };
 
-const HelpCard = ({
+const ServiceCard = ({
   cardKey,
   icon,
   label,
@@ -146,8 +267,8 @@ const HelpCard = ({
         )}
         key={cardKey}
       >
-        <div className="flex justify-start gap-x-4 items-center">
-          <p className="text-green-700">{icon}</p>
+        <div className="flex justify-start gap-x-4 items-start">
+          <p className="text-green-700 mt-[6px]">{icon}</p>
           <div>
             <p className="text-lg md:text-xl text-green-900 font-medium">
               {label}

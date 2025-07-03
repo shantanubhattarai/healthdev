@@ -4,15 +4,21 @@ import Link from "next/link";
 
 import {
   AccessibilityIcon,
+  BrainIcon,
   HandHelpingIcon,
+  HeartHandshakeIcon,
+  HouseIcon,
   HousePlusIcon,
+  UsersIcon,
   UsersRoundIcon,
+  ArrowRightIcon,
 } from "lucide-react";
 import React from "react";
 import { usePrefs } from "@/app/context/PrefContext";
 import { cn } from "@/lib/utils";
 
 const HowWeHelpSection = () => {
+  const { highlightLinks } = usePrefs();
   return (
     <section className="pb-12 md:pb-24 lg:py-36">
       <h3 className="text-center text-2xl lg:text-4xl font-semibold leading-14 text-green-800">
@@ -23,23 +29,43 @@ const HowWeHelpSection = () => {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
         <HelpCard
-          label="Daily Personal Activities"
-          cardKey="sda"
-          icon={<AccessibilityIcon size={48} />}
-        >
-          <p>
-            Supporting you with personal care tasks, routines, and everyday
-            activies, promoting independence and confidence.
-          </p>
-        </HelpCard>
-        <HelpCard
-          label="Household Tasks"
+          label="Supported Independent Living (SIL)"
           cardKey="sil"
           icon={<HandHelpingIcon size={48} />}
         >
           <p>
-            Keeping your home safe, clean, and comfortable so you can focus on
-            what matters most.
+            Build independence in your own home or shared living environment
+            with tailored supports.
+          </p>
+        </HelpCard>
+        <HelpCard
+          label="Specialist Disability Accommodation (SDA)"
+          cardKey="sda"
+          icon={<AccessibilityIcon size={48} />}
+        >
+          <p>
+            Purpose-built, high-support housing solutions for greater comfort
+            and safety.
+          </p>
+        </HelpCard>
+        <HelpCard
+          label="Short-Term Accommodation (STA) / Respite"
+          cardKey="sta"
+          icon={<HouseIcon size={48} />}
+        >
+          <p>
+            Flexible, short-term care to give you and your carers a break with
+            peace of mind.
+          </p>
+        </HelpCard>
+        <HelpCard
+          label="Community Nursing Care"
+          cardKey="cn"
+          icon={<HeartHandshakeIcon size={48} />}
+        >
+          <p>
+            Qualified, compassionate nurses delivering clinical care and complex
+            supports where you need them.
           </p>
         </HelpCard>
         <HelpCard
@@ -48,24 +74,44 @@ const HowWeHelpSection = () => {
           icon={<UsersRoundIcon size={48} />}
         >
           <p>
-            Connecting you to community, hobbies, and interests with friendly,
-            reliable support.
+            Connect, engage, and thrive through social, educational, and
+            recreational activities.
           </p>
         </HelpCard>
         <HelpCard
-          label="In-Home Support"
-          cardKey="htoh"
+          label="Group & Centre-Based Activities"
+          cardKey="group"
+          icon={<UsersIcon size={48} />}
+        >
+          <p>
+            Join structured group programs that build confidence, skills, and
+            friendships.
+          </p>
+        </HelpCard>
+        <HelpCard
+          label="Personal Activities Assistance"
+          cardKey="sil"
           icon={<HousePlusIcon size={48} />}
         >
           <p>
-            Flexible in-home care tailored to your lifestyle, helping you live
-            safely and comfortably at home.
+            Personalised assistance with daily routines, self-care, and mobility
+            to support your lifestyle.
           </p>
         </HelpCard>
-        {/* <Link href={`/services`} className="group">
+        <HelpCard
+          label="Complex Behavorial & Forensic Supports"
+          cardKey="sil"
+          icon={<BrainIcon size={48} />}
+        >
+          <p>
+            Specialist support for participants with complex or justice-related
+            needs, delivered with dignity and respect.
+          </p>
+        </HelpCard>
+        <Link href={`/services`} className="group">
           <div
             className={
-              "px-6 py-6 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-sky-700 bg-[url(/noise.png)] bg-blend-darken group-hover:bg-sky-600 transition-all border border-sky-800"
+              "px-6 py-6 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-green-700 bg-[url(/noise.png)] bg-blend-darken group-hover:bg-green-600 transition-all border border-green-800"
             }
           >
             <div className="text-center text-xl md:text-2xl col-span-2 flex justify-center items-center flex-col h-full text-white">
@@ -82,7 +128,7 @@ const HowWeHelpSection = () => {
               </p>
             </div>
           </div>
-        </Link> */}
+        </Link>
       </div>
     </section>
   );
@@ -101,7 +147,7 @@ const HelpCard = ({
 }) => {
   const { highlightLinks } = usePrefs();
   return (
-    <Link href={`/services/`} className="group" key={cardKey}>
+    <Link href={`/services/${cardKey}`} className="group" key={cardKey}>
       <div
         className={cn(
           "px-6 py-16 h-full rounded-sm flex flex-col items-center justify-start w-full text-center gap-y-6 bg-zinc-100 lg:bg-zinc-50 group-hover:bg-teal-50 transition-all",
@@ -119,7 +165,7 @@ const HelpCard = ({
             highlightLinks && "underline underline-offset-2"
           )}
         >
-          Learn More about {label}
+          Learn More
         </p>
         {/* <p
           className={cn(

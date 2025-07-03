@@ -5,10 +5,17 @@ import { cn } from "@/lib/utils";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
-const ContactDetails = () => {
+const ContactDetails = ({ horizontal }: { horizontal?: boolean }) => {
   const { highlightLinks } = usePrefs();
   return (
-    <ul className="flex flex-col gap-4">
+    <ul
+      className={cn(
+        "flex gap-4",
+        horizontal
+          ? "flex-col lg:flex-row items-center md:items-start mb-4 lg:mb-0"
+          : "flex-col"
+      )}
+    >
       <li className="flex gap-2 items-center">
         <MapPin size={20} />
         <span>15/16 Charlton Ct, Woolner</span>
