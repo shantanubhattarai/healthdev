@@ -36,148 +36,159 @@ export default function SIL() {
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           What we offer
         </h3>
-        <p className="text-zinc-800">
-          Our SIL services cover a wide range of supports, including:
-        </p>
-        <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>Daily Living Assistance</li>
-          <li>Personal Care</li>
-          <li>Meal Preparation</li>
-          <li>Cleaning, Laundry and Home Organization</li>
-        </ul>
-        <p className="mt-2 text-zinc-800">
-          Delivered with respect for autonomy and routine
-        </p>
-      </section>
-      <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          24/7 On-Site Support
-        </h3>
-        <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>Qualified, compassionate staff</li>
-          <li>Round-the-clock help based on individual needs</li>
-          <li>Ensuring safety, security, and peace of mind</li>
-        </ul>
-      </section>
-      <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Skill Building and Development
-        </h3>
-        <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>Cooking, budgeting, shopping</li>
-          <li>Appointment management</li>
-          <li>Using public transport</li>
-          <li>Boosting confidence and lifelong independence</li>
-        </ul>
-      </section>
-      <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Medication and Health Management
-        </h3>
-        <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>Medication prompts</li>
-          <li>Health monitoring</li>
-          <li>Coordination with health professionals</li>
-        </ul>
-      </section>
-      <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Person-Centred Planning
-        </h3>
-        <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>
-            Collaborative planning with participants, families, and coordinators
-          </li>
-          <li>
-            Individualised plans reflecting personal vision and life goals
-          </li>
-        </ul>
-      </section>
-      <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Safe, Supportive Homes
-        </h3>
-        <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>Welcoming, inclusive, and secure</li>
-          <li>A sense of belonging and community</li>
-          <li>Respecting privacy and independence</li>
-        </ul>
-      </section>
-      <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Social and Community Engagement
-        </h3>
-        <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>
-            Participation in social, recreational, and community activities
-          </li>
-          <li>Building meaningful connections</li>
-          <li>Reducing isolation</li>
-        </ul>
+        <div className="text-zinc-800 flex flex-col gap-4">
+          <div>
+            <p className="font-medium">Daily Living Assistance</p>
+            <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+              <li>Personal Care</li>
+              <li>Meal Preparation</li>
+              <li>Cleaning, Laundry and Home Organization</li>
+              <li>Delivered with respect for autonomy and routine</li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium">24/7 On-Site Support</p>
+            <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+              <li>Qualified, compassionate staff</li>
+              <li>Round-the-clock help based on individual needs</li>
+              <li>Ensuring safety, security, and peace of mind</li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium">Skill Building and Development</p>
+            <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+              <li>Cooking, budgeting, shopping</li>
+              <li>Appointment management</li>
+              <li>Using public transport</li>
+              <li>Boosting confidence and lifelong independence</li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium">Medication and Health Management</p>
+            <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+              <li>Medication prompts</li>
+              <li>Health monitoring</li>
+              <li>Coordination with health professionals</li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium">Person-Centred Planning</p>
+            <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+              <li>
+                Collaborative planning with participants, families, and
+                coordinators
+              </li>
+              <li>
+                Individualised plans reflecting personal vision and life goals
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium">Safe, Supportive Homes</p>
+            <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+              <li>Welcoming, inclusive, and secure</li>
+              <li>A sense of belonging and community</li>
+              <li>Respecting privacy and independence</li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-medium">Social and Community Engagement</p>
+            <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+              <li>
+                Participation in social, recreational, and community activities
+              </li>
+              <li>Building meaningful connections</li>
+              <li>Reducing isolation</li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Empowering Independence, Every Step of the Way
         </h3>
-        <p className="text-zinc-800 mt-2">
-          Everyone deserves the right to live life on their own terms.
-        </p>
-        <p className="text-zinc-800 mt-2">
-          Our mission is to build pathways, not just provide support. We support
-          you to develop skills, manage routines, and connect with the
-          community.
-        </p>
-        <p className="text-zinc-800 mt-2">
-          Independence is about having the right support to do things your way.
-        </p>
+        <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+          <li>Everyone deserves the right to live life on their own terms</li>
+          <li>Our mission: build pathways, not just provide support</li>
+          <li>
+            We support you to develop skills, manage routines, and connect with
+            the community.
+          </li>
+          <li>
+            Independence is about <i>having the right support</i> to do things
+            your way.
+          </li>
+        </ul>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Shared Accommodation: Finding the right fit
+          Shared Accommodation: Finding the Right Fit
         </h3>
-        <p className="text-zinc-800">
-          At Apex Aid Health Care, we understand that choosing to live in shared
-          accommodation is more than just finding a place to stay — it&apos;s
-          about finding a space where you feel safe, respected, and understood.
-        </p>
-        <p className="text-zinc-800 mt-2">
-          That&apos;s why we focus on creating shared living environments that
-          support both independence and meaningful connections. We take the time
-          to carefully match housemates based on lifestyle preferences,
-          personality, routines, and support needs to ensure a harmonious and
-          positive living experience for everyone involved.
-        </p>
+        <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+          <li>
+            Choosing shared accommodation is about safety, respect, and
+            inclusion
+          </li>
+          <li>
+            Housemates matched carefully by:
+            <ul className="list-[circle] list-inside ml-8 text-zinc-800">
+              <li>Lifestyle</li>
+              <li>Personality</li>
+              <li>Daily Routines</li>
+              <li>Support Needs</li>
+            </ul>
+          </li>
+          <li>Positive, harmonious shared living environments</li>
+        </ul>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Holistic supported accommodation: integrating SIL and SDA
+          Holistic Supported Accommodation: Integrating SIL and SDA
         </h3>
-        <p className="text-zinc-800">
-          At Apex Aid Health Care, we believe that quality supported
-          accommodation is about more than just housing — it&apos;s about
-          creating ah holistic environment that supports independence,
-          wellbeing, and community connection.
-        </p>
-        <p className="text-zinc-800 mt-2">
-          Our integrated approach combines
-          <span className="font-medium">
-            {" "}
-            Specialist Disability Accommodation (SDA){" "}
-          </span>
-          with
-          <span className="font-medium">
-            {" "}
-            Supported Independent Living (SIL){" "}
-          </span>
-          services to offer personalised, flexible support tailored to each
-          individual&apos;s unique needs.
-        </p>
+        <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+          <li>Supported accommodation is more than just housing</li>
+          <li>
+            We combine <b>Specialist Disability Accommodation(SDA)</b> and
+            <b> Supported Independent Living(SIL)</b>
+          </li>
+          <li>Flexible, personalized supports</li>
+          <li>Designed to promote independence, wellbeing, and belonging</li>
+          <li>Enabling choice and control</li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Who can Access SIL?
+        </h3>
+        <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+          <li>NDIS participant with SIL funding</li>
+          <li>Need support for daily personal tasks</li>
+          <li>Working towards independent living</li>
+          <li>
+            Our team can help you navigate eligibility and NDIS proceesses
+          </li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Ready to Explore your SIL Options?
+        </h3>
+        <ul className="list-disc list-inside ml-1 mt-2 text-zinc-800">
+          <li>
+            Whether you are starting your journey or have funding in place, we
+            are here to help
+          </li>
+          <li>
+            Let&apos;s find a supported living arrangement that suits you and
+            feels like home
+          </li>
+        </ul>
       </section>
       <section className="py-12">
         <Banner
           mainText={<ContactDetails horizontal />}
           url="/contact"
-          urlText="Talk to Our Team"
+          urlText="Enquire Now"
         />
       </section>
     </article>
