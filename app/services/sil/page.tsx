@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SILImage from "@/public/images/SIL.jpg";
-import SIL_01 from "@/public/images/SIL_01.jpg";
+// import SIL_01 from "@/public/images/SIL_01.jpg";
 import Banner from "@/components/common/Banner";
 import ContactDetails from "@/components/contact/ContactDetails";
 
