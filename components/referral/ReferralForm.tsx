@@ -12,36 +12,76 @@ const interestedServices = [
     label: "Supported Independent Living (SIL)",
   },
   {
-    value: "Respite Care & STA (Short-Term Accommodation)",
-    label: "Respite Care & STA (Short-Term Accommodation)",
-  },
-  {
-    value: "Hospital to Home (Transition Support)",
-    label: "Hospital to Home (Transition Support)",
-  },
-  {
-    value: "Complex Mental Health (Psychological Disability)",
-    label: "Complex Mental Health (Psychological Disability)",
-  },
-  {
-    value: "Social & Community Participation",
-    label: "Social & Community Participation",
-  },
-  {
     value: "Specialist Disability Accommodation (SDA)",
     label: "Specialist Disability Accommodation (SDA)",
   },
   {
-    value: "Forensic Disability Services",
-    label: "Forensic Disability Services",
+    value: "Short-Term Accommodation (STA) / Respite",
+    label: "Short-Term Accommodation (STA) / Respite",
   },
   {
-    value: "Community Nursing",
-    label: "Community Nursing",
+    value: "Community Nursing Care (including High-Intensity)",
+    label: "Community Nursing Care (including High-Intensity)",
   },
   {
-    value: "Assistance with Daily Living",
-    label: "Assistance with Daily Living",
+    value: "Innovative Community Participation",
+    label: "Innovative Community Participation",
+  },
+  {
+    value: "Group & Centre-Based Activities",
+    label: "Group & Centre-Based Activities",
+  },
+  {
+    value: "Daily Tasks / Shared Living",
+    label: "Daily Tasks / Shared Living",
+  },
+  {
+    value: "Household Tasks & Home Maintenance",
+    label: "Household Tasks & Home Maintenance",
+  },
+  {
+    value: "Assist Personal Activities (Standard & High)",
+    label: "Assist Personal Activities (Standard & High)",
+  },
+  {
+    value: "Complex Behavioural & Forensic Supports",
+    label: "Complex Behavioural & Forensic Supports",
+  },
+  {
+    value: "Transition Programs (Hospital to Home, Youth to Adult Care)",
+    label: "Transition Programs (Hospital to Home, Youth to Adult Care)",
+  },
+  {
+    value: "Development of Life Skills",
+    label: "Development of Life Skills",
+  },
+  {
+    value: "Travel & Transport Assistance",
+    label: "Travel & Transport Assistance",
+  },
+  {
+    value: "Assistive Technology",
+    label: "Assistive Technology",
+  },
+  {
+    value: "Personal Mobility Equipment",
+    label: "Personal Mobility Equipment",
+  },
+  {
+    value: "Home Modifications",
+    label: "Home Modifications",
+  },
+  {
+    value: "Household Equipment & Assistive Products",
+    label: "Household Equipment & Assistive Products",
+  },
+  {
+    value: "Support Co-ordination",
+    label: "Support Co-ordination",
+  },
+  {
+    value: "Palliative Care",
+    label: "Palliative Care",
   },
 ];
 

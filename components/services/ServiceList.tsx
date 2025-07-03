@@ -9,11 +9,13 @@ import {
   BrainIcon,
   ChevronRight,
   HandHelpingIcon,
+  HandshakeIcon,
   HeartHandshakeIcon,
   HospitalIcon,
   HouseIcon,
   HousePlugIcon,
   HousePlusIcon,
+  RefreshCcwDotIcon,
   UsersIcon,
   UsersRoundIcon,
 } from "lucide-react";
@@ -126,7 +128,7 @@ const ServiceListSection = () => {
         <ServiceCard
           label="Assist Personal Activities"
           cardKey="adl"
-          icon={<HeartHandshakeIcon size={48} />}
+          icon={<HandshakeIcon size={48} />}
         >
           <p className="text-green-800 mb-1">Standard & High</p>
           <p>
@@ -218,6 +220,26 @@ const ServiceListSection = () => {
           <p>
             Access to tools and products that support your day-to-day living
             needs and enhance your quality of life.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Support Coordination"
+          cardKey="household"
+          icon={<RefreshCcwDotIcon size={48} />}
+        >
+          <p>
+            Helping you navigate the NDIS, connect with services, and build
+            skills to manage your own support with confidence.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Palliative Care"
+          cardKey="household"
+          icon={<HeartHandshakeIcon size={48} />}
+        >
+          <p>
+            Compassionate, respectful end-of-life care delivered in your home or
+            supported accommodation, focused on dignity and comfort.
           </p>
         </ServiceCard>
         <Link href={`/services`} className="group">

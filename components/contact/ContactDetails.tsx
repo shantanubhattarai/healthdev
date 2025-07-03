@@ -18,17 +18,17 @@ const ContactDetails = ({ horizontal }: { horizontal?: boolean }) => {
     >
       <li className="flex gap-2 items-center">
         <MapPin size={20} />
-        <span>15/16 Charlton Ct, Woolner</span>
+        <span>12/17 Sunset Drive, Coconut Grove, NT, 0810</span>
       </li>
       <Link
         className={cn(
           "flex gap-2 items-center underline underline-offset-2",
           highlightLinks && "font-semibold"
         )}
-        href="tel:123456789#"
+        href="tel:+61451421606"
       >
         <Phone size={18} />
-        <span>1300 675 144</span>
+        <span>+61451421606</span>
       </Link>
       <Link
         className={cn(

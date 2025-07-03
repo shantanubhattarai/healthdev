@@ -1,23 +1,3 @@
-"use client";
-
-// import clsx from "clsx";
-// import Image from "next/image";
-// import Link from "next/link";
-// import React, { useState } from "react";
-
-// import SDAImage from "@/public/images/SDA.jpg";
-// import SILImage from "@/public/images/SIL.jpg";
-// import STAImage from "@/public/images/STA.jpg";
-// import FDSImage from "@/public/images/FDS.jpg";
-// import HToHImage from "@/public/images/HtoH.jpg";
-// import CNImage from "@/public/images/CN.jpg";
-// import ADLImage from "@/public/images/ADL.jpg";
-// import SCPImage from "@/public/images/SCP.jpg";
-// import GroupImage from "@/public/images/Group.jpg";
-// import TransportImage from "@/public/images/Transport.jpg";
-// import HouseholdImage from "@/public/images/Household.jpg";
-// import { usePrefs } from "../context/PrefContext";
-// import { cn } from "@/lib/utils";
 import FAQSection from "@/components/services/FAQSection";
 import ServiceListSection from "@/components/services/ServiceList";
 

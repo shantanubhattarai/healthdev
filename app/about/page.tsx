@@ -40,14 +40,25 @@ const About = () => {
         </p>
         <p className="text-zinc-800 mt-2">Our services include:</p>
         <ul className="py-1 text-zinc-800 list-disc list-inside">
-          <li>Supported Independent Living (SIL) </li>
-          <li>Specialist Disability Accommodation (SDA) </li>
+          <li>Supported Independent Living (SIL)</li>
+          <li>Specialist Disability Accommodation (SDA)</li>
           <li>Short-Term Accommodation (STA) / Respite</li>
-          <li>Community Nursing</li>
-          <li>Community Participation & Group Activities</li>
-          <li>Household Tasks & Assistance with Daily Living</li>
+          <li>Community Nursing Care (including High-Intensity)</li>
+          <li>Innovative Community Participation</li>
+          <li>Group & Centre-Based Activities</li>
+          <li>Daily Tasks / Shared Living</li>
+          <li>Household Tasks & Home Maintenance</li>
+          <li>Assist Personal Activities (Standard & High)</li>
           <li>Complex Behavioural & Forensic Supports</li>
           <li>Transition Programs (Hospital to Home, Youth to Adult Care)</li>
+          <li>Development of Life Skills</li>
+          <li>Travel & Transport Assistance</li>
+          <li>Assistive Technology</li>
+          <li>Personal Mobility Equipment</li>
+          <li>Home Modifications</li>
+          <li>Household Equipment & Assistive Products</li>
+          <li>Support Co-ordination</li>
+          <li>Palliative Care</li>
         </ul>
       </section>
       <section className="py-6">
