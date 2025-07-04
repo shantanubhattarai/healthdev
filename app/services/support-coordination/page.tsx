@@ -3,7 +3,7 @@ import STAImage from "@/public/images/STA.jpg";
 import Banner from "@/components/common/Banner";
 import ContactDetails from "@/components/contact/ContactDetails";
 
-export default function STA() {
+export default function SupportCoordination() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-green-900 bg-noise bg-blend-multiply text-center">
