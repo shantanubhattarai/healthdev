@@ -196,4 +196,8 @@ body {
   input[type="radio"]:checked {
     accent-color: var(--color-green-600);
   }
+
+  ::marker {
+    @apply text-green-900;
+  }
 }

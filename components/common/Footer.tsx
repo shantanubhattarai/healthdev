@@ -123,7 +123,7 @@ const Footer = () => {
                 href="/services/scp"
                 className="hover:underline hover:underline-offset-2"
               >
-                Innovative Community Participation
+                Community Participation
               </Link>
               <Link
                 href="/services/group"
@@ -138,6 +138,12 @@ const Footer = () => {
                 Daily Tasks / Shared Living
               </Link>
               <Link
+                href="/services/adl"
+                className="hover:underline hover:underline-offset-2"
+              >
+                Innovative Community Participation
+              </Link>
+              <Link
                 href="/services/household"
                 className="hover:underline hover:underline-offset-2"
               >
@@ -149,19 +155,6 @@ const Footer = () => {
               >
                 Assist Personal Activities
               </Link>
-              <Link
-                href="/services/adl"
-                className="hover:underline hover:underline-offset-2"
-              >
-                Complex Behavioural & Forensic Supports
-              </Link>
-              {/* <Link
-                href="/services"
-                className="hover:underline hover:underline-offset-2 inline-flex items-center justify-start gap-x-2"
-              >
-                <span>All Services</span>
-                <SquareArrowOutUpRight size={14} />
-              </Link> */}
             </ul>
             <ul
               className={cn(
@@ -169,6 +162,12 @@ const Footer = () => {
                 highlightLinks && "underline underline-offset-2 font-semibold"
               )}
             >
+              <Link
+                href="/services/adl"
+                className="hover:underline hover:underline-offset-2"
+              >
+                Complex Behavioural & Forensic Supports
+              </Link>
               <Link
                 href="/services/htoh"
                 className="hover:underline hover:underline-offset-2"

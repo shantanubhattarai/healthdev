@@ -63,6 +63,7 @@ const HowWeHelpSection = () => {
           cardKey="cn"
           icon={<HeartHandshakeIcon size={48} />}
         >
+          <p className="text-green-800 mb-1">Including High-Intensity</p>
           <p>
             Qualified, compassionate nurses delivering clinical care and complex
             supports where you need them.
@@ -89,13 +90,14 @@ const HowWeHelpSection = () => {
           </p>
         </HelpCard>
         <HelpCard
-          label="Personal Activities Assistance"
+          label="Assistance with Personal Activities"
           cardKey="sil"
           icon={<HousePlusIcon size={48} />}
         >
+          <p className="text-green-800 mb-1">Standard & High</p>
           <p>
-            Personalised assistance with daily routines, self-care, and mobility
-            to support your lifestyle.
+            Support with daily personal care needs — from showering and dressing
+            to mobility assistance — tailored to your individual requirements.
           </p>
         </HelpCard>
         <HelpCard

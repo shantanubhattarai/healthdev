@@ -76,16 +76,6 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Innovative Community Participation"
-          cardKey="scp"
-          icon={<UsersRoundIcon size={48} />}
-        >
-          <p>
-            Creative, flexible supports to help you try new activities, develop
-            skills, and build confidence in community life.
-          </p>
-        </ServiceCard>
-        {/* <ServiceCard
           label="Community Participation"
           cardKey="scp"
           icon={<UsersRoundIcon size={48} />}
@@ -94,7 +84,7 @@ const ServiceListSection = () => {
             Engage in social, educational, or recreational activities with our
             support, strengthening skills and building community connections.
           </p>
-        </ServiceCard> */}
+        </ServiceCard>
         <ServiceCard
           label="Group & Centre-Based Activities"
           cardKey="group"
@@ -126,14 +116,24 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Assist Personal Activities"
+          label="Assistance with Personal Activities"
           cardKey="adl"
           icon={<HandshakeIcon size={48} />}
         >
           <p className="text-green-800 mb-1">Standard & High</p>
           <p>
-            Support with daily personal care needs — from showering and dressing
-            to mobility assistance — tailored to your individual requirements.
+            Dignified, person-centered daily care for all levels of need - from
+            routine self-care to complex, high- intensity supports
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Innovative Community Participation"
+          cardKey="scp"
+          icon={<UsersRoundIcon size={48} />}
+        >
+          <p>
+            Creative, flexible supports to help you try new activities, develop
+            skills, and build confidence in community life.
           </p>
         </ServiceCard>
         <ServiceCard
@@ -224,7 +224,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Support Coordination"
-          cardKey="household"
+          cardKey="support-coordination"
           icon={<RefreshCcwDotIcon size={48} />}
         >
           <p>
