@@ -43,6 +43,17 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
+          label="Short-Term Accommodation (STA) / Respite"
+          cardKey="sta"
+          icon={<HouseIcon size={48} />}
+        >
+          <p>
+            Flexible short-term stays that provide you with a change of scenery
+            and give carers a break, all while maintaining your daily support
+            needs.
+          </p>
+        </ServiceCard>
+        <ServiceCard
           label="Specialist Disability Accommodation (SDA)"
           cardKey="sda"
           icon={<AccessibilityIcon size={48} />}
@@ -54,14 +65,13 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Short-Term Accommodation (STA) / Respite"
-          cardKey="sta"
-          icon={<HouseIcon size={48} />}
+          label="Support Coordination"
+          cardKey="support-coordination"
+          icon={<RefreshCcwDotIcon size={48} />}
         >
           <p>
-            Flexible short-term stays that provide you with a change of scenery
-            and give carers a break, all while maintaining your daily support
-            needs.
+            Helping you navigate the NDIS, connect with services, and build
+            skills to manage your own support with confidence.
           </p>
         </ServiceCard>
         <ServiceCard
@@ -86,6 +96,17 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
+          label="Assistance with Personal Activities"
+          cardKey="adl"
+          icon={<HandshakeIcon size={48} />}
+        >
+          <p className="text-green-800 mb-1">Standard & High</p>
+          <p>
+            Dignified, person-centered daily care for all levels of need - from
+            routine self-care to complex, high- intensity supports
+          </p>
+        </ServiceCard>
+        <ServiceCard
           label="Group & Centre-Based Activities"
           cardKey="group"
           icon={<UsersIcon size={48} />}
@@ -93,16 +114,6 @@ const ServiceListSection = () => {
           <p>
             Structured programs in group settings to encourage social
             interaction, skill-building, and a sense of belonging.
-          </p>
-        </ServiceCard>
-        <ServiceCard
-          label="Daily Tasks / Shared Living"
-          cardKey="adl"
-          icon={<HeartHandshakeIcon size={48} />}
-        >
-          <p>
-            Support with personal and household tasks in shared living or family
-            homes, helping you maintain a comfortable and healthy routine.
           </p>
         </ServiceCard>
         <ServiceCard
@@ -116,24 +127,13 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Assistance with Personal Activities"
-          cardKey="adl"
-          icon={<HandshakeIcon size={48} />}
-        >
-          <p className="text-green-800 mb-1">Standard & High</p>
-          <p>
-            Dignified, person-centered daily care for all levels of need - from
-            routine self-care to complex, high- intensity supports
-          </p>
-        </ServiceCard>
-        <ServiceCard
-          label="Innovative Community Participation"
-          cardKey="scp"
-          icon={<UsersRoundIcon size={48} />}
+          label="Travel & Transport Assistance"
+          cardKey="transport"
+          icon={<AmbulanceIcon size={48} />}
         >
           <p>
-            Creative, flexible supports to help you try new activities, develop
-            skills, and build confidence in community life.
+            Safe, reliable transport options to get you to appointments, social
+            events, and community activities with confidence.
           </p>
         </ServiceCard>
         <ServiceCard
@@ -173,17 +173,7 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Travel & Transport Assistance"
-          cardKey="transport"
-          icon={<AmbulanceIcon size={48} />}
-        >
-          <p>
-            Safe, reliable transport options to get you to appointments, social
-            events, and community activities with confidence.
-          </p>
-        </ServiceCard>
-        <ServiceCard
-          label="Assistive Technology"
+          label="Assistive Technology & Home Modifications"
           cardKey="transport"
           icon={<HousePlugIcon size={48} />}
         >
@@ -203,17 +193,7 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Home Modifications"
-          cardKey="household"
-          icon={<HousePlusIcon size={48} />}
-        >
-          <p>
-            Practical changes to your home to improve safety, accessibility, and
-            independence.
-          </p>
-        </ServiceCard>
-        <ServiceCard
-          label="Household Equipment & Assitive Products"
+          label="Household Equipment & Assistive Products"
           cardKey="household"
           icon={<HousePlugIcon size={48} />}
         >
@@ -223,13 +203,13 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Support Coordination"
-          cardKey="support-coordination"
-          icon={<RefreshCcwDotIcon size={48} />}
+          label="Daily Tasks and Shared Living"
+          cardKey="adl"
+          icon={<HeartHandshakeIcon size={48} />}
         >
           <p>
-            Helping you navigate the NDIS, connect with services, and build
-            skills to manage your own support with confidence.
+            Support with personal and household tasks in shared living or family
+            homes, helping you maintain a comfortable and healthy routine.
           </p>
         </ServiceCard>
         <ServiceCard
@@ -240,6 +220,16 @@ const ServiceListSection = () => {
           <p>
             Compassionate, respectful end-of-life care delivered in your home or
             supported accommodation, focused on dignity and comfort.
+          </p>
+        </ServiceCard>
+        <ServiceCard
+          label="Innovative Community Participation"
+          cardKey="scp"
+          icon={<UsersRoundIcon size={48} />}
+        >
+          <p>
+            Creative, flexible supports to help you try new activities, develop
+            skills, and build confidence in community life.
           </p>
         </ServiceCard>
         <Link href={`/services`} className="group">

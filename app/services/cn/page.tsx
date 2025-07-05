@@ -41,24 +41,21 @@ export default function CN() {
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           Who do we support?
         </h3>
-        <div className="text-zinc-800">
-          <ul className="list-disc list-inside mt-2">
-            <li>Individuals requiring complex medical care at home</li>
-            <li>Participants transitioning from hospital to home</li>
-            <li>
-              People with wounds, pressure injuries, or chronic health
-              conditions
-            </li>
-            <li>Those needing medication, continence, or health assessments</li>
-            <li>
-              Participants funded under the NDIS, aged care, or other disability
-              programs
-            </li>
-            <li>
-              Anyone seeking quality, trusted clinical support in the community
-            </li>
-          </ul>
-        </div>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>Individuals requiring complex medical care at home</li>
+          <li>Participants transitioning from hospital to home</li>
+          <li>
+            People with wounds, pressure injuries, or chronic health conditions
+          </li>
+          <li>Those needing medication, continence, or health assessments</li>
+          <li>
+            Participants funded under the NDIS, aged care, or other disability
+            programs
+          </li>
+          <li>
+            Anyone seeking quality, trusted clinical support in the community
+          </li>
+        </ul>
       </section>
 
       <section className="pt-12">

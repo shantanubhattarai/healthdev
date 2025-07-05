@@ -1,32 +1,26 @@
 import Image from "next/image";
 import ADLImage from "@/public/images/ADL.jpg";
 import ADL01Image from "@/public/images/ADL_01.jpg";
+import Banner from "@/components/common/Banner";
+import ContactDetails from "@/components/contact/ContactDetails";
 
-export default function SDA() {
+export default function AssistanceWithPersonalActivities() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-green-900 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
-            Assistance with Daily Living
+            Assistance with Personal Activities (Standard and High)
           </h2>
         </div>
       </section>
       <section className="pt-12">
         <p className="text-zinc-800">
-          At Apex Aid Health Care, we provide
-          <span className="font-medium">
-            {" "}
-            Assistance with Daily Living (ADL){" "}
-          </span>
-          to help individuals with disabilities manage everyday tasks and
-          routines in a way that supports
-          <span className="font-medium">
-            {" "}
-            independence, dignity, and personal choice.{" "}
-          </span>
-          Our goal is to empower people to live life on their own terms—safely,
-          confidently, and comfortably in their home or community.
+          At Apex Aid Health Care, we provide tailored Assistance with Personal
+          Activities to help people with disabilities manage everyday tasks with
+          confidence, independence, and dignity. Our goal is to empower you to
+          live life on your own terms—safely and comfortably at home or in the
+          community.
         </p>
         <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
@@ -39,19 +33,24 @@ export default function SDA() {
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          What is Assistance with Daily Living?
+          What is Assistance with Personal Activities?
         </h3>
-        <p className="text-zinc-800">
-          ADL refers to support provided to help you complete essential daily
-          tasks that may be challenging due to physical, cognitive, or
-          psychosocial disability. These supports can be delivered in your own
-          home, in shared accommodation, or during community participation.
-        </p>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>
+            Support with essential daily tasks that may be challenging due to
+            physical, cognitive, or psychosocial disabilities
+          </li>
+          <li>
+            Delivered in your own home, shared accommodation, or while
+            participating in community activities
+          </li>
+          <li>Focused on promoting independence, choice, and wellbeing</li>
+        </ul>
       </section>
 
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          How do we support you?
+          Standard Assistance with Personal Activities Includes
         </h3>
         <p className="text-zinc-800">
           Our experienced and compassionate support workers assist with:
@@ -61,29 +60,29 @@ export default function SDA() {
             <div>
               <p className="font-medium">Personal Care</p>
               <p>
-                Bathing, grooming, dressing, oral hygiene, and toileting in a
-                respectful and discreet manner.
+                Bathing, grooming, dressing, oral hygiene, and toileting in
+                respectfully and discreetly.
               </p>
             </div>
             <div>
               <p className="font-medium">Meal Preparation & Feeding</p>
               <p>
-                Assistance with preparing nutritious meals, feeding support, and
-                dietary planning based on your needs and preferences.
+                Preparing nutritious meals, feeding support, and dietary
+                planning tailored to your preferences and needs
               </p>
             </div>
             <div>
               <p className="font-medium">Mobility & Transfers</p>
               <p>
-                Help with safe movement around the home, including hoist use,
-                walking support, or wheelchair transfers.
+                Safe assistance with moving around your home, including use of
+                hoists, walking aids, or wheelchair transfers
               </p>
             </div>
             <div>
               <p className="font-medium">Household Tasks</p>
               <p>
                 Light cleaning, laundry, dishwashing, and general tidying to
-                keep your home clean and comfortable.
+                keep your living environment comfortable
               </p>
             </div>
             <div>
@@ -91,16 +90,38 @@ export default function SDA() {
                 Medication Prompts & Health Routines
               </p>
               <p>
-                Support with remembering to take medications, managing
-                health-related tasks, and following routines as recommended by
-                medical professionals.
+                Reminders and support to manage medications and follow health
+                routines as directed by your healthcare team
               </p>
             </div>
             <div>
               <p className="font-medium">Transport & Community Access</p>
               <p>
-                Support to attend appointments, run errands, or engage in
-                community and social activities.
+                Assistance attending appointments, running errands, and
+                participating in social or community events
+              </p>
+            </div>
+            <div>
+              <p className="font-medium">
+                High-Intensity Personal Activities Assistance
+              </p>
+              <p>
+                For participants with complex health needs, we provide advanced
+                care delivered by trained and qualified staff, including:
+              </p>
+              <ul className="list-disc list-inside mt-2 ml-4 text-zinc-800">
+                <li>Complex bowel care</li>
+                <li>Enteral feeding (PEG/NG tubes)</li>
+                <li>Urinary catheter care (in-dwelling, in-out, suprapubic)</li>
+                <li>Subcutaneous injections</li>
+                <li>Complex wound care</li>
+                <li>Other high-risk personal care tasks as required</li>
+              </ul>
+              <p className="mt-2">
+                All high-intensity supports follow strict policies, risk
+                assessments, and evidence-based best practices, with oversight
+                from experienced registered nurses and allied health
+                professionals.
               </p>
             </div>
           </div>
@@ -119,56 +140,51 @@ export default function SDA() {
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           NDIS and Daily Living Support
         </h3>
-        <p className="mt-2 text-zinc-800">
-          Assistance with Daily Living is typically funded under:
-        </p>
-        <div className="text-zinc-800 mt-2">
-          <p className="font-medium">
-            Core Supports - Assistance with Daily Life
-          </p>
-          <p>
-            This allows for flexible, everyday support that meets your practical
-            and personal needs at home and in the community.
-          </p>
-        </div>
-        <p className="mt-2 text-zinc-800">
-          We work closely with you and your support network to develop a
-          tailored plan that aligns with your goals, promotes independence, and
-          respects your lifestyle and routine.
-        </p>
+        <ul className="list-disc list-inside text-zinc-800 mt-2">
+          <li>
+            <span className="font-medium">Person-Centred Support - </span>
+            Your choices, preferences, and goals guide all aspects of care
+          </li>
+          <li>
+            <span className="font-medium">Experienced, Friendly Staff - </span>
+            Trained in safe, respectful, inclusive, and culturally aware support
+            practices
+          </li>
+          <li>
+            <span className="font-medium">Flexible Scheduling - </span>
+            From a few hours per week to 24/7 assistance, we work around your
+            life
+          </li>
+          <li>
+            <span className="font-medium">Holistic Care Approach - </span>
+            Coordination with allied health professionals and families for
+            consistent quality care
+          </li>
+        </ul>
       </section>
 
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Why choose Apex Aid?
+          Our Commitment
         </h3>
-        <ul className="list-disc list-inside text-zinc-800 mt-2">
-          <li>
-            <span className="font-medium">Person-Centred Support - </span>
-            We honour your choices, preferences, and goals in every aspect of
-            your daily routine.
-          </li>
-          <li>
-            <span className="font-medium">Experienced, Friendly Staff - </span>
-            Our team is trained in safe, respectful, and inclusive support
-            practices.
-          </li>
-          <li>
-            <span className="font-medium">Flexible Scheduling - </span>
-            Whether you need a few hours a week or 24/7 assistance, we work
-            around your life.
-          </li>
-          <li>
-            <span className="font-medium">Holistic Care - </span>
-            We collaborate with allied health professionals and families to
-            ensure consistent and quality support.
-          </li>
-          <p className="mt-2 text-zinc-800">
-            At Apex Aid Health Care, we support more than just your daily
-            tasks—we support your independence, wellbeing, and confidence every
-            step of the way.
-          </p>
-        </ul>
+        <p className="text-zinc-800">
+          At Apex Aid Health Care, we believe that every person deserves to live
+          with dignity, independence, and choice. Our personal care services are
+          designed to support your daily living while empowering you to achieve
+          your goals and maintain your lifestyle.
+        </p>
+        <p className="mt-2 text-zinc-800">
+          At Apex Aid Health Care, we don&apos;t just support your daily tasks —
+          we support your independence, wellbeing, and confidence every step of
+          the way.
+        </p>
+      </section>
+      <section className="py-12">
+        <Banner
+          mainText={<ContactDetails horizontal />}
+          url="/contact"
+          urlText="Enquire Now"
+        />
       </section>
     </article>
   );

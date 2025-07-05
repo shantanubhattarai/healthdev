@@ -1,25 +1,26 @@
 import Image from "next/image";
 import HouseholdImage from "@/public/images/Household.jpg";
 import Household01Image from "@/public/images/Household_01.jpg";
+import Banner from "@/components/common/Banner";
+import ContactDetails from "@/components/contact/ContactDetails";
 
-export default function GroupActivities() {
+export default function HouseholdTasksAndHomeMaintenance() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-green-900 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
-            Household Assistance
+            Household Taks and Home Maintenance
           </h2>
         </div>
       </section>
       <section className="pt-12">
         <p className="text-zinc-800">
-          At Apex Aid Health Care, we provide
-          <span className="font-medium"> Household Assistance </span>
-          to help individuals with disabilities manage day-to-day domestic
-          tasks. Our support is designed to ensure your home remains clean,
-          safe, and functional — while also promoting your independence and
-          dignity.
+          At Apex Aid Health Care, we understand that maintaining a clean, safe,
+          and comfortable home is essential to your wellbeing. Our Household
+          Assistance and Home Maintenance services provide practical,
+          personalised support to help you manage daily chores, promoting a
+          healthy and organised living environment.
         </p>
         <div className="relative h-96 lg:h-[640px] rounded-md mt-4">
           <Image
@@ -32,138 +33,99 @@ export default function GroupActivities() {
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          What is household assistance?
+          Who Can Access Household Assistance and Home Maintenance?
         </h3>
-        <div className="text-zinc-800">
-          <p>
-            Household Assistance involves practical, hands-on help with domestic
-            chores and home maintenance tasks that may be difficult to complete
-            on your own due to physical, cognitive, or psychosocial challenges.
-          </p>
-          <p className="mt-2">This support is typically funded through:</p>
-          <ul className="list-disc list-inside mt-2">
-            <li className="font-medium">
-              NDIS Core Supports - Assistance with Daily Life
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>NDIS participants with Core Supports funding</li>
+          <li>
+            Individuals who need help managing household tasks due to
+            disability, health challenges, or other support needs
+          </li>
+        </ul>
+      </section>
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          Our Services
+        </h3>
+        <div className="mt-2 flex flex-col xl:flex-row xl:justify-between items-start gap-4">
+          <ul className="list-disc list-inside mt-2 text-zinc-800">
+            <li>
+              Cleaning and tidying living spaces, kitchens, bathrooms, and
+              bedrooms
             </li>
+            <li>
+              Laundry tasks including washing, drying, folding, and ironing
+            </li>
+            <li>Dishwashing and kitchen maintenance</li>
+            <li>Organising and maintaining clutter-free, safe environments</li>
+            <li>
+              Assistance with shopping, meal preparation, and pantry
+              organisation
+            </li>
+            <li>Support with minor home maintenance and safety checks</li>
           </ul>
         </div>
       </section>
       <section className="pt-12">
-        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          What services do we provide?
-        </h3>
-        <p className="text-zinc-800">
-          Our experienced support workers can assist with:
-        </p>
-        <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
-          <div className="w-full xl:w-xl h-96 relative shrink-0">
-            <Image
-              src={Household01Image}
-              alt="What do we offer?"
-              fill
-              className="rounded-md object-cover object-top"
-            />
-          </div>
-          <div className="text-zinc-800 flex flex-col gap-2">
-            <div>
-              <p className="font-medium">Cleaning & Tidying</p>
-              <p>
-                Vacuuming, dusting, mopping, surface cleaning, and keeping your
-                home orderly.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Cooking Classes</p>
-              <p>
-                Learn to prepare meals, explore nutrition, and gain independence
-                in the kitchen.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Laundry</p>
-              <p>
-                Washing, drying, folding, and putting away clothes and linens.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Dishwashing & Kitchen Hygiene</p>
-              <p>
-                Maintaining a clean kitchen environment, including sanitising
-                surfaces and appliances.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Meal Preparation Support</p>
-              <p>Helping with safe food handling, cooking, and cleaning up.</p>
-            </div>
-            <div>
-              <p className="font-medium">Changing Bedding & Linen Care</p>
-              <p>
-                Ensuring fresh, clean bedding for a healthy and comfortable
-                sleep environment.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Grocery Shopping Support</p>
-              <p>
-                Accompanied shopping trips or help with making lists and placing
-                online orders.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Light Garden or Outdoor Tasks</p>
-              <p>
-                Assistance with sweeping patios, watering plants, or tidying
-                outdoor areas (if within scope).
-              </p>
-            </div>
-          </div>
+        <div className="w-full h-96 lg:h-[640px] relative">
+          <Image
+            src={Household01Image}
+            alt="What do we offer?"
+            fill
+            className="rounded-md object-cover object-top"
+          />
         </div>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Our approach
+          Why Choose Apex Aid Health Care?
         </h3>
-        <div className="text-zinc-800 flex flex-col gap-2">
-          <div>
-            <p className="font-medium">Person-Centred Support</p>
-            <p>
-              We customise our services to your specific needs, preferences, and
-              routines.
-            </p>
-          </div>
-          <div>
-            <p className="font-medium">Respectful & Reliable Team</p>
-            <p>
-              Our staff are trained, screened, and committed to maintaining your
-              privacy, dignity, and safety.
-            </p>
-          </div>
-          <div>
-            <p className="font-medium">Empowerment-Focused</p>
-            <p>
-              We encourage you to be involved in tasks where possible, helping
-              build skills and independence.
-            </p>
-          </div>
-          <div>
-            <p className="font-medium">Flexible Scheduling</p>
-            <p>
-              Whether you need help daily, weekly, or occasionally, we adapt to
-              suit your lifestyle.
-            </p>
-          </div>
-        </div>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>
+            Person-centred approach respecting your preferences, routines, and
+            lifestyle
+          </li>
+          <li>
+            Reliable, respectful, and trained staff experienced in culturally
+            aware care
+          </li>
+          <li>Flexible scheduling tailored to your needs</li>
+          <li>
+            Commitment to safety, hygiene, and high-quality service delivery
+          </li>
+          <li>
+            Collaborative planning with you and your support network, with
+            ongoing reviews to meet your evolving needs
+          </li>
+        </ul>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Why does it matter?
+          Our Commitment
         </h3>
+        <ul className="list-disc list-inside mt-2 text-zinc-800">
+          <li>Supporting your independence and confidence at home</li>
+          <li>
+            Providing consistent, trustworthy assistance with household tasks
+          </li>
+          <li>
+            Helping maintain a clean, safe, and pleasant living environment
+          </li>
+        </ul>
+      </section>
+      <section className="pt-4">
         <p className="text-zinc-800">
-          A well-maintained home supports physical and mental wellbeing. With
-          Apex Aid&apos;s Household Assistance, you can focus on what matters
-          most—while we help take care of the rest.
+          At Apex Aid Health Care, we are dedicated to helping you live
+          comfortably and confidently in your home with the practical support
+          you deserve.
         </p>
+      </section>
+      <section className="py-12">
+        <Banner
+          mainText={<ContactDetails horizontal />}
+          url="/contact"
+          urlText="Enquire Now"
+        />
       </section>
     </article>
   );
