@@ -175,43 +175,43 @@ const Footer = () => {
                 Transition Supports
               </Link>
               <Link
-                href="/services"
+                href="/services/development-of-life-skills"
                 className="hover:underline hover:underline-offset-2"
               >
                 Development of Life Skills
               </Link>
               <Link
-                href="/services"
+                href="/services/assistive-technology-and-home-modifications"
                 className="hover:underline hover:underline-offset-2"
               >
                 Assistive Technology & Home Modifications
               </Link>
               <Link
-                href="/services"
+                href="/services/personal-mobility-equipment"
                 className="hover:underline hover:underline-offset-2"
               >
                 Personal Mobility Equipment
               </Link>
               <Link
-                href="/services"
+                href="/services/household-equipment-and-assistive-products"
                 className="hover:underline hover:underline-offset-2"
               >
                 Household Equipment & Assistive Products
               </Link>
               <Link
-                href="/services"
+                href="/services/daily-tasks-and-shared-living"
                 className="hover:underline hover:underline-offset-2"
               >
                 Daily Tasks and Shared Living
               </Link>
               <Link
-                href="/services"
+                href="/services/palliative-care"
                 className="hover:underline hover:underline-offset-2"
               >
                 Palliative Care
               </Link>
               <Link
-                href="/services"
+                href="/services/innovative-community-participation"
                 className="hover:underline hover:underline-offset-2"
               >
                 Innovative Community Participation
