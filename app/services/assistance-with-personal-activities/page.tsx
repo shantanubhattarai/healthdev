@@ -10,8 +10,9 @@ export default function AssistanceWithPersonalActivities() {
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-green-900 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
-            Assistance with Personal Activities (Standard and High)
+            Assistance with Personal Activities
           </h2>
+          <p className="text-zinc-200 leading-5">Standard and High</p>
         </div>
       </section>
       <section className="pt-12">

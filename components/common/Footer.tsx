@@ -96,64 +96,64 @@ const Footer = () => {
               )}
             >
               <Link
-                href="/services/sil"
+                href="/services/supported-independent-living"
                 className="hover:underline hover:underline-offset-2"
               >
                 Supported Independent Living
               </Link>
               <Link
-                href="/services/sda"
-                className="hover:underline hover:underline-offset-2"
-              >
-                Specialist Disability Accommodation
-              </Link>
-              <Link
-                href="/services/sta"
+                href="/services/short-term-accommodation"
                 className="hover:underline hover:underline-offset-2"
               >
                 Short-Term Accommodation / Respite
               </Link>
               <Link
-                href="/services/cn"
+                href="/services/specialist-disability-accommodation"
+                className="hover:underline hover:underline-offset-2"
+              >
+                Specialist Disability Accommodation
+              </Link>
+              <Link
+                href="/services/support-coordination"
+                className="hover:underline hover:underline-offset-2"
+              >
+                Support Coordination
+              </Link>
+              <Link
+                href="/services/community-nursing-care"
                 className="hover:underline hover:underline-offset-2"
               >
                 Community Nursing Care
               </Link>
               <Link
-                href="/services/scp"
+                href="/services/community-participation"
                 className="hover:underline hover:underline-offset-2"
               >
                 Community Participation
               </Link>
               <Link
-                href="/services/group"
+                href="/services/assistance-with-personal-activities"
+                className="hover:underline hover:underline-offset-2"
+              >
+                Assistance with Personal Activities
+              </Link>
+              <Link
+                href="/services/group-and-centre-based-activities"
                 className="hover:underline hover:underline-offset-2"
               >
                 Group & Centre-Based Activities
               </Link>
               <Link
-                href="/services/adl"
-                className="hover:underline hover:underline-offset-2"
-              >
-                Daily Tasks / Shared Living
-              </Link>
-              <Link
-                href="/services/adl"
-                className="hover:underline hover:underline-offset-2"
-              >
-                Innovative Community Participation
-              </Link>
-              <Link
-                href="/services/household"
+                href="/services/household-tasks-and-home-maintenance"
                 className="hover:underline hover:underline-offset-2"
               >
                 Household Tasks & Home Maintenance
               </Link>
               <Link
-                href="/services/adl"
+                href="/services/travel-and-transport-assistance"
                 className="hover:underline hover:underline-offset-2"
               >
-                Assist Personal Activities
+                Travel & Transport Assistance
               </Link>
             </ul>
             <ul
@@ -163,64 +163,58 @@ const Footer = () => {
               )}
             >
               <Link
-                href="/services/adl"
+                href="/services/complex-behavioural-and-forensic-supports"
                 className="hover:underline hover:underline-offset-2"
               >
                 Complex Behavioural & Forensic Supports
               </Link>
               <Link
-                href="/services/htoh"
+                href="/services/transition-supports"
                 className="hover:underline hover:underline-offset-2"
               >
-                Transition Programs
+                Transition Supports
               </Link>
               <Link
-                href="/services/sil"
+                href="/services"
                 className="hover:underline hover:underline-offset-2"
               >
                 Development of Life Skills
               </Link>
               <Link
-                href="/services/transport"
+                href="/services"
                 className="hover:underline hover:underline-offset-2"
               >
-                Travel & Transport Assistance
+                Assistive Technology & Home Modifications
               </Link>
               <Link
-                href="/services/adl"
-                className="hover:underline hover:underline-offset-2"
-              >
-                Assistive Technology
-              </Link>
-              <Link
-                href="/services/adl"
+                href="/services"
                 className="hover:underline hover:underline-offset-2"
               >
                 Personal Mobility Equipment
               </Link>
               <Link
-                href="/services/household"
-                className="hover:underline hover:underline-offset-2"
-              >
-                Home Modifications
-              </Link>
-              <Link
-                href="/services/household"
+                href="/services"
                 className="hover:underline hover:underline-offset-2"
               >
                 Household Equipment & Assistive Products
               </Link>
               <Link
-                href="/services/adl"
+                href="/services"
                 className="hover:underline hover:underline-offset-2"
               >
-                Support Co-ordination
+                Daily Tasks and Shared Living
               </Link>
               <Link
-                href="/services/adl"
+                href="/services"
                 className="hover:underline hover:underline-offset-2"
               >
                 Palliative Care
+              </Link>
+              <Link
+                href="/services"
+                className="hover:underline hover:underline-offset-2"
+              >
+                Innovative Community Participation
               </Link>
             </ul>
           </div>

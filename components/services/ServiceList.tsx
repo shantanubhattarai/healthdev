@@ -33,7 +33,7 @@ const ServiceListSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
         <ServiceCard
           label="Supported Independent Living (SIL)"
-          cardKey="sil"
+          cardKey="supported-independent-living"
           icon={<HandHelpingIcon size={48} />}
         >
           <p>
@@ -44,7 +44,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Short-Term Accommodation (STA) / Respite"
-          cardKey="sta"
+          cardKey="short-term-accommodation"
           icon={<HouseIcon size={48} />}
         >
           <p>
@@ -55,7 +55,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Specialist Disability Accommodation (SDA)"
-          cardKey="sda"
+          cardKey="specialist-disability-accommodation"
           icon={<AccessibilityIcon size={48} />}
         >
           <p>
@@ -76,7 +76,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Community Nursing Care"
-          cardKey="cn"
+          cardKey="community-nursing-care"
           icon={<HeartHandshakeIcon size={48} />}
         >
           <p className="text-green-800 mb-1">Including High-intensity</p>
@@ -87,7 +87,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Community Participation"
-          cardKey="scp"
+          cardKey="community-participation"
           icon={<UsersRoundIcon size={48} />}
         >
           <p>
@@ -97,7 +97,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Assistance with Personal Activities"
-          cardKey="adl"
+          cardKey="assistance-with-personal-activities"
           icon={<HandshakeIcon size={48} />}
         >
           <p className="text-green-800 mb-1">Standard & High</p>
@@ -108,7 +108,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Group & Centre-Based Activities"
-          cardKey="group"
+          cardKey="group-and-centre-based-activities"
           icon={<UsersIcon size={48} />}
         >
           <p>
@@ -118,7 +118,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Household Tasks and Home Maintenance"
-          cardKey="household"
+          cardKey="household-tasks-and-home-maintenance"
           icon={<HousePlusIcon size={48} />}
         >
           <p>
@@ -128,7 +128,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Travel & Transport Assistance"
-          cardKey="transport"
+          cardKey="travel-and-transport-assistance"
           icon={<AmbulanceIcon size={48} />}
         >
           <p>
@@ -137,8 +137,8 @@ const ServiceListSection = () => {
           </p>
         </ServiceCard>
         <ServiceCard
-          label="Complex Behavorial & Forensic Supports"
-          cardKey="adl"
+          label="Complex Behavourial & Forensic Supports"
+          cardKey="complex-behavourial-and-forensic-supports"
           icon={<BrainIcon size={48} />}
         >
           <p>
@@ -149,7 +149,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Transition Supports"
-          cardKey="htoh"
+          cardKey="transition-supports"
           icon={<HospitalIcon size={48} />}
         >
           <p className="text-green-800 mb-1">
