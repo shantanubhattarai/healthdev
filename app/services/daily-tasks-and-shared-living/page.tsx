@@ -1,28 +1,27 @@
 import Image from "next/image";
-import SupportImage from "@/public/images/SupportCoordination.jpg";
-import Support01Image from "@/public/images/SupportCoordination_01.jpg";
+import FDSImage from "@/public/images/FDS.jpg";
 import Banner from "@/components/common/Banner";
 import ContactDetails from "@/components/contact/ContactDetails";
 
-export default function SupportCoordination() {
+export default function DailyTasksAndSharedLiving() {
   return (
     <article className="px-4 pt-12 md:pt-0 container mx-auto">
       <section className="text-white px-4 py-2 rounded-md flex flex-col gap-8 justify-center items-center min-h-64 bg-green-900 bg-noise bg-blend-multiply text-center">
         <div className="max-w-xl">
           <h2 className="text-4xl tracking-wide font-current-serif font-medium mb-4">
-            Support Coordination
+            Daily Tasks and Shared Living
           </h2>
         </div>
       </section>
       <section className="pt-12">
         <p className="text-zinc-800">
-          At Apex Aid Health Care, our Support Coordination service assists you
-          in understanding and implementing your NDIS plan, helping you connect
-          with the right providers and maximise your funding.
+          At Apex Aid Health Care, our Daily Tasks and Shared Living services
+          support participants to manage everyday activities while enjoying the
+          benefits of community and companionship in shared living environments.
         </p>
         <div className="relative h-96  lg:h-[640px] rounded-md mt-4">
           <Image
-            src={SupportImage}
+            src={FDSImage}
             alt="fds"
             fill
             className="rounded-md object-cover object-center"
@@ -31,39 +30,32 @@ export default function SupportCoordination() {
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Who can Access Support Coordination?
+          Who Can Access Daily Tasks & Shared Living?
         </h3>
         <ul className="list-disc list-inside mt-2 text-zinc-800">
           <li>
-            NDIS participants with Support Coordination funding in their plan
+            NDIS participants who require assistance with daily living tasks
           </li>
           <li>
-            Individuals needing guidance to navigate the NDIS and access
-            services
+            Individuals living in group or shared homes seeking support with
+            household and personal care
           </li>
         </ul>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Our Support Coordination Services Include
+          Our Daily Tasks & Shared Living Services
         </h3>
         <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>Assistance understanding your NDIS plan and goals</li>
-          <li>Connecting you with appropriate service providers</li>
-          <li>Coordinating multiple supports to work together smoothly</li>
-          <li>Building your capacity to manage supports independently</li>
-          <li>Advocacy and problem-solving support</li>
+          <li>
+            Assistance with personal care such as grooming, dressing, and
+            hygiene
+          </li>
+          <li>Support with meal preparation and nutrition</li>
+          <li>Help with cleaning, laundry, and household management</li>
+          <li>Facilitating social connection and community involvement</li>
+          <li>Coordination of support within shared living arrangements</li>
         </ul>
-      </section>
-      <section className="pt-12">
-        <div className="w-full h-96 lg:h-[720px] relative">
-          <Image
-            src={Support01Image}
-            alt="Hospital to home"
-            fill
-            className="rounded-md object-cover object-center"
-          />
-        </div>
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
@@ -71,11 +63,16 @@ export default function SupportCoordination() {
         </h3>
         <ul className="list-disc list-inside mt-2 text-zinc-800">
           <li>
-            Experienced coordinators with deep knowledge of the NDIS system
+            Respectful, person-centred care tailored to individual preferences
           </li>
-          <li>Person-centred approach focused on your goals and preferences</li>
-          <li>Clear communication and timely support</li>
-          <li>Commitment to empowering your independence</li>
+          <li>
+            Experienced staff skilled in both personal and household support
+          </li>
+          <li>
+            Focus on fostering independence while encouraging community
+            engagement
+          </li>
+          <li>Supportive environments that promote safety and belonging</li>
         </ul>
       </section>
       <section className="pt-12">
@@ -83,10 +80,15 @@ export default function SupportCoordination() {
           Our Commitment
         </h3>
         <ul className="list-disc list-inside mt-2 text-zinc-800">
-          <li>Providing reliable, flexible, and personalised coordination</li>
-          <li>Supporting you to achieve your best outcomes</li>
-          <li>Regular progress reviews and plan adjustments</li>
+          <li>Helping you achieve balance between independence and support</li>
+          <li>Creating nurturing shared living spaces that feel like home</li>
+          <li>Encouraging skill development and personal growth</li>
         </ul>
+        <p className="text-zinc-800 mt-4">
+          At Apex Aid Health Care, we aim to make everyday living easier and
+          more fulfilling—whether you live independently or in shared
+          accommodation.
+        </p>
       </section>
       <section className="py-12">
         <Banner

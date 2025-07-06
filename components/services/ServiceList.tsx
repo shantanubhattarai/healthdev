@@ -163,7 +163,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Development of Life Skills"
-          cardKey="sil"
+          cardKey="development-of-life-skills"
           icon={<HandHelpingIcon size={48} />}
         >
           <p>
@@ -174,7 +174,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Assistive Technology & Home Modifications"
-          cardKey="transport"
+          cardKey="assistive-technology-and-home-modifications"
           icon={<HousePlugIcon size={48} />}
         >
           <p>
@@ -184,7 +184,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Personal Mobility Equipment"
-          cardKey="transport"
+          cardKey="personal-mobility-equipment"
           icon={<HousePlugIcon size={48} />}
         >
           <p>
@@ -194,7 +194,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Household Equipment & Assistive Products"
-          cardKey="household"
+          cardKey="household-equipment-and-assistive-products"
           icon={<HousePlugIcon size={48} />}
         >
           <p>
@@ -204,7 +204,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Daily Tasks and Shared Living"
-          cardKey="adl"
+          cardKey="daily-tasks-and-shared-living"
           icon={<HeartHandshakeIcon size={48} />}
         >
           <p>
@@ -214,7 +214,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Palliative Care"
-          cardKey="household"
+          cardKey="palliative-care"
           icon={<HeartHandshakeIcon size={48} />}
         >
           <p>
@@ -224,7 +224,7 @@ const ServiceListSection = () => {
         </ServiceCard>
         <ServiceCard
           label="Innovative Community Participation"
-          cardKey="scp"
+          cardKey="innovative-community-participation"
           icon={<UsersRoundIcon size={48} />}
         >
           <p>

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import GroupImage from "@/public/images/Group.jpg";
-import SCPImage from "@/public/images/SCP.jpg";
+import GroupImage from "@/public/images/GroupAndCentre.jpg";
+import Group01Image from "@/public/images/Group.jpg";
 import Banner from "@/components/common/Banner";
 import ContactDetails from "@/components/contact/ContactDetails";
 
@@ -52,7 +52,7 @@ export default function GroupActivities() {
         <div className="mt-2 flex flex-col xl:flex-row items-start gap-4">
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
-              src={SCPImage}
+              src={Group01Image}
               alt="What do we offer?"
               fill
               className="rounded-md object-cover object-center"
