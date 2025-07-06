@@ -30,7 +30,7 @@ const HowWeHelpSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
         <HelpCard
           label="Supported Independent Living (SIL)"
-          cardKey="sil"
+          cardKey="supported-independent-living"
           icon={<HandHelpingIcon size={48} />}
         >
           <p>
@@ -40,7 +40,7 @@ const HowWeHelpSection = () => {
         </HelpCard>
         <HelpCard
           label="Specialist Disability Accommodation (SDA)"
-          cardKey="sda"
+          cardKey="specialist-disability-accommodation"
           icon={<AccessibilityIcon size={48} />}
         >
           <p>
@@ -50,7 +50,7 @@ const HowWeHelpSection = () => {
         </HelpCard>
         <HelpCard
           label="Short-Term Accommodation (STA) / Respite"
-          cardKey="sta"
+          cardKey="short-term-accommodation"
           icon={<HouseIcon size={48} />}
         >
           <p>
@@ -60,7 +60,7 @@ const HowWeHelpSection = () => {
         </HelpCard>
         <HelpCard
           label="Community Nursing Care"
-          cardKey="cn"
+          cardKey="community-nursing-care"
           icon={<HeartHandshakeIcon size={48} />}
         >
           <p className="text-green-800 mb-1">Including High-Intensity</p>
@@ -71,7 +71,7 @@ const HowWeHelpSection = () => {
         </HelpCard>
         <HelpCard
           label="Community Participation"
-          cardKey="scp"
+          cardKey="community-participation"
           icon={<UsersRoundIcon size={48} />}
         >
           <p>
@@ -81,7 +81,7 @@ const HowWeHelpSection = () => {
         </HelpCard>
         <HelpCard
           label="Group & Centre-Based Activities"
-          cardKey="group"
+          cardKey="group-and-centre-based-activities"
           icon={<UsersIcon size={48} />}
         >
           <p>
@@ -91,7 +91,7 @@ const HowWeHelpSection = () => {
         </HelpCard>
         <HelpCard
           label="Assistance with Personal Activities"
-          cardKey="sil"
+          cardKey="assistance-with-personal-acitivities"
           icon={<HousePlusIcon size={48} />}
         >
           <p className="text-green-800 mb-1">Standard & High</p>
@@ -101,8 +101,8 @@ const HowWeHelpSection = () => {
           </p>
         </HelpCard>
         <HelpCard
-          label="Complex Behavorial & Forensic Supports"
-          cardKey="sil"
+          label="Complex Behavourial & Forensic Supports"
+          cardKey="complex-behavourial-and-forensic-supports"
           icon={<BrainIcon size={48} />}
         >
           <p>
