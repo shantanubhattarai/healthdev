@@ -163,7 +163,7 @@ const Footer = () => {
               )}
             >
               <Link
-                href="/services/complex-behavioural-and-forensic-supports"
+                href="/services/complex-behavourial-and-forensic-supports"
                 className="hover:underline hover:underline-offset-2"
               >
                 Complex Behavioural & Forensic Supports

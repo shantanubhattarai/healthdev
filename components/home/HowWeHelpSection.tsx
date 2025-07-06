@@ -91,7 +91,7 @@ const HowWeHelpSection = () => {
         </HelpCard>
         <HelpCard
           label="Assistance with Personal Activities"
-          cardKey="assistance-with-personal-acitivities"
+          cardKey="assistance-with-personal-activities"
           icon={<HousePlusIcon size={48} />}
         >
           <p className="text-green-800 mb-1">Standard & High</p>
