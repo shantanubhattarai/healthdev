@@ -51,7 +51,7 @@ export default function AssistanceWithPersonalActivities() {
 
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          Standard Assistance with Personal Activities Includes
+          Standard Personal Activities Assistance
         </h3>
         <p className="text-zinc-800">
           Our experienced and compassionate support workers assist with:
@@ -102,29 +102,6 @@ export default function AssistanceWithPersonalActivities() {
                 participating in social or community events
               </p>
             </div>
-            <div>
-              <p className="font-medium">
-                High-Intensity Personal Activities Assistance
-              </p>
-              <p>
-                For participants with complex health needs, we provide advanced
-                care delivered by trained and qualified staff, including:
-              </p>
-              <ul className="list-disc list-inside mt-2 ml-4 text-zinc-800">
-                <li>Complex bowel care</li>
-                <li>Enteral feeding (PEG/NG tubes)</li>
-                <li>Urinary catheter care (in-dwelling, in-out, suprapubic)</li>
-                <li>Subcutaneous injections</li>
-                <li>Complex wound care</li>
-                <li>Other high-risk personal care tasks as required</li>
-              </ul>
-              <p className="mt-2">
-                All high-intensity supports follow strict policies, risk
-                assessments, and evidence-based best practices, with oversight
-                from experienced registered nurses and allied health
-                professionals.
-              </p>
-            </div>
           </div>
           <div className="w-full xl:w-xl h-96 relative shrink-0">
             <Image
@@ -136,7 +113,28 @@ export default function AssistanceWithPersonalActivities() {
           </div>
         </div>
       </section>
-
+      <section className="pt-12">
+        <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
+          High-Intensity Personal Activities Assistance
+        </h3>
+        <p className="text-zinc-800">
+          For participants with complex health needs, we provide advanced care
+          delivered by trained and qualified staff, including:
+        </p>
+        <ul className="list-disc list-inside mt-2 ml-4 text-zinc-800">
+          <li>Complex bowel care</li>
+          <li>Enteral feeding (PEG/NG tubes)</li>
+          <li>Urinary catheter care (in-dwelling, in-out, suprapubic)</li>
+          <li>Subcutaneous injections</li>
+          <li>Complex wound care</li>
+          <li>Other high-risk personal care tasks as required</li>
+        </ul>
+        <p className="mt-2 text-zinc-800">
+          All high-intensity supports follow strict policies, risk assessments,
+          and evidence-based best practices, with oversight from experienced
+          registered nurses and allied health professionals.
+        </p>
+      </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
           NDIS and Daily Living Support

@@ -121,7 +121,7 @@ export default function PalliativeCare() {
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">
-          What can STA be used for?
+          Why Choose Apex Aid Health Care?
         </h3>
         <ul className="list-disc list-inside mt-2 text-zinc-800">
           <li>Qualified, experienced nurses and support staff</li>
