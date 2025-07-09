@@ -23,6 +23,7 @@ import { cn } from "@/lib/utils";
 
 import LogoAlpha from "@/public/logohorizontalalpha.png";
 import LogoWhite from "@/public/logohorizontalwhite.png";
+import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -84,7 +85,6 @@ const Header = () => {
         </div>
         <nav className="hidden md:block">
           <ul className="flex gap-2">
-            <AccessibilityWidget />
             <Link
               className={cn(
                 "px-2 py-1 font-medium border-b-2 hover:border-green-800 transition-all",
@@ -130,6 +130,7 @@ const Header = () => {
             >
               Contact
             </Link>
+            <AccessibilityWidget />
           </ul>
         </nav>
         <nav
@@ -204,7 +205,22 @@ const AccessibilityWidget = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <SettingsIcon />
+        <p
+          className={cn(
+            "px-2 py-1 font-medium shadow-2xs hover:border-green-800 transition-all hidden md:block lg:flex lg:justify-start lg:items-center lg:gap-x-2 border rounded-sm",
+            highlightLinks ? "border-green-600" : "border-zinc-300"
+          )}
+        >
+          Accessibility
+        </p>
+        <p
+          className={cn(
+            "px-2 py-1 font-medium shadow-2xs hover:border-green-800 transition-all border rounded-sm md:hidden",
+            highlightLinks ? "border-green-600" : "border-zinc-300"
+          )}
+        >
+          <SettingsIcon />
+        </p>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuLabel className="text-zinc-700">
@@ -244,6 +260,19 @@ const AccessibilityWidget = () => {
           <LinkIcon />
           <span>Highlight Links</span>
         </DropdownMenuCheckboxItem>
+        <DropdownMenuItem className="w-full pt-2">
+          <button
+            className="flex justify-center items-center gap-1 text-center py-1 px-2 text-md bg-slate-100 border border-slate-300 rounded-sm w-full"
+            onClick={() => {
+              changeFont("default");
+              changeLargeText(false);
+              changeLargeTracking(false);
+              changeHighlightLinks(false);
+            }}
+          >
+            <span>Reset All</span>
+          </button>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
