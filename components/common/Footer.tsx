@@ -143,12 +143,12 @@ const Footer = () => {
               >
                 Group & Centre-Based Activities
               </Link>
-              <Link
+              {/* <Link
                 href="/services/household-tasks-and-home-maintenance"
                 className="hover:underline hover:underline-offset-2"
               >
                 Household Tasks & Home Maintenance
-              </Link>
+              </Link> */}
               <Link
                 href="/services/travel-and-transport-assistance"
                 className="hover:underline hover:underline-offset-2"
@@ -198,12 +198,12 @@ const Footer = () => {
               >
                 Household Equipment & Assistive Products
               </Link>
-              <Link
+              {/* <Link
                 href="/services/daily-tasks-and-shared-living"
                 className="hover:underline hover:underline-offset-2"
               >
                 Daily Tasks and Shared Living
-              </Link>
+              </Link> */}
               <Link
                 href="/services/palliative-care"
                 className="hover:underline hover:underline-offset-2"

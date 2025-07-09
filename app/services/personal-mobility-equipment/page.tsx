@@ -1,5 +1,5 @@
-import Image from "next/image";
-import FDSImage from "@/public/images/FDS.jpg";
+// import Image from "next/image";
+// import FDSImage from "@/public/images/FDS.jpg";
 import Banner from "@/components/common/Banner";
 import ContactDetails from "@/components/contact/ContactDetails";
 
@@ -19,14 +19,14 @@ export default function PersonalMobilityEquipment() {
           mobility equipment designed to enhance your independence, safety, and
           comfort in daily activities.
         </p>
-        <div className="relative h-96  lg:h-[640px] rounded-md mt-4">
+        {/* <div className="relative h-96  lg:h-[640px] rounded-md mt-4">
           <Image
             src={FDSImage}
             alt="fds"
             fill
             className="rounded-md object-cover object-center"
           />
-        </div>
+        </div> */}
       </section>
       <section className="pt-12">
         <h3 className="text-xl lg:text-2xl mb-2 font-semibold text-green-800">

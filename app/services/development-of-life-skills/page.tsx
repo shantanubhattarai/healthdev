@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FDSImage from "@/public/images/FDS.jpg";
+import DoLSImage from "@/public/images/DoLS.jpg";
 import Banner from "@/components/common/Banner";
 import ContactDetails from "@/components/contact/ContactDetails";
 
@@ -21,7 +21,7 @@ export default function DevelopmentOfLifeSkills() {
         </p>
         <div className="relative h-96  lg:h-[640px] rounded-md mt-4">
           <Image
-            src={FDSImage}
+            src={DoLSImage}
             alt="fds"
             fill
             className="rounded-md object-cover object-center"

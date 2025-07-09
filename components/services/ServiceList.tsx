@@ -14,7 +14,7 @@ import {
   HospitalIcon,
   HouseIcon,
   HousePlugIcon,
-  HousePlusIcon,
+  // HousePlusIcon,
   RefreshCcwDotIcon,
   UsersIcon,
   UsersRoundIcon,
@@ -116,7 +116,7 @@ const ServiceListSection = () => {
             interaction, skill-building, and a sense of belonging.
           </p>
         </ServiceCard>
-        <ServiceCard
+        {/* <ServiceCard
           label="Household Tasks and Home Maintenance"
           cardKey="household-tasks-and-home-maintenance"
           icon={<HousePlusIcon size={48} />}
@@ -125,7 +125,7 @@ const ServiceListSection = () => {
             Reliable assistance with everyday tasks such as cleaning, laundry,
             and meal preparation, ensuring your home remains safe and welcoming.
           </p>
-        </ServiceCard>
+        </ServiceCard> */}
         <ServiceCard
           label="Travel & Transport Assistance"
           cardKey="travel-and-transport-assistance"
@@ -202,7 +202,7 @@ const ServiceListSection = () => {
             needs and enhance your quality of life.
           </p>
         </ServiceCard>
-        <ServiceCard
+        {/* <ServiceCard
           label="Daily Tasks and Shared Living"
           cardKey="daily-tasks-and-shared-living"
           icon={<HeartHandshakeIcon size={48} />}
@@ -211,7 +211,7 @@ const ServiceListSection = () => {
             Support with personal and household tasks in shared living or family
             homes, helping you maintain a comfortable and healthy routine.
           </p>
-        </ServiceCard>
+        </ServiceCard> */}
         <ServiceCard
           label="Palliative Care"
           cardKey="palliative-care"
