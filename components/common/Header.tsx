@@ -16,6 +16,7 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
@@ -23,7 +24,6 @@ import { cn } from "@/lib/utils";
 
 import LogoAlpha from "@/public/logohorizontalalpha.png";
 import LogoWhite from "@/public/logohorizontalwhite.png";
-import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
@@ -260,16 +260,16 @@ const AccessibilityWidget = () => {
           <LinkIcon />
           <span>Highlight Links</span>
         </DropdownMenuCheckboxItem>
-        <DropdownMenuItem className="w-full pt-2">
-          <button
-            className="flex justify-center items-center gap-1 text-center py-1 px-2 text-md bg-slate-100 border border-slate-300 rounded-sm w-full"
-            onClick={() => {
-              changeFont("default");
-              changeLargeText(false);
-              changeLargeTracking(false);
-              changeHighlightLinks(false);
-            }}
-          >
+        <DropdownMenuItem
+          className="w-full"
+          onClick={() => {
+            changeFont("default");
+            changeLargeText(false);
+            changeLargeTracking(false);
+            changeHighlightLinks(false);
+          }}
+        >
+          <button className="flex justify-center items-center gap-1 text-center py-1 px-2 text-md bg-slate-100 border border-slate-300 rounded-sm w-full shadow-xs">
             <span>Reset All</span>
           </button>
         </DropdownMenuItem>
