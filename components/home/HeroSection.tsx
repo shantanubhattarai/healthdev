@@ -9,7 +9,7 @@ const HeroSection = () => {
   const { highlightLinks } = usePrefs();
   return (
     <section
-      className="text-white px-4 py-8 flex flex-col gap-8 justify-center items-center min-h-[75dvh] text-center bg-center bg-cover bg-black/30 bg-blend-overlay"
+      className="text-white px-4 py-8 flex flex-col gap-8 justify-center items-center min-h-[80dvh] text-center bg-center bg-cover bg-black/30 bg-blend-overlay"
       style={{ backgroundImage: `url(${HeroBG.src})` }}
     >
       <div className="max-w-2xl bg-black/30 px-4 pt-6 pb-8 rounded-md">
